@@ -2,10 +2,10 @@
   "kind": "Template",
   "apiVersion": "v1",
   "metadata": {
-    "name": "nodejs-mongo-persistent",
+    "name": "brian",
     "annotations": {
-      "openshift.io/display-name": "Node.js + MongoDB (Persistent)",
-      "description": "An example Node.js application with a MongoDB database. For more information about using this template, including OpenShift considerations, see https://github.com/openshift/nodejs-ex/blob/master/README.md.",
+      "openshift.io/display-name": "Brian J. Hollingsworth",
+      "description": "A robust resume to show off what I can do.",
       "tags": "quickstart,nodejs",
       "iconClass": "icon-nodejs",
       "template.openshift.io/long-description": "This template defines resources needed to develop a NodeJS application, including a build configuration, application deployment configuration, and database deployment configuration.",
