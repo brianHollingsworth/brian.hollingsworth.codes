@@ -2,9 +2,11 @@
 var express = require('express'),
   app = express(),
   morgan = require('morgan')
-  favicon = require('serve-favicon');
+  favicon = require('serve-favicon')
+  favicons = require('connect-favicons');
 
-app.use(favicon(__dirname + '/public/images/Icons/favicon.ico'));
+app.use(favicons(__dirname + 'public/images/Icons'));
+//app.use(favicon(__dirname + '/public/images/Icons/favicon.ico'));
 
 Object.assign = require('object-assign')
 
