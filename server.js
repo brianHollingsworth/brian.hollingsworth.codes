@@ -4,7 +4,7 @@ var express = require('express'),
   morgan = require('morgan')
   favicon = require('serve-favicon');
 
-app.use(favicon(path.join(__dirname,'public','images','Icons','favicon.ico')));
+app.use(favicon(__dirname + '/public/images/Icons/favicon.ico'));
 
 Object.assign = require('object-assign')
 
