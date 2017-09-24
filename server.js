@@ -1,11 +1,14 @@
-//  OpenShift sample Node application
-var express = require('express'),
-  app = express(),
-  morgan = require('morgan')
-  favicon = require('serve-favicon')
-  favicons = require('connect-favicons');
+var express = require('express');
+var morgan = require('morgan');
+var favicons = require('connect-favicons');
+var path = require('path');
 
-app.use(favicons(__dirname + 'public/images/Icons'));
+var app = express();
+
+  app.use(favicons(__dirname + '/public/images/Icons'));
+  app.use(express.static(path.join(__dirname, '/public')));
+//app.use(favicon(path.join(__dirname, 'public', 'images', 'Icons', 'favicon.ico')));
+//app.use(favicons(__dirname + 'public/images/Icons'));
 //app.use(favicon(__dirname + '/public/images/Icons/favicon.ico'));
 
 Object.assign = require('object-assign')
