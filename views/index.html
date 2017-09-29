@@ -32,6 +32,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="/css/bootstrap.min.css">
   <link rel="stylesheet" href="/css/animation.css">
+  <script type="text/javascript" src="js/custom.js"></script>
   <script src="/js/jquery.min.js"></script>
   <script src="/js/bootstrap.min.js"></script>
 
@@ -43,6 +44,11 @@
   // Whenever the page is reloaded, animate the signature.
   $(document).ready(function() {
     document.getElementById('signature-animated').src = 'images/Signature_Animated.gif';
+
+    var date = new Date();
+    var dayOfTheWeek = date.getDay();
+    dailyColorPalette(dayOfTheWeek);
+
   });
 </script>
 
@@ -65,19 +71,25 @@
      </a> -->
   </div>
 
-  <div class="background-material-grey-300">
+  <div class="background-material-profile">
     <div id="profile" class="container">
       Profile.
     </div>
   </div>
 
-  <div class="background-material-grey-400">
+  <div class="background-material-experience">
     <div id="professional-experience" class="container">
       Professional Experience.
     </div>
   </div>
 
-  <div class="background-material-grey-500">
+  <div class="background-material-skillset">
+    <div id="skillset" class="container">
+      Skillset.
+    </div>
+  </div>
+
+  <div class="background-material-about">
     <section class='container'>
 
 
@@ -117,6 +129,12 @@
         <div class="logo"><a href="https://www.openshift.com/"></a></div>
       </footer>
     </section>
+  </div>
+
+  <div class="background-material-contact">
+    <div id="contact" class="container">
+      Contact.
+    </div>
   </div>
 </body>
 

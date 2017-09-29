@@ -99,10 +99,10 @@ hr { margin: 40px 0px; border-color: #727878; opacity: 0.2; filter:alpha(opacity
 .fixed .navbar  { position: fixed; top: 60px; }
 
 .background-white { background: #FFFFFF; }
-.background-material-grey-200 { background: #EEEEEE; }
-.background-material-grey-300 { background: #E0E0E0; }
-.background-material-grey-400 { background: #BDBDBD; }
-.background-material-grey-500 { background: #9E9E9E; }
+.background-material-profile { background: #C0DFD9; }
+.background-material-experience { background: #E9ECE5; }
+.background-material-skillset { background: #B3C2BF; }
+.background-material-about { background: #3B3A36; }
 .container { max-width: 1280px; padding: 40px 180px; }
 
 #profile .row > div { margin-bottom: 20px; }
