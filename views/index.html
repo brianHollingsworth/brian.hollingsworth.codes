@@ -32,7 +32,9 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="/css/bootstrap.min.css">
   <link rel="stylesheet" href="/css/animation.css">
+
   <script type="text/javascript" src="js/custom.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
   <script src="/js/jquery.min.js"></script>
   <script src="/js/bootstrap.min.js"></script>
 
@@ -49,10 +51,16 @@
     var dayOfTheWeek = date.getDay();
     dailyColorPalette(dayOfTheWeek);
 
+    $('#sidebar').affix({
+      offset: {
+        top: $('.navbar-default').height()
+      }
+    });
+
   });
 </script>
 
-<body>
+<body data-spy="scroll" data-target="#sidebar">
 
   <div id="top" class="jumbotron">
     <div id="signature-container" class="container">
@@ -63,34 +71,41 @@
         </div>
       </div>
     </div>
-    <!--
-    <div class="overlay"></div>
+  </div>
 
-    <a href="#profile" class="scroll-down">
-       <span class="glyphicon glyphicon-chevron-down"></span>
-     </a> -->
+  <div class="well bs-sidebar affix" id="sidebar">
+    <ul class="nav nav-pills nav-stacked">
+      <li><a href="#profile">Profile</a></li>
+      <li><a href="#professional-experience">Experience</a></li>
+      <li><a href="#skillset">Skillset</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
   </div>
 
   <div class="background-material-profile">
     <div id="profile" class="container">
       Profile.
+      <div style="padding-bottom: 300px"></div>
     </div>
   </div>
 
   <div class="background-material-experience">
     <div id="professional-experience" class="container">
       Professional Experience.
+      <div style="padding-bottom: 300px"></div>
     </div>
   </div>
 
   <div class="background-material-skillset">
     <div id="skillset" class="container">
       Skillset.
+      <div style="padding-bottom: 300px"></div>
     </div>
   </div>
 
   <div class="background-material-about">
-    <section class='container'>
+    <section id="about" class='container'>
 
 
       <div class="row">
@@ -123,17 +138,20 @@
             </p>
             <%} %>
         </section>
+
       </div>
 
       <footer>
         <div class="logo"><a href="https://www.openshift.com/"></a></div>
       </footer>
     </section>
+    <div style="padding-bottom: 300px"></div>
   </div>
 
   <div class="background-material-contact">
     <div id="contact" class="container">
       Contact.
+      <div style="padding-bottom: 300px"></div>
     </div>
   </div>
 </body>

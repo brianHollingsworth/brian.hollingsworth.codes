@@ -455,3 +455,7 @@ figure.effect:hover p {
    top: 50%;
    transform: translateY(-50%);
 }
+
+.bs-sidebar.affix {
+  top: 25px;
+}
