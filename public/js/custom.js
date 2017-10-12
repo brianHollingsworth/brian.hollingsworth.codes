@@ -1,86 +1,67 @@
 function dailyColorPalette(dayOfTheWeek) {
    switch (dayOfTheWeek) {
       case 0:
-         $('.background-material-profile').css('background', '#EFEBE9');
-         $('.background-material-experience').css('background', '#FF7043');
-         $('.background-material-skillset').css('background', '#FFB74D');
-         $('.background-material-about').css('background', '#FFAB91');
-         $('.background-material-contact').css('background', '#D7CCC8');
+         // Sunday Funday
+         $('.background-material-profile').css('background', '#33658A');
+         $('.background-material-experience').css('background', '#86BBD8');
+         $('.background-material-skillset').css('background', '#2F4858');
+         $('.background-material-about').css('background', '#F6AE2D');
+         $('.background-material-contact').css('background', '#F26419');
          break;
       case 1:
-         $('.background-material-profile').css('background', '#EDE9CE');
-         $('.background-material-experience').css('background', '#C7AD88');
-         $('.background-material-skillset').css('background', '#64706C');
-         $('.background-material-about').css('background', '#935347');
-         $('.background-material-contact').css('background', '#00838F');
+         // The Monday Blues
+         $('.background-material-profile').css('background', '#2196F3');
+         $('.background-material-experience').css('background', '#6EC6FF');
+         $('.background-material-skillset').css('background', '#0069C0');
+         $('.background-material-about').css('background', '#306A9A');
+         $('.background-material-contact').css('background', '#909091');
          break;
       case 2:
-         $('.background-material-profile').css('background', '#FAFAFA');
-         $('.background-material-experience').css('background', '#37474F');
-         $('.background-material-skillset').css('background', '#CFD8DC');
-         $('.background-material-about').css('background', '#26A69A');
-         $('.background-material-contact').css('background', '#00838F');
+         // Optum Orange Tuesday
+         $('.background-material-profile').css('background', '#EF861B');
+         $('.background-material-experience').css('background', '#F6BD16');
+         $('.background-material-skillset').css('background', '#F9D61A');
+         $('.background-material-about').css('background', '#9C9C9C');
+         $('.background-material-contact').css('background', '#BCBCBC');
          break;
       case 3:
-         $('.background-material-profile').css('background', '#FFF8E1');
-         $('.background-material-experience').css('background', '#616161');
-         $('.background-material-skillset').css('background', '#BDBDBD');
-         $('.background-material-about').css('background', '#D7CCC8');
-         $('.background-material-contact').css('background', '#FFB74D');
+         // Wednesday Wanderlust
+         $('.background-material-profile').css('background', '#9AD2CB');
+         $('.background-material-experience').css('background', '#D7EBBA');
+         $('.background-material-skillset').css('background', '#FEFFBE');
+         $('.background-material-about').css('background', '#EBD494');
+         $('.background-material-contact').css('background', '#472836');
          break;
       case 4:
-         $('.background-material-profile').css('background', '#FFFFFF');
-         $('.background-material-experience').css('background', '#82B1FF');
-         $('.background-material-skillset').css('background', '#CFD8DC');
-         $('.background-material-about').css('background', '#82B1FF');
-         $('.background-material-contact').css('background', '#757575');
+         // Material Light Blue and Gray
+         $('.background-material-profile').css('background', '#C9C9C9');
+         $('.background-material-experience').css('background', '#E3E3E3');
+         $('.background-material-skillset').css('background', '#9AD3DE');
+         $('.background-material-about').css('background', '#89BDD3');
+         $('.background-material-contact').css('background', '#173E43');
          break;
       case 5:
-         $('.background-material-profile').css('background', '#F0F4C3');
-         $('.background-material-experience').css('background', '#81C784');
-         $('.background-material-skillset').css('background', '#A5D6A7');
-         $('.background-material-about').css('background', '#C5E1A5');
-         $('.background-material-contact').css('background', '#A1887F');
+         // Happy Friday
+         $('.background-material-profile').css('background', '#264653');
+         $('.background-material-experience').css('background', '#2A9D8F');
+         $('.background-material-skillset').css('background', '#E9C46A');
+         $('.background-material-about').css('background', '#F4A261');
+         $('.background-material-contact').css('background', '#E76F51');
          break;
       case 6:
-         $('.background-material-profile').css('background', '#F9FBE7');
-         $('.background-material-experience').css('background', '#E53935');
-         $('.background-material-skillset').css('background', '#FB8C00');
-         $('.background-material-about').css('background', '#FF7043');
-         $('.background-material-contact').css('background', '#D7CCC8');
+         // Saturday at Sea
+         $('.background-material-profile').css('background', '#05668D');
+         $('.background-material-experience').css('background', '#028090');
+         $('.background-material-skillset').css('background', '#00A896');
+         $('.background-material-about').css('background', '#02C39A');
+         $('.background-material-contact').css('background', '#F0F3BD');
          break;
       default:
-         $('.background-material-profile').css('background', '#EFEBE9');
-         $('.background-material-experience').css('background', '#FF7043');
-         $('.background-material-skillset').css('background', '#FFB74D');
-         $('.background-material-about').css('background', '#FFAB91');
-         $('.background-material-contact').css('background', '#D7CCC8');
+         $('.background-material-profile').css('background', '#EF861B');
+         $('.background-material-experience').css('background', '#F6BD16');
+         $('.background-material-skillset').css('background', '#F9D61A');
+         $('.background-material-about').css('background', '#9C9C9C');
+         $('.background-material-contact').css('background', '#BCBCBC');
          break;
    }
-   // if (dayOfTheWeek = 0) {
-   //   $('.background-material-profile').css('background', '#C9C9C9');
-   //   $('.background-material-experience').css('background', '#E3E3E3');
-   //   $('.background-material-skillset').css('background', '#9AD3DE');
-   //   $('.background-material-about').css('background', '#89BDD3');
-   // } else if (dayOfTheWeek = 1) {
-   //   $('.background-material-profile').css('background', '#C9C9C9');
-   //   $('.background-material-experience').css('background', '#E3E3E3');
-   //   $('.background-material-skillset').css('background', '#9AD3DE');
-   //   $('.background-material-about').css('background', '#89BDD3');
-   // } else if (dayOfTheWeek = 2) {
-   //   $('.background-material-profile').css('background', '#C9C9C9');
-   //   $('.background-material-experience').css('background', '#E3E3E3');
-   //   $('.background-material-skillset').css('background', '#9AD3DE');
-   //   $('.background-material-about').css('background', '#89BDD3');
-   // } else if (dayOfTheWeek = 3) {
-   //   $('.background-material-profile').css('background', '#C9C9C9');
-   //   $('.background-material-experience').css('background', '#E3E3E3');
-   //   $('.background-material-skillset').css('background', '#9AD3DE');
-   //   $('.background-material-about').css('background', '#89BDD3');
-   // } else if (dayOfTheWeek = 4) {
-   //   $('.background-material-profile').css('background', '#C9C9C9');
-   //   $('.background-material-experience').css('background', '#E3E3E3');
-   //   $('.background-material-skillset').css('background', '#9AD3DE');
-   //   $('.background-material-about').css('background', '#89BDD3');
-   // }
 }
