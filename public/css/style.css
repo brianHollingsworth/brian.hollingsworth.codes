@@ -451,11 +451,36 @@ figure.effect:hover p {
 }
 
 #signature-container {
-   position: relative;
-   top: 50%;
-   transform: translateY(-50%);
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .bs-sidebar.affix {
   top: 25px;
+}
+
+.fa-github:hover {
+  color: #000;
+}
+
+.fa-linkedin:hover {
+  color: #0077B4;
+}
+
+.fa-twitter:hover {
+  color: #1DA1F2;
+}
+
+.fa-instagram:hover {
+  color: #C52C83;
+}
+
+.fa-snapchat-ghost:hover {
+  color: #FFFC00;
+}
+
+#social-links li {
+   padding: 3em;
+   display: inline-block;
 }
