@@ -244,7 +244,6 @@ hr { margin: 40px 0px; border-color: #727878; opacity: 0.2; filter:alpha(opacity
 }
 
 @media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : portrait) {
-
    /* Display mobile-navbar on high-res mobile devices like my iPhone 7 Plus. */
    #sidebar { display: none; }
 
@@ -252,9 +251,6 @@ hr { margin: 40px 0px; border-color: #727878; opacity: 0.2; filter:alpha(opacity
 }
 
 @media only screen and (orientation: portrait) and (max-width: 767px)  {
-
-
-
     .jumbotron {
       -webkit-background-size: auto 150%;
       background-attachment: scroll;
