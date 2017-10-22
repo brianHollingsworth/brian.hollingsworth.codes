@@ -244,6 +244,12 @@ hr { margin: 40px 0px; border-color: #727878; opacity: 0.2; filter:alpha(opacity
 }
 
 @media only screen and (orientation: portrait) and (max-width: 767px)  {
+
+   /* Display mobile-navbar on high-res mobile devices like my iPhone 7 Plus. */
+   #sidebar { display: none; }
+
+   #mobile-navbar { display: inline-block; }
+
     .jumbotron {
       -webkit-background-size: auto 150%;
       background-attachment: scroll;
