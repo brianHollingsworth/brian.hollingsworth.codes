@@ -33,6 +33,9 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="/css/bootstrap.min.css">
   <link rel="stylesheet" href="/css/animation.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/overlay.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
   <script type="text/javascript" src="js/custom.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
@@ -150,73 +153,119 @@
     </ul>
   </div>
 
-  <div class="background-material-profile">
+  <div class="text-center background-material-profile">
     <div id="profile" class="container">
       Profile.
       <div style="padding-bottom: 300px"></div>
     </div>
   </div>
 
-  <div class="background-material-experience">
+  <div class="text-center background-material-experience">
     <div id="professional-experience" class="container">
       Professional Experience.
       <div style="padding-bottom: 300px"></div>
     </div>
   </div>
 
-  <div class="background-material-skillset">
+  <div class="text-center background-material-skillset">
     <div id="skillset" class="container">
       Skillset.
       <div style="padding-bottom: 300px"></div>
     </div>
   </div>
 
-  <div class="background-material-about">
+  <div class="text-center background-material-about">
     <section id="about" class='container'>
 
+      <h2>About brian.hollingsworth.codes</h2>
 
-      <div class="row">
-        <section class="col-xs-12 col-sm-6 col-md-6">
+      <div style="max-width:800px;margin:auto;overflow:auto;">
+        <p style="font-size:16px;padding-top: 1.5em">
+          I decided to make this site for a number of reasons, but it mostly boiled down to this: I got bored of LinkedIn. I knew nothing would make me more homogeneous than flaunting my profile on the same platform as every other developer out there. Thus, out
+          of that irritancy, brian.hollingsworth.codes was born!
+        </p>
+      </div>
+      <!-- </section> -->
 
-          <h2>About brian.hollingsworth.codes</h2>
-          <p>Page view count:
-            <% if (pageCountMessage) { %>
-              <span class="code" id="count-value"><%=pageCountMessage%></span>
-          </p>
-          <div class="code">
-            <h3>DB Connection Info:</h3>
-            <table style='margin-left: 20px'>
-              <tr>
-                <td>Type:</td>
-                <td>
-                  <%= dbInfo.type %>
-                </td>
-              </tr>
-              <!-- <tr>
-              <td>URL:</td>
-              <td>
-                <%= dbInfo.url %>
-              </td>
-            </tr> -->
-            </table>
+      <div class="row" style="padding-top: 2em">
+        <div class="mean-flex-box" style="display:flex">
+          <div style="flex:1;padding-left:5px;">
+            <a href="https://www.mongodb.com/" target="_blank"><img src="images/MongoDB.png"></a>
           </div>
-          <% } else { %>
-            <span class="code" id="count-value">No database configured</span>
-            </p>
-            <%} %>
-        </section>
+          <div style="flex:1;padding-left:5px;">
+            <a href="https://expressjs.com/" target="_blank"><img src="images/Express.png"></a>
+          </div>
+          <div style="flex:1;padding-left:5px;">
+            <a href="https://angular.io/" target="_blank"><img src="images/Angular.png"></a>
+          </div>
+          <div style="flex:1;padding-left:5px;">
+            <a href="https://nodejs.org/en/" target="_blank"><img src="images/Nodejs.png"></a>
+          </div>
+        </div>
+      </div>
 
+      <div style="max-width:800px;margin:auto;overflow:auto;">
+        <p style="font-size:16px;padding-top: 2em">
+          This is a MEAN stack application on built on top of Red Hat's incredible OpenShift container platform. All of my code is open source, so feel free to look under the hood of my "resume" and fork it if you want!
+        </p>
+      </div>
+
+      <div class="row" style="padding-top: 2em">
+        <a href="https://github.com/brianHollingsworth/brian.hollingsworth.codes" target="_blank" class="btn btn-primary btn-md">View Source Code on GitHub</a>
       </div>
 
       <footer>
         <div class="logo"><a href="https://www.openshift.com/"></a></div>
       </footer>
+      <div align="left">
+        <p>Page view count:
+          <% if (pageCountMessage) { %>
+            <span class="code" id="count-value"><%=pageCountMessage%></span>
+        </p>
+        <div class="code">
+          <h3>DB Connection Info:</h3>
+          <table style='margin-left: 20px'>
+            <tr>
+              <td>Type:</td>
+              <td>
+                <%= dbInfo.type %>
+              </td>
+            </tr>
+            <!-- <tr>
+              <td>URL:</td>
+              <td>
+                <%= dbInfo.url %>
+              </td>
+            </tr> -->
+          </table>
+        </div>
+        <% } else { %>
+          <span class="code" id="count-value">No database configured</span>
+          </p>
+          <%} %>
+      </div>
     </section>
-    <div style="padding-bottom: 300px"></div>
   </div>
 
   <div class="background-material-contact" style="text-align:center">
-    <div class="social-wrapper">
+    <div style="display:flex">
+      <div class="social-link" style="flex:1;padding-right:5px;">
+        <a target="_blank" href="https://github.com/brianHollingsworth"><i class="fa fa-github" aria-hidden="true"></i></a>
+      </div>
+      <div class="social-link" style="flex:1;padding-left:5px;">
+        <a target="_blank" href="https://www.linkedin.com/in/brianjhollingsworth/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+      </div>
+      <div class="social-link" style="flex:1;padding-left:5px;">
+        <a target="_blank" href="https://twitter.com/Kobe_Brian"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+      </div>
+      <div class="social-link" style="flex:1;padding-left:5px;">
+        <a target="_blank" href="https://www.instagram.com/brianhollingsworth/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+      </div>
+      <div class="social-link" style="flex:1;padding-left:5px;">
+        <a data-toggle="modal" data-target="#snapcodeModal"><i class="fa fa-snapchat-ghost" aria-hidden="true"></i></a>
+      </div>
+    </div>
+    <!-- <div class="social-wrapper">
       <nav class="social-nav">
         <a target="_blank" href="https://github.com/brianHollingsworth"><i class="fa fa-github" aria-hidden="true"></i></a>
         <a target="_blank" href="https://www.linkedin.com/in/brianjhollingsworth/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
@@ -224,13 +273,11 @@
         <a target="_blank" href="https://www.instagram.com/brianhollingsworth/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
         <a data-toggle="modal" data-target="#snapcodeModal"><i class="fa fa-snapchat-ghost" aria-hidden="true"></i></a>
       </nav>
-    </div>
+    </div> -->
   </div>
 
   <div class="modal fade" id="snapcodeModal" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <img src="images/Snapcode.png" width="50%" style="display:block;margin:auto">
-    </div>
+    <img id="snapcode" src="images/Snapcode.png" width="420px" style="display:block;margin:auto;">
   </div>
 </body>
 
