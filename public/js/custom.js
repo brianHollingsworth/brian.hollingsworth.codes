@@ -15,6 +15,8 @@ function dailyColorPalette(dayOfTheWeek) {
          $('.background-material-skillset').css('background', '#0069C0');
          $('.background-material-about').css('background', '#306A9A');
          $('.background-material-contact').css('background', '#909091');
+         $('.background-material-about h2').css({"color":"#81D4FA"});
+         $('.background-material-about p').css({"color":"#81D4FA"});
          break;
       case 2:
          // Optum Orange Tuesday
