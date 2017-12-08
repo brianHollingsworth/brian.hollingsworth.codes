@@ -253,8 +253,9 @@ div.skill {
   margin: 20px auto 20px auto;
   text-align: justify;
   border: 2px;
-  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.35);
   background-position: 8px 11px;
+  border-radius: 8px;
 }
 
 div.skill span {
@@ -272,7 +273,7 @@ img.skill-icon {
 
 .square {
   display: inline-block;
-  padding-right: 0.5em;
+  margin-right: 0.5em;
   height: 4em;
   width: 4em;
 }
@@ -487,6 +488,11 @@ img.skill-icon {
     border-top: 1px solid black;
     margin-top: -50px;
   }
+
+  #skillController {
+    padding: 0px 75px;
+  }
+
   div.social-link a i {
     font-size: 5em;
     padding-top: 0.1em;
@@ -504,6 +510,11 @@ img.skill-icon {
     border-top: 1px solid black;
     margin-top: -45px;
   }
+
+  #skillController {
+    padding: 0px 85px;
+  }
+
   div.social-link a i {
     font-size: 5em;
     padding-top: 0.1em;
@@ -521,6 +532,11 @@ img.skill-icon {
     border-top: 1px solid black;
     margin-top: -35px;
   }
+
+  #skillController {
+    padding: 0px 75px;
+  }
+
   div.social-link a i {
     font-size: 4em;
     padding-top: 0.1em;
@@ -556,9 +572,9 @@ img.skill-icon {
     margin-top: -15px;
   }
   div.social-link a i {
-    font-size: 2em;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
+    font-size: 3em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
   }
 }
 
