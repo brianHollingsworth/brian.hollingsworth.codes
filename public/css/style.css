@@ -682,6 +682,67 @@ figure.effect:hover p {
   transform: translateY(-50%);
 }
 
+#mobile-navbar nav {
+  background-color: rgba(0, 0, 0);
+  border-color: #000;
+}
+
+.navbar-toggle {
+  border: none;
+  background: transparent !important;
+}
+.navbar-toggle:hover {
+  background: transparent !important;
+}
+.navbar-toggle .icon-bar {
+  width: 22px;
+  transition: all 0.2s;
+}
+.navbar-toggle .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+.navbar-toggle .middle-bar {
+  opacity: 0;
+}
+.navbar-toggle .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+.navbar-toggle.collapsed .top-bar {
+  transform: rotate(0);
+}
+.navbar-toggle.collapsed .middle-bar {
+  opacity: 1;
+}
+.navbar-toggle.collapsed .bottom-bar {
+  transform: rotate(0);
+}
+
+#navbar-button {
+  border-color: #000;
+}
+
+#bs-example-navbar-collapse-1 {
+  border-color: #000;
+}
+
+#bs-example-navbar-collapse-1 a {
+  color: #F2F2F2;
+}
+
+#bs-example-navbar-collapse-1 a:hover {
+  color: #BFBFBF;
+}
+
+#brand-img {
+  position: relative;
+  padding-top: 5px;
+  padding-left: 5px;
+  max-height: 3em;
+  min-height: 3em;
+}
+
 .bs-sidebar.affix {
   top: 25px;
 }
