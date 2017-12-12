@@ -719,6 +719,10 @@ figure.effect:hover p {
   transform: rotate(0);
 }
 
+#mobile-navbar {
+  display: none;
+}
+
 #navbar-button {
   border-color: #000;
 }
