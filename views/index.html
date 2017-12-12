@@ -251,37 +251,6 @@
       <div class="row" style="padding-top: 2em">
         <a href="https://github.com/brianHollingsworth/brian.hollingsworth.codes" target="_blank" class="btn btn-primary btn-md">View Source Code on GitHub</a>
       </div>
-
-      <footer>
-        <div class="logo"><a href="https://www.openshift.com/"></a></div>
-      </footer>
-      <div align="left">
-        <p>Page view count:
-          <% if (pageCountMessage) { %>
-            <span class="code" id="count-value"><%=pageCountMessage%></span>
-        </p>
-        <div class="code">
-          <h3>DB Connection Info:</h3>
-          <table style='margin-left: 20px'>
-            <tr>
-              <td>Type:</td>
-              <td>
-                <%= dbInfo.type %>
-              </td>
-            </tr>
-            <!-- <tr>
-              <td>URL:</td>
-              <td>
-                <%= dbInfo.url %>
-              </td>
-            </tr> -->
-          </table>
-        </div>
-        <% } else { %>
-          <span class="code" id="count-value">No database configured</span>
-          </p>
-          <%} %>
-      </div>
     </section>
   </div>
 
