@@ -31,6 +31,7 @@
 
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/modal.css">
   <link rel="stylesheet" href="/css/bootstrap.min.css">
   <link rel="stylesheet" href="/css/animation.css">
   <link rel="stylesheet" href="css/animate.css">
@@ -47,12 +48,11 @@
 
 <script>
   // Whenever the page is reloaded, animate the signature.
-  $(document).ready(function() {
+  $(document).ready(function () {
 
     if (window.innerWidth <= 767) {
       $("#mobile-navbar").css("display", "block");
-    }
-    else {
+    } else {
       $("#mobile-navbar").css("display", "none");
     }
 
@@ -68,7 +68,7 @@
     var dayOfTheWeek = date.getDay();
     dailyColorPalette(dayOfTheWeek);
 
-    $('a[href^="#"]').on('click', function(e) {
+    $('a[href^="#"]').on('click', function (e) {
       e.preventDefault();
 
       var target = this.hash;
@@ -76,22 +76,22 @@
 
       $('html, body').stop().animate({
         'scrollTop': $target.offset().top
-      }, 900, 'swing', function() {
+      }, 900, 'swing', function () {
         window.location.hash = target;
       });
     });
   });
 
-  $(function() {
+  $(function () {
     var navMain = $(".navbar-collapse");
-    navMain.on("click", "a:not([data-toggle])", null, function() {
+    navMain.on("click", "a:not([data-toggle])", null, function () {
       navMain.collapse('hide');
     });
   });
 
   // Whenever my resume is viewed on a mobile device, I only want the fixed
   // navigation bar to be displayed.
-  $(window).resize(function() {
+  $(window).resize(function () {
     if (window.innerWidth <= 767) {
       $("#mobile-navbar").css("display", "block");
       $("#mobile-navbar").show();
@@ -102,34 +102,45 @@
       $("#mobile-navbar").hide();
     }
   });
+
 </script>
 
 <body data-spy="scroll" data-target="#sidebar">
   <div id="mobile-navbar">
-      <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-          <div class="container-fluid">
-              <!-- Brand and toggle get grouped for better mobile display -->
-              <div class="navbar-header">
-                  <button id="navbar-button" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                      <span class="sr-only">Toggle navigation</span>
-                      <span class="icon-bar top-bar"></span>
-                      <span class="icon-bar middle-bar"></span>
-                      <span class="icon-bar bottom-bar"></span>
-                  </button>
-                  <a class="navbar-left" href="#"><img id="brand-img" src="images/Signature_White.png"></a>
-              </div>
-              <!-- Collect the nav links, forms, and other content for toggling -->
-              <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
-                  <ul class="nav navbar-nav">
-                    <li><a href="#profile">Profile</a></li>
-                    <li><a href="#professional-experience">Experience</a></li>
-                    <li><a href="#skillset">Skillset</a></li>
-                    <li><a href="#about">About</a></li>
-                  </ul>
-                </div>
-              <!-- /.navbar-collapse -->
-          </div>
-          <!-- /.container -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button id="navbar-button" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+          </button>
+          <a class="navbar-left" href="#">
+            <img id="brand-img" src="images/Signature_White.png">
+          </a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="#profile">Profile</a>
+            </li>
+            <li>
+              <a href="#professional-experience">Experience</a>
+            </li>
+            <li>
+              <a href="#skillset">Skillset</a>
+            </li>
+            <li>
+              <a href="#about">About</a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container -->
   </div>
 
   <div id="top" class="jumbotron">
@@ -145,10 +156,26 @@
 
   <div id="sidebar" class="well bs-sidebar affix">
     <ul class="nav nav-pills nav-stacked">
-      <li><a href="#profile"><i class="fa fa-user-circle" aria-hidden="true"></i></a></li>
-      <li><a href="#professional-experience"><i class="fa fa-briefcase" aria-hidden="true"></i></a></li>
-      <li><a href="#skillset"><i class="fa fa-code" aria-hidden="true"></i></a></li>
-      <li><a href="#about"><i class="fa fa-code-fork" aria-hidden="true"></i></a></li>
+      <li>
+        <a href="#profile">
+          <i class="fa fa-user-circle" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#professional-experience">
+          <i class="fa fa-briefcase" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#skillset">
+          <i class="fa fa-code" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#about">
+          <i class="fa fa-code-fork" aria-hidden="true"></i>
+        </a>
+      </li>
       <!-- <li><a href="#contact"><i class="fa fa-id-card" aria-hidden="true"></i></a></li> -->
     </ul>
   </div>
@@ -177,8 +204,12 @@
               <li>
                 <div class="skill" style="margin:0 auto 0 auto;">
                   <span>
-                     <div class="square"><img class="skill-icon" src={{language.Icon}}></div>
-                     <span ng-repeat="i in getProficiency(language.Proficiency) track by $index"><i class="fa fa-star" style="font-size: 1.1em;" aria-hidden="true"></i></span>
+                    <div class="square">
+                      <img class="skill-icon" src={{language.Icon}}>
+                    </div>
+                    <span ng-repeat="i in getProficiency(language.Proficiency) track by $index">
+                      <i class="fa fa-star" style="font-size: 1.1em;" aria-hidden="true"></i>
+                    </span>
                   </span>
                 </div>
               </li>
@@ -189,8 +220,12 @@
               <li>
                 <div class="skill" style="margin:0 auto 10px auto;">
                   <span>
-                     <div class="square"><img class="skill-icon" src={{tool.Icon}}></div>
-                     <span ng-repeat="i in getProficiency(tool.Proficiency) track by $index"><i class="fa fa-star" style="font-size: 1.1em;" aria-hidden="true"></i></span>
+                    <div class="square">
+                      <img class="skill-icon" src={{tool.Icon}}>
+                    </div>
+                    <span ng-repeat="i in getProficiency(tool.Proficiency) track by $index">
+                      <i class="fa fa-star" style="font-size: 1.1em;" aria-hidden="true"></i>
+                    </span>
                   </span>
                 </div>
               </li>
@@ -201,8 +236,12 @@
               <li>
                 <div class="skill" style="margin:0 auto 10px auto;">
                   <span>
-                     <div class="square"><img class="skill-icon" src={{environment.Icon}}></div>
-                     <span ng-repeat="i in getProficiency(environment.Proficiency) track by $index"><i class="fa fa-star" style="font-size: 1.1em;" aria-hidden="true"></i></span>
+                    <div class="square">
+                      <img class="skill-icon" src={{environment.Icon}}>
+                    </div>
+                    <span ng-repeat="i in getProficiency(environment.Proficiency) track by $index">
+                      <i class="fa fa-star" style="font-size: 1.1em;" aria-hidden="true"></i>
+                    </span>
                   </span>
                 </div>
               </li>
@@ -220,8 +259,9 @@
 
       <div style="max-width:800px;margin:auto;overflow:auto;">
         <p style="font-size:16px;padding-top: 1.5em">
-          I decided to make this site for a number of reasons, but it mostly boiled down to this: I got bored of LinkedIn. I knew nothing would make me more homogeneous than flaunting my profile on the same platform as every other developer out there. Thus, out
-          of that irritancy, brian.hollingsworth.codes was born!
+          I decided to make this site for a number of reasons, but it mostly boiled down to this: I got bored of LinkedIn. I knew nothing
+          would make me more homogeneous than flaunting my profile on the same platform as every other developer out there.
+          Thus, out of that irritancy, brian.hollingsworth.codes was born!
         </p>
       </div>
       <!-- </section> -->
@@ -229,23 +269,32 @@
       <div class="row" style="padding-top: 2em">
         <div class="mean-flex-box" style="display:flex">
           <div style="flex:1;padding-left:5px;">
-            <a href="https://www.mongodb.com/" target="_blank"><img src="images/MongoDB.png"></a>
+            <a href="https://www.mongodb.com/" target="_blank">
+              <img src="images/MongoDB.png">
+            </a>
           </div>
           <div style="flex:1;padding-left:5px;">
-            <a href="https://expressjs.com/" target="_blank"><img src="images/Express.png"></a>
+            <a href="https://expressjs.com/" target="_blank">
+              <img src="images/Express.png">
+            </a>
           </div>
           <div style="flex:1;padding-left:5px;">
-            <a href="https://angular.io/" target="_blank"><img src="images/Angular.png"></a>
+            <a href="https://angular.io/" target="_blank">
+              <img src="images/Angular.png">
+            </a>
           </div>
           <div style="flex:1;padding-left:5px;">
-            <a href="https://nodejs.org/en/" target="_blank"><img src="images/Nodejs.png"></a>
+            <a href="https://nodejs.org/en/" target="_blank">
+              <img src="images/Nodejs.png">
+            </a>
           </div>
         </div>
       </div>
 
       <div style="max-width:800px;margin:auto;overflow:auto;">
         <p style="font-size:16px;padding-top: 2em">
-          This is a MEAN stack application on built on top of Red Hat's incredible OpenShift container platform. All of my code is open source, so feel free to look under the hood of my "resume" and fork it if you want!
+          This is a MEAN stack application on built on top of Red Hat's incredible OpenShift container platform. All of my code is
+          open source, so feel free to look under the hood of my "resume" and fork it if you want!
         </p>
       </div>
 
@@ -258,19 +307,29 @@
   <div class="background-material-contact" style="text-align:center">
     <div style="display:flex">
       <div class="social-link" style="flex:1;padding-right:5px;">
-        <a target="_blank" href="https://github.com/brianHollingsworth"><i class="fa fa-github" aria-hidden="true"></i></a>
+        <a target="_blank" href="https://github.com/brianHollingsworth">
+          <i class="fa fa-github" aria-hidden="true"></i>
+        </a>
       </div>
       <div class="social-link" style="flex:1;padding-left:5px;">
-        <a target="_blank" href="https://www.linkedin.com/in/brianjhollingsworth/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        <a target="_blank" href="https://www.linkedin.com/in/brianjhollingsworth/">
+          <i class="fa fa-linkedin" aria-hidden="true"></i>
+        </a>
       </div>
       <div class="social-link" style="flex:1;padding-left:5px;">
-        <a target="_blank" href="https://twitter.com/Kobe_Brian"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a target="_blank" href="https://twitter.com/Kobe_Brian">
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+        </a>
       </div>
       <div class="social-link" style="flex:1;padding-left:5px;">
-        <a target="_blank" href="https://www.instagram.com/brianhollingsworth/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <a target="_blank" href="https://www.instagram.com/brianhollingsworth/">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
       </div>
-      <div class="social-link" style="flex:1;padding-left:5px;">
-        <a data-toggle="modal" data-target="#snapcodeModal"><i class="fa fa-snapchat-ghost" aria-hidden="true"></i></a>
+      <div id="snapchat" class="social-link" style="flex:1;padding-left:5px;">
+        <a target="#">
+          <i class="fa fa-snapchat-ghost" aria-hidden="true"></i>
+        </a>
       </div>
     </div>
     <!-- <div class="social-wrapper">
@@ -284,8 +343,15 @@
     </div> -->
   </div>
 
-  <div class="modal fade" id="snapcodeModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <!-- <div class="modal fade" id="snapcodeModal" tabindex="-1" role="dialog" aria-hidden="true">
     <img id="snapcode" src="images/Snapcode.png" width="420px" style="display:block;margin:auto;">
+  </div> -->
+  <div id="modal-container">
+    <div class="modal-background">
+      <div class="modal">
+        <img id="snapcode" src="images/Snapcode.png" style="display:block;margin:auto;">
+      </div>
+    </div>
   </div>
 
 </body>
@@ -293,126 +359,134 @@
 <script>
   var app = angular.module('resumeApp', []);
 
-app.controller('skillController', ['$scope', '$http', function ($scope, $http) {
+  app.controller('skillController', ['$scope', '$http', function ($scope, $http) {
 
-  $scope.languages = [{
-    "Name": "C++",
-    "Proficiency": 5,
-    "Icon": "images/Language_Icons/C++.png"
-  }, {
-    "Name": "Java",
-    "Proficiency": 5,
-    "Icon": "images/Language_Icons/Java.png"
-  }, {
-    "Name": "C#",
-    "Proficiency": 5,
-    "Icon": "images/Language_Icons/CSharp.png"
-  }, {
-    "Name": "Perl",
-    "Proficiency": 4,
-    "Icon": "images/Language_Icons/Perl.png"
-  }, {
-    "Name": "HTML",
-    "Proficiency": 4,
-    "Icon": "images/Language_Icons/HTML.png"
-  }, {
-    "Name": "CSS",
-    "Proficiency": 4,
-    "Icon": "images/Language_Icons/CSS.png"
-  }, {
-    "Name": "JavaScript",
-    "Proficiency": 4,
-    "Icon": "images/Language_Icons/JavaScript.png"
-  }, {
-    "Name": "Node.js",
-    "Proficiency": 4,
-    "Icon": "images/Language_Icons/Nodejs.png"
-  }, {
-    "Name": "Python",
-    "Proficiency": 3,
-    "Icon": "images/Language_Icons/Python.png"
-  }, {
-    "Name": "jQuery",
-    "Proficiency": 3,
-    "Icon": "images/Language_Icons/jQuery.png"
-  }]
+    $scope.languages = [{
+      "Name": "C++",
+      "Proficiency": 5,
+      "Icon": "images/Language_Icons/C++.png"
+    }, {
+      "Name": "Java",
+      "Proficiency": 5,
+      "Icon": "images/Language_Icons/Java.png"
+    }, {
+      "Name": "C#",
+      "Proficiency": 5,
+      "Icon": "images/Language_Icons/CSharp.png"
+    }, {
+      "Name": "Perl",
+      "Proficiency": 4,
+      "Icon": "images/Language_Icons/Perl.png"
+    }, {
+      "Name": "HTML",
+      "Proficiency": 4,
+      "Icon": "images/Language_Icons/HTML.png"
+    }, {
+      "Name": "CSS",
+      "Proficiency": 4,
+      "Icon": "images/Language_Icons/CSS.png"
+    }, {
+      "Name": "JavaScript",
+      "Proficiency": 4,
+      "Icon": "images/Language_Icons/JavaScript.png"
+    }, {
+      "Name": "Node.js",
+      "Proficiency": 4,
+      "Icon": "images/Language_Icons/Nodejs.png"
+    }, {
+      "Name": "Python",
+      "Proficiency": 3,
+      "Icon": "images/Language_Icons/Python.png"
+    }, {
+      "Name": "jQuery",
+      "Proficiency": 3,
+      "Icon": "images/Language_Icons/jQuery.png"
+    }]
 
-  $scope.tools = [{
-    "Name": "Visual Studio",
-    "Proficiency": 4,
-    "Icon": "images/Tool_Icons/Visual_Studio.png"
-  }, {
-    "Name": "Visual Studio Code",
-    "Proficiency": 4,
-    "Icon": "images/Tool_Icons/Visual_Studio_Code.png"
-  }, {
-    "Name": "Git",
-    "Proficiency": 4,
-    "Icon": "images/Tool_Icons/Git.png"
-  }, {
-    "Name": "SQL Server",
-    "Proficiency": 3,
-    "Icon": "images/Tool_Icons/SQL_Server.png"
-  }, {
-    "Name": "OpenShift",
-    "Proficiency": 3,
-    "Icon": "images/Tool_Icons/OpenShift.png"
-  }, {
-    "Name": "Xcode",
-    "Proficiency": 3,
-    "Icon": "images/Tool_Icons/Xcode.png"
-  }, {
-    "Name": "JBoss",
-    "Proficiency": 3,
-    "Icon": "images/Tool_Icons/JBoss.png"
-  }, {
-    "Name": "Toad for Oracle",
-    "Proficiency": 3,
-    "Icon": "images/Tool_Icons/Toad_for_Oracle.png"
-  }]
+    $scope.tools = [{
+      "Name": "Visual Studio",
+      "Proficiency": 4,
+      "Icon": "images/Tool_Icons/Visual_Studio.png"
+    }, {
+      "Name": "Visual Studio Code",
+      "Proficiency": 4,
+      "Icon": "images/Tool_Icons/Visual_Studio_Code.png"
+    }, {
+      "Name": "Git",
+      "Proficiency": 4,
+      "Icon": "images/Tool_Icons/Git.png"
+    }, {
+      "Name": "SQL Server",
+      "Proficiency": 3,
+      "Icon": "images/Tool_Icons/SQL_Server.png"
+    }, {
+      "Name": "OpenShift",
+      "Proficiency": 3,
+      "Icon": "images/Tool_Icons/OpenShift.png"
+    }, {
+      "Name": "Xcode",
+      "Proficiency": 3,
+      "Icon": "images/Tool_Icons/Xcode.png"
+    }, {
+      "Name": "JBoss",
+      "Proficiency": 3,
+      "Icon": "images/Tool_Icons/JBoss.png"
+    }, {
+      "Name": "Toad for Oracle",
+      "Proficiency": 3,
+      "Icon": "images/Tool_Icons/Toad_for_Oracle.png"
+    }]
 
-  $scope.environments = [{
-    "Name": "macOS",
-    "Proficiency": 5,
-    "Icon": "images/Environment_Icons/macOS.png"
-  }, {
-    "Name": "Windows",
-    "Proficiency": 5,
-    "Icon": "images/Environment_Icons/Windows_7.png"
-  }, {
-    "Name": "Windows Server 2012",
-    "Proficiency": 4,
-    "Icon": "images/Environment_Icons/Windows_Server_2012.png"
-  }, {
-    "Name": "Red Hat",
-    "Proficiency": 4,
-    "Icon": "images/Environment_Icons/Red_Hat.png"
-  }, {
-    "Name": "SUSE Linux",
-    "Proficiency": 2,
-    "Icon": "images/Environment_Icons/SUSE_Linux.png"
-  }, {
-    "Name": "Ubuntu",
-    "Proficiency": 2,
-    "Icon": "images/Environment_Icons/Ubuntu.png"
-  }]
+    $scope.environments = [{
+      "Name": "macOS",
+      "Proficiency": 5,
+      "Icon": "images/Environment_Icons/macOS.png"
+    }, {
+      "Name": "Windows",
+      "Proficiency": 5,
+      "Icon": "images/Environment_Icons/Windows_7.png"
+    }, {
+      "Name": "Windows Server 2012",
+      "Proficiency": 4,
+      "Icon": "images/Environment_Icons/Windows_Server_2012.png"
+    }, {
+      "Name": "Red Hat",
+      "Proficiency": 4,
+      "Icon": "images/Environment_Icons/Red_Hat.png"
+    }, {
+      "Name": "SUSE Linux",
+      "Proficiency": 2,
+      "Icon": "images/Environment_Icons/SUSE_Linux.png"
+    }, {
+      "Name": "Ubuntu",
+      "Proficiency": 2,
+      "Icon": "images/Environment_Icons/Ubuntu.png"
+    }]
 
-  $scope.getProficiency = function (proficiency) {
-    return new Array(proficiency);
-  }
-}]);
-</script>
-
-<!-- <script>
-  var app = angular.module('resumeApp', []);
-
-  app.controller('toolController', function($scope) {
-
-
-    $scope.getProficiency = function(proficiency) {
+    $scope.getProficiency = function (proficiency) {
       return new Array(proficiency);
     }
+  }]);
+
+</script>
+
+<script>
+  $('#snapchat').click(function () {
+    $("#modal-container").show();
+    $('#modal-container').removeAttr('class').addClass("blow-up");
+    $('body').addClass('modal-active');
+  })
+
+  $('#modal-container').click(function () {
+    $(this).addClass('out');
+    $('body').removeClass('modal-active');
+    setTimeout(
+      function () {
+        $("#modal-container").hide();
+      }, 500);
+    
   });
-</script> -->
+
+</script>
 
 </html>

@@ -498,6 +498,10 @@ img.skill-icon {
     padding-top: 0.1em;
     padding-bottom: 0.1em;
   }
+
+  #snapcode {
+    width: 30vw;
+  }
 }
 
 /* Landscape tablets and medium desktops */
@@ -519,6 +523,10 @@ img.skill-icon {
     font-size: 5em;
     padding-top: 0.1em;
     padding-bottom: 0.1em;
+  }
+
+  #snapcode {
+    width: 30vw;
   }
 }
 
@@ -542,6 +550,10 @@ img.skill-icon {
     padding-top: 0.1em;
     padding-bottom: 0.1em;
   }
+
+  #snapcode {
+    width: 40vw;
+  }
 }
 
 /* Landscape phones and portrait tablets */
@@ -559,6 +571,10 @@ img.skill-icon {
     padding-top: 0.1em;
     padding-bottom: 0.1em;
   }
+
+  #snapcode {
+    width: 50vw;
+  }
 }
 
 /* Portrait phones and smaller */
@@ -575,6 +591,10 @@ img.skill-icon {
     font-size: 3em;
     padding-top: 0.2em;
     padding-bottom: 0.2em;
+  }
+
+  #snapcode {
+    width: 50vw;
   }
 }
 
@@ -788,10 +808,6 @@ nav.social-nav a i {
   width: 20%;
 }
 
-/*nav.social-nav a i {
-
-}*/
-
 #social-links li {
   /* -webkit-transform: scale(1.2); /* Saf3.1+, Chrome */
   /*-moz-transform: scale(1.2); /* FF3.5+ */
@@ -805,72 +821,4 @@ nav.social-nav a i {
   font-size: 5em;
   padding-top: 0.2em;
   padding-bottom: 0.2em;
-}
-
-/* Safari 4.0 - 8.0 */
-
-@-webkit-keyframes slideDown {
-  0% {
-    transform: translateY(-500px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
-
-@keyframes slideDown {
-  0% {
-    transform: translateY(-500px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
-
-/* Safari 4.0 - 8.0 */
-
-@-webkit-keyframes slideUp {
-  0% {
-    transform: translateY(0px);
-  }
-  100% {
-    transform: translateY(-500px);
-  }
-}
-
-@keyframes slideUp {
-  0% {
-    transform: translateY(0px);
-  }
-  100% {
-    transform: translateY(-500px);
-  }
-}
-
-.snapcodeDown {
-  -webkit-animation-name: slideDown;
-  /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 0.6s;
-  /* Safari 4.0 - 8.0 */
-  animation-name: slideDown;
-  animation-duration: 0.6s;
-}
-
-.snapcodeUp {
-  -webkit-animation-name: slideUp;
-  /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 0.6s;
-  /* Safari 4.0 - 8.0 */
-  animation-name: slideUp;
-  animation-duration: 0.6s;
-}
-
-.modal.fade {
-  opacity: 1;
-}
-
-.modal.fade .modal-dialog {
-  -webkit-transform: translate(0);
-  -moz-transform: translate(0);
-  transform: translate(0);
 }
