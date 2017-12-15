@@ -235,19 +235,21 @@
       <div style="max-width:800px;margin:auto;overflow:auto;">
         <p style="font-size:16px;padding-top: 2em">
           Initially, this MEAN stack application was built on top of Red
-          Hat's incredible OpenShift container platform. However, after the
-          first couple months, the cluster on which my app resided became
-          unreliable and would regularly experience extended outages.<br>
-          I moved my app over to DigitalOcean All of my code is
-          open source, so feel free to look under the hood of my "resume" and fork it if you want!
+          Hat's OpenShift container platform. However, after the first couple
+          months, the cluster on which my app resided became unreliable and
+          would regularly experience extended outages. Thus, I moved my app over
+          to DigitalOcean, and it's been smooth sailing ever since!<br>
+          All of my code is open source, so feel free to look under the hood of
+          my "resume" and fork it if you want!
         </p>
       </div>
 
       <h2>MongoDB View Counter</h2>
-      <p>
       <% if (pageCountMessage) { %>
-          Just like the good old days of MySpace, I'm counting the number of views my profile receives.<br>
-          You are view #<span class="code" id="count-value"><%=pageCountMessage%></span>
+          <p style="font-size:16px;padding-top: 2em"></p>
+          Just like my old MySpace profile, brian.hollingsworth.codes tracks the
+          number of views it receives.<br>
+          You are view #<span class="code" id="count-value"><%=pageCountMessage%></span>.
           </p>
           <!-- <div class="code"><h3>DB Connection Info:</h3>
             <table style='margin-left: 20px'>
@@ -257,7 +259,7 @@
           </div> -->
       <% } else { %>
           <p>
-          <span class="code" id="count-value">No database configured</span>
+          <span class="code" id="count-value">No database configured.</span>
           </p>
       <%} %>
 
