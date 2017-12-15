@@ -240,28 +240,17 @@
           would regularly experience extended outages. Thus, I moved my app over
           to DigitalOcean, and it's been smooth sailing ever since!<br>
           All of my code is open source, so feel free to look under the hood of
-          my "resume" and fork it if you want!
-        </p>
+          my "resume" and fork it if you want!<br>
+          By the way, brian.hollingsworth.codes utilizes MongoDB to track the
+          number of views it receives.
+          <% if (pageCountMessage) { %>
+            You are view #<span class="code" id="count-value"><%=pageCountMessage%></span>!
+            </p>
+          <% } else { %>
+            <span class="code" id="count-value">No database configured.</span>
+            </p>
+          <%} %>
       </div>
-
-      <h2>MongoDB View Counter</h2>
-      <% if (pageCountMessage) { %>
-          <p style="font-size:16px;padding-top: 2em"></p>
-          Just like my old MySpace profile, brian.hollingsworth.codes tracks the
-          number of views it receives.<br>
-          You are view #<span class="code" id="count-value"><%=pageCountMessage%></span>.
-          </p>
-          <!-- <div class="code"><h3>DB Connection Info:</h3>
-            <table style='margin-left: 20px'>
-                <tr><td>Type:</td><td><%= dbInfo.type %></td></tr>
-                <tr><td>URL:</td><td><%= dbInfo.url %></td></tr>
-            </table>
-          </div> -->
-      <% } else { %>
-          <p>
-          <span class="code" id="count-value">No database configured.</span>
-          </p>
-      <%} %>
 
       <div class="row" style="padding-top: 2em">
         <a href="https://github.com/brianHollingsworth/brian.hollingsworth.codes" target="_blank" class="btn btn-primary btn-md">View Source Code on GitHub</a>
