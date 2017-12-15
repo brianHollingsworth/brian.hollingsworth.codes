@@ -46,65 +46,6 @@
 
 </head>
 
-<script>
-  // Whenever the page is reloaded, animate the signature.
-  $(document).ready(function () {
-
-    if (window.innerWidth <= 767) {
-      $("#mobile-navbar").css("display", "block");
-    } else {
-      $("#mobile-navbar").css("display", "none");
-    }
-
-    $('#sidebar').affix({
-      offset: {
-        top: $('.navbar-default').height()
-      }
-    });
-
-    document.getElementById('signature-animated').src = 'images/Signature_Animated.gif';
-
-    var date = new Date();
-    var dayOfTheWeek = date.getDay();
-    dailyColorPalette(dayOfTheWeek);
-
-    $('a[href^="#"]').on('click', function (e) {
-      e.preventDefault();
-
-      var target = this.hash;
-      var $target = $(target);
-
-      $('html, body').stop().animate({
-        'scrollTop': $target.offset().top
-      }, 900, 'swing', function () {
-        window.location.hash = target;
-      });
-    });
-  });
-
-  $(function () {
-    var navMain = $(".navbar-collapse");
-    navMain.on("click", "a:not([data-toggle])", null, function () {
-      navMain.collapse('hide');
-    });
-  });
-
-  // Whenever my resume is viewed on a mobile device, I only want the fixed
-  // navigation bar to be displayed.
-  $(window).resize(function () {
-    if (window.innerWidth <= 767) {
-      $("#mobile-navbar").css("display", "block");
-      $("#mobile-navbar").show();
-      $("#sidebar").hide();
-    } else {
-      $("#sidebar").show();
-      $("#mobile-navbar").css("display", "none");
-      $("#mobile-navbar").hide();
-    }
-  });
-
-</script>
-
 <body data-spy="scroll" data-target="#sidebar">
   <div id="mobile-navbar">
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -355,6 +296,65 @@
   </div>
 
 </body>
+
+<script>
+  // Whenever the page is reloaded, animate the signature.
+  $(document).ready(function () {
+
+    if (window.innerWidth <= 767) {
+      $("#mobile-navbar").css("display", "block");
+    } else {
+      $("#mobile-navbar").css("display", "none");
+    }
+
+    $('#sidebar').affix({
+      offset: {
+        top: $('.navbar-default').height()
+      }
+    });
+
+    document.getElementById('signature-animated').src = 'images/Signature_Animated.gif';
+
+    var date = new Date();
+    var dayOfTheWeek = date.getDay();
+    dailyColorPalette(dayOfTheWeek);
+
+    $('a[href^="#"]').on('click', function (e) {
+      e.preventDefault();
+
+      var target = this.hash;
+      var $target = $(target);
+
+      $('html, body').stop().animate({
+        'scrollTop': $target.offset().top
+      }, 900, 'swing', function () {
+        window.location.hash = target;
+      });
+    });
+  });
+
+  $(function () {
+    var navMain = $(".navbar-collapse");
+    navMain.on("click", "a:not([data-toggle])", null, function () {
+      navMain.collapse('hide');
+    });
+  });
+
+  // Whenever my resume is viewed on a mobile device, I only want the fixed
+  // navigation bar to be displayed.
+  $(window).resize(function () {
+    if (window.innerWidth <= 767) {
+      $("#mobile-navbar").css("display", "block");
+      $("#mobile-navbar").show();
+      $("#sidebar").hide();
+    } else {
+      $("#sidebar").show();
+      $("#mobile-navbar").css("display", "none");
+      $("#mobile-navbar").hide();
+    }
+  });
+
+</script>
 
 <script>
   var app = angular.module('resumeApp', []);
