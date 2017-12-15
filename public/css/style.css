@@ -573,7 +573,7 @@ img.skill-icon {
   }
 
   #snapcode {
-    width: 50vw;
+    width: 30vw;
   }
 }
 
@@ -821,4 +821,9 @@ nav.social-nav a i {
   font-size: 5em;
   padding-top: 0.2em;
   padding-bottom: 0.2em;
+}
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
 }
