@@ -121,23 +121,46 @@
     </ul>
   </div>
 
+  <!-- <div id="container">
+    <div class="text-center background-material-profile">
+      <a href="#profile">
+        <i class="fa fa-user-circle" aria-hidden="true"></i>
+        Profile
+      </a>
+    </div>
+    <div class="text-center background-material-experience">Professional Experience</div>
+    <div class="text-center background-material-skillset">Skillset</div>
+    <div class="text-center background-material-about">About brian.hollingsworth.codes</div>
+  </div> -->
+
   <div class="text-center background-material-profile">
     <div id="profile" class="container">
-      Profile.
+      <img id="profile-pic" class="profile-pic">
+      <div class="profile-text">
+        <h2>Profile.</h2>
+        <p style="font-size:16px">
+          If it wasn't apparent by the URL or the Bootstrap jumbotron,
+          I'm Brian Hollingsworth. This site is a little side project of mine to
+          add some interactive flare to my resume.<br>
+          I decided to make this site for a number of reasons, but it mostly
+          boiled down to this: I got bored of LinkedIn. I knew nothing
+          would make me more homogeneous than flaunting my profile on the same platform as every other developer out there.
+          Thus, out of that irritancy, brian.hollingsworth.codes was born!
+        </p>
+      </div>
     </div>
-    <img src="images/Profile.png" height="500px" style="right:0px">
   </div>
 
   <div class="text-center background-material-experience">
     <div id="professional-experience" class="container">
-      Professional Experience.
+      Professional Experience
       <div style="padding-bottom: 300px"></div>
     </div>
   </div>
 
   <div class="text-center background-material-skillset">
     <div id="skillset" class="container">
-      Skillset.
+      <h2>Skillset</h2>
       <div id="skillController" ng-app="resumeApp" ng-controller="skillController">
         <div class="row">
           <div class="col-sm-4">
@@ -197,14 +220,6 @@
     <section id="about" class='container'>
 
       <h2>About brian.hollingsworth.codes</h2>
-
-      <div style="max-width:800px;margin:auto;overflow:auto;">
-        <p style="font-size:16px;padding-top: 1.5em">
-          I decided to make this site for a number of reasons, but it mostly boiled down to this: I got bored of LinkedIn. I knew nothing
-          would make me more homogeneous than flaunting my profile on the same platform as every other developer out there.
-          Thus, out of that irritancy, brian.hollingsworth.codes was born!
-        </p>
-      </div>
       <!-- </section> -->
 
       <div class="row" style="padding-top: 2em">
@@ -234,21 +249,21 @@
 
       <div style="max-width:800px;margin:auto;overflow:auto;">
         <p style="font-size:16px;padding-top: 2em">
-          Initially, this MEAN stack application was built on top of Red
-          Hat's OpenShift container platform. However, after the first couple
-          months, the cluster on which my app resided became unreliable and
-          would regularly experience extended outages. Thus, I moved my app over
-          to DigitalOcean, and it's been smooth sailing ever since!<br>
-          All of my code is open source, so feel free to look under the hood of
-          my "resume" and fork it if you want!<br>
-          By the way, brian.hollingsworth.codes utilizes MongoDB to track the
-          number of views it receives.<br>
+          Initially, this MEAN stack application was built on top of Red Hat's OpenShift container platform. However, after the first
+          couple months, the cluster on which my app resided became unreliable and would regularly experience extended outages.
+          Thus, I moved my app over to DigitalOcean, and it's been smooth sailing ever since!
+          <br> All of my code is open source, so feel free to look under the hood of my "resume" and fork it if you want!
+          <br> By the way, brian.hollingsworth.codes utilizes MongoDB to track the number of views it receives.
+          <br>
           <% if (pageCountMessage) { %>
-            You are view #<span class="code" id="count-value"><%=pageCountMessage%></span>!
-            </p>
-          <% } else { %>
-            <span class="code" id="count-value">No database configured.</span>
-            </p>
+            You are view #
+            <span class="code" id="count-value">
+              <%=pageCountMessage%>
+            </span>!
+        </p>
+        <% } else { %>
+          <span class="code" id="count-value">No database configured.</span>
+          </p>
           <%} %>
       </div>
 
@@ -316,8 +331,10 @@
 
     if (window.innerWidth <= 767) {
       $("#mobile-navbar").css("display", "block");
+      $("#profile-pic").attr("src", "images/Profile-Mobile.png");
     } else {
       $("#mobile-navbar").css("display", "none");
+      $("#profile-pic").attr("src", "images/Profile.png");
     }
 
     $('#sidebar').affix({
@@ -360,10 +377,12 @@
       $("#mobile-navbar").css("display", "block");
       $("#mobile-navbar").show();
       $("#sidebar").hide();
+      $("#profile-pic").attr("src", "images/Profile-Mobile.png");
     } else {
       $("#sidebar").show();
       $("#mobile-navbar").css("display", "none");
       $("#mobile-navbar").hide();
+      $("#profile-pic").attr("src", "images/Profile.png");
     }
   });
 
@@ -498,7 +517,7 @@
       function () {
         $("#modal-container").hide();
       }, 500);
-      $('body').removeClass('stop-scrolling');
+    $('body').removeClass('stop-scrolling');
   });
 
 </script>

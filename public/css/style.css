@@ -142,6 +142,24 @@ hr {
   text-align: center;
 }
 
+#profile {
+  display: flex;
+  padding-bottom: 0px;
+}
+
+.profile-pic {
+  padding-left: 100px;
+  height: 500px;
+  margin-right: 1em;
+  right:0px;
+}
+.profile-text {
+  max-width: 550px;
+  margin: auto;
+  overflow: auto;
+  flex-grow: 1;
+}
+
 .jumbotron .container>* {
   text-align: center;
   color: #000000;
@@ -370,8 +388,8 @@ img.skill-icon {
 }
 
 @media (max-width: 1200px) {
-  #interests .interest-content {
-    padding: 20px 0px;
+  .profile-pic {
+    padding-left: 100px;
   }
 }
 
@@ -410,9 +428,6 @@ img.skill-icon {
   .container {
     padding: 60px 20px;
     min-width: 280px;
-  }
-  .hidden-phone {
-    display: none;
   }
   #sidebar {
     display: none;
@@ -566,6 +581,17 @@ img.skill-icon {
     border-top: 1px solid black;
     margin-top: -25px;
   }
+
+  #profile {
+    display: inline;
+  }
+
+  .profile-pic {
+    padding-top: 1.5em;
+    padding-left: 1em;
+    height: 250px;
+  }
+
   div.social-link a i {
     font-size: 3em;
     padding-top: 0.1em;
@@ -587,6 +613,11 @@ img.skill-icon {
     border-top: 1px solid black;
     margin-top: -15px;
   }
+
+  #profile {
+    display: block;
+  }
+
   div.social-link a i {
     font-size: 3em;
     padding-top: 0.2em;
