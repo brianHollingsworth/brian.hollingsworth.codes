@@ -256,10 +256,7 @@
           <br> By the way, brian.hollingsworth.codes utilizes MongoDB to track the number of views it receives.
           <br>
           <% if (pageCountMessage) { %>
-            You are view #
-            <span class="code" id="count-value">
-              <%=pageCountMessage%>
-            </span>!
+            You are view #<span class="code" id="count-value"><%=pageCountMessage%></span>!
         </p>
         <% } else { %>
           <span class="code" id="count-value">No database configured.</span>
