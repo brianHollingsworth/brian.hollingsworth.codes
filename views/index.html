@@ -144,8 +144,9 @@
           add some interactive flare to my resume.<br>
           I decided to make this site for a number of reasons, but it mostly
           boiled down to this: I got bored of LinkedIn. I knew nothing
-          would make me more homogeneous than flaunting my profile on the same platform as every other developer out there.
-          Thus, out of that irritancy, brian.hollingsworth.codes was born!
+          would make me more homogeneous than flaunting my profile on the same 
+          platform as every other developer out there. Thus, out of that 
+          irritancy, brian.hollingsworth.codes was born!
         </p>
       </div>
     </div>
@@ -160,7 +161,14 @@
 
   <div class="text-center background-material-skillset">
     <div id="skillset" class="container">
-      <h2>Skillset</h2>
+      <div class="skillset-text">
+        <h2>Skillset.</h2>
+        <p style="font-size:16px">
+          Loosely following the <a href="http://www.bumc.bu.edu/facdev-medicine/files/2012/03/Dreyfus-skill-level.pdf" target="_blank"><i>Dreyfus model of skill acquisition</i></a>,
+          I've laid out what I believe to be my top skills into three categories: 
+          languages, tools, and operating systems.
+        </p>
+      </div>
       <div id="skillController" ng-app="resumeApp" ng-controller="skillController">
         <div class="row">
           <div class="col-sm-4">
@@ -249,9 +257,12 @@
 
       <div style="max-width:800px;margin:auto;overflow:auto;">
         <p style="font-size:16px;padding-top: 2em">
-          Initially, this MEAN stack application was built on top of Red Hat's OpenShift container platform. However, after the first
-          couple months, the cluster on which my app resided became unreliable and would regularly experience extended outages.
-          Thus, I moved my app over to DigitalOcean, and it's been smooth sailing ever since!
+          Initially, this MEAN stack application was built on top of Red Hat's 
+          OpenShift container platform. However, after the first couple months, 
+          the cluster on which my app resided became unreliable and would 
+          regularly experience extended outages. I spent a few weeks testing out
+          the big name cloud platforms but ended up moving my app over to
+          DigitalOcean, and it's been smooth sailing ever since!
           <br> All of my code is open source, so feel free to look under the hood of my "resume" and fork it if you want!
           <br> By the way, brian.hollingsworth.codes utilizes MongoDB to track the number of views it receives.
           <br>
@@ -392,15 +403,15 @@
 
     $scope.languages = [{
       "Name": "C++",
-      "Proficiency": 5,
+      "Proficiency": 4,
       "Icon": "images/Language_Icons/C++.png"
     }, {
       "Name": "Java",
-      "Proficiency": 5,
+      "Proficiency": 4,
       "Icon": "images/Language_Icons/Java.png"
     }, {
       "Name": "C#",
-      "Proficiency": 5,
+      "Proficiency": 4,
       "Icon": "images/Language_Icons/CSharp.png"
     }, {
       "Name": "Perl",
