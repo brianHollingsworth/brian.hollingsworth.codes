@@ -160,6 +160,12 @@ hr {
   flex-grow: 1;
 }
 
+.skillset-text {
+  max-width: 550px;
+  margin: auto;
+  overflow: auto;
+}
+
 .jumbotron .container>* {
   text-align: center;
   color: #000000;
