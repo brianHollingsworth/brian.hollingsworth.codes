@@ -560,6 +560,10 @@ img.skill-icon {
     padding: 0px 75px;
   }
 
+  .square {
+    margin-right: 0.25em;
+  }
+
   div.social-link a i {
     font-size: 4em;
     padding-top: 0.1em;
