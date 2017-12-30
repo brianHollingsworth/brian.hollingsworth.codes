@@ -160,6 +160,12 @@ hr {
   flex-grow: 1;
 }
 
+.experience-text {
+  max-width: 700px;
+  margin: auto;
+  overflow: auto;
+}
+
 .skillset-text {
   max-width: 550px;
   margin: auto;
@@ -295,102 +301,34 @@ img.skill-icon {
   max-height: 100%;
 }
 
+div.job {
+  padding: 8px 12px 8px 12px;
+  margin: 20px auto 20px auto;
+  text-align: justify;
+  border: 2px;
+  background-color: rgba(255, 255, 255, 0.35);
+  background-position: 8px 11px;
+  border-radius: 8px;
+}
+
+div.job span {
+  display: inline-block;
+  padding-bottom: 2px;
+  font-size: 15px;
+  line-height: 1.3em;
+  color: #5C5C5C;
+}
+
+img.job-icon {
+  max-width: 100%;
+  max-height: 100%;
+}
+
 .square {
   display: inline-block;
   margin-right: 0.5em;
   height: 4em;
   width: 4em;
-}
-
-/* #projects .row { margin: 0px; } // bootstrap 3.1- hack */
-
-#projects .row>div {
-  margin-bottom: 30px;
-}
-
-#projects figure {
-  position: relative;
-  overflow: hidden;
-}
-
-#projects figure h3 {
-  color: #FFF;
-  font-weight: 600;
-  margin-bottom: 5px;
-}
-
-#projects figure p>strong {
-  width: 60px;
-  display: inline-block;
-  margin: 0px;
-}
-
-#projects figure img {
-  width: 110%;
-}
-
-#projects figure figcaption {
-  padding: 20px 30px;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  height: 100%;
-  width: 100%;
-}
-
-#projects figure a {
-  z-index: 1000;
-  text-indent: 200%;
-  white-space: nowrap;
-  font-size: 0;
-  opacity: 0;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  height: 100%;
-  width: 100%;
-}
-
-#projects figure .icon {
-  background: #22A39F;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  width: 48px;
-  height: 48px;
-}
-
-#projects figure .icon span {
-  font-size: 18px;
-  line-height: 18px;
-  padding: 15px;
-}
-
-#contact {
-  padding-bottom: 200px;
-}
-
-#contact h2, #contact .row * {
-  color: #FFFFFF;
-}
-
-#contact a {
-  display: block;
-  line-height: 32px;
-  margin-bottom: 20px;
-  opacity: 0.6;
-  filter: alpha(opacity=60);
-}
-
-#contact a .icon {
-  float: left;
-  margin-right: 20px;
-}
-
-#contact a:hover {
-  opacity: 1;
-  filter: alpha(opacity=100);
-  text-decoration: none;
 }
 
 @media (max-width: 1200px) {
