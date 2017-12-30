@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" ng-app="resumeApp">
 
 <head>
   <meta charset="utf-8">
@@ -117,7 +117,6 @@
           <i class="fa fa-code-fork" aria-hidden="true"></i>
         </a>
       </li>
-      <!-- <li><a href="#contact"><i class="fa fa-id-card" aria-hidden="true"></i></a></li> -->
     </ul>
   </div>
 
@@ -154,8 +153,45 @@
 
   <div class="text-center background-material-experience">
     <div id="professional-experience" class="container">
-      Professional Experience
-      <div style="padding-bottom: 300px"></div>
+      <div class="experience-text">
+        <h2>Developer Experience.</h2>
+        <p style="font-size:16px">
+          I started coding as a teenager, but I officially began trading lines
+          of code for fiscal returns on March 3rd, 2014, when I was lucky
+          enough to have the most coveted job by Computer Science students at
+          St. Cloud State: Maverick Software Consulting.<br>
+          While the first four jobs I've listed below exhibit all of my
+          professional experience as a developer, I could not allow myself to
+          leave Marnanteli's Pizza and Merrill off this list; they each played
+          a huge role in helping me pay for 100% of my college tuition & fees 
+          out-of-pocket!
+        </p>
+      </div>
+      <div style="float: none; display: block; margin: 0 auto;">
+        <div id="jobController" ng-controller="jobController">
+            <div class="row">
+              <div class="col-lg-6 col-lg-offset-3">
+                <ul ng-repeat="job in jobs" style="list-style-type: none;padding-left:0;">
+                  <li>
+                    <div class="job" style="margin:0 auto 0 auto;">
+                      <span>
+                        <div class="square">
+                          <a href="{{job.Site}}" target="_blank"><img class="job-icon" src={{job.Icon}}></a>
+                        </div>
+                        <span>
+                          <h5 style="font-weight:800;">{{job.Role}} - {{job.Company}}</h5>
+                          <p>
+                            {{job.Description}}
+                          </p>
+                        </span>
+                      </span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+      </div>
     </div>
   </div>
 
@@ -169,7 +205,7 @@
           languages, tools, and operating systems.
         </p>
       </div>
-      <div id="skillController" ng-app="resumeApp" ng-controller="skillController">
+      <div id="skillController" ng-controller="skillController">
         <div class="row">
           <div class="col-sm-4">
             <ul ng-repeat="language in languages" style="list-style-type: none;padding-left:0;">
@@ -228,7 +264,6 @@
     <section id="about" class='container'>
 
       <h2>About brian.hollingsworth.codes</h2>
-      <!-- </section> -->
 
       <div class="row" style="padding-top: 2em">
         <div class="mean-flex-box" style="display:flex">
@@ -309,20 +344,8 @@
         </a>
       </div>
     </div>
-    <!-- <div class="social-wrapper">
-      <nav class="social-nav">
-        <a target="_blank" href="https://github.com/brianHollingsworth"><i class="fa fa-github" aria-hidden="true"></i></a>
-        <a target="_blank" href="https://www.linkedin.com/in/brianjhollingsworth/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-        <a target="_blank" href="https://twitter.com/Kobe_Brian"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-        <a target="_blank" href="https://www.instagram.com/brianhollingsworth/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-        <a data-toggle="modal" data-target="#snapcodeModal"><i class="fa fa-snapchat-ghost" aria-hidden="true"></i></a>
-      </nav>
-    </div> -->
   </div>
 
-  <!-- <div class="modal fade" id="snapcodeModal" tabindex="-1" role="dialog" aria-hidden="true">
-    <img id="snapcode" src="images/Snapcode.png" width="420px" style="display:block;margin:auto;">
-  </div> -->
   <div id="modal-container">
     <div class="modal-background">
       <div class="modal">
@@ -396,9 +419,7 @@
 
 </script>
 
-<script type="text/javascript" src="js/skill-controller.js"></script>
-
-</script>
+<script type="text/javascript" src="js/resume-app.js"></script>
 
 <script>
   $('#snapchat').click(function () {
