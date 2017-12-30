@@ -49,6 +49,8 @@ function dailyColorPalette(dayOfTheWeek) {
          $('.background-material-skillset').css('background', '#E9C46A');
          $('.background-material-about').css('background', '#F4A261');
          $('.background-material-contact').css('background', '#E76F51');
+         $('.background-material-profile h2').css({"color":"#2A9D8F"});
+         $('.background-material-profile p').css({"color":"#2A9D8F"});
          break;
       case 6:
          // Saturday at Sea
@@ -56,6 +58,8 @@ function dailyColorPalette(dayOfTheWeek) {
          $('.background-material-experience').css('background', '#028090');
          $('.background-material-skillset').css('background', '#00A896');
          $('.background-material-about').css('background', '#02C39A');
+         $('.background-material-about h2').css({"color":"#F0F3BD"});
+         $('.background-material-about p').css({"color":"#F0F3BD"});
          $('.background-material-contact').css('background', '#F0F3BD');
          break;
       default:
