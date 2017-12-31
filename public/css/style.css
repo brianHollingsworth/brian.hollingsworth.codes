@@ -301,6 +301,13 @@ img.skill-icon {
   max-height: 100%;
 }
 
+.square {
+  display: inline-block;
+  margin-right: 0.5em;
+  height: 4em;
+  width: 4em;
+}
+
 div.job {
   padding: 8px 12px 8px 12px;
   margin: 20px auto 20px auto;
@@ -324,11 +331,11 @@ img.job-icon {
   max-height: 100%;
 }
 
-.square {
+.job-square {
   display: inline-block;
   margin-right: 0.5em;
-  height: 4em;
-  width: 4em;
+  height: 5em;
+  width: 5em;
 }
 
 @media (max-width: 1200px) {
