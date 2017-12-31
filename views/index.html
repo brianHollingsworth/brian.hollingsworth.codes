@@ -181,7 +181,7 @@
                         <span>
                           <h5 style="font-weight:600;">{{job.Role}}</h5>
                           <h5 style="font-weight:600;">{{job.Company}}</h5>
-                          <p ng-bind-html="job.Description | trustAsHTML"></p>
+                          <p class="job-description" ng-bind-html="job.Description | trustAsHTML"></p>
                         </span>
                       </span>
                     </div>
@@ -415,6 +415,15 @@
       $("#profile-pic").attr("src", "images/Profile.png");
     }
   });
+
+  // A function to remove gradient from job descriptions when you reach the bottom.
+  jQuery(function($) {
+    $('.job-description').on('scroll', function() {
+        if($(this).scrollTop() + $(this).innerHeight() >= $(this)[0].scrollHeight) {
+            // alert('end reached');
+        }
+    })
+});
 
 </script>
 
