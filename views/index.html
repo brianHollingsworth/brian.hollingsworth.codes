@@ -175,14 +175,13 @@
                   <li>
                     <div class="job" style="margin:0 auto 0 auto;">
                       <span>
-                        <div class="square">
+                        <div class="job-square">
                           <a href="{{job.Site}}" target="_blank"><img class="job-icon" src={{job.Icon}}></a>
                         </div>
                         <span>
-                          <h5 style="font-weight:800;">{{job.Role}} - {{job.Company}}</h5>
-                          <p>
-                            {{job.Description}}
-                          </p>
+                          <h5 style="font-weight:600;">{{job.Role}}</h5>
+                          <h5 style="font-weight:600;">{{job.Company}}</h5>
+                          <p ng-bind-html="job.Description | trustAsHTML"></p>
                         </span>
                       </span>
                     </div>

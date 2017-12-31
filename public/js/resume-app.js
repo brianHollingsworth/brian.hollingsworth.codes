@@ -109,43 +109,49 @@ app.controller('skillController', ['$scope', '$http', function ($scope, $http) {
   }
 }]);
 
+app.filter('trustAsHTML', function ($sce) {
+  return function (val) {
+    return $sce.trustAsHtml(val);
+  };
+});
+
 app.controller('jobController', ['$scope', '$http', function ($scope, $http) {
 
-    $scope.jobs = [{
-      "Role": "Technology Development Program Senior Associate",
-      "Company": "Optum",
-      "Site": "https://www.optum.com/",
-      "Description": "Test",
-      "Icon": "images/Company_Icons/Optum.png"
-    }, {
-      "Company": "Optum",
-      "Role": "Technology Development Program Intern",
-      "Site": "https://www.optum.com/",
-      "Icon": "images/Company_Icons/Optum.png",
-      "Description": "Test"
-    }, {
-      "Company": "Maverick Software Consulting",
-      "Role": "Software Engineering Intern",
-      "Site": "http://www.mavericksoftware.com/",
-      "Icon": "images/Company_Icons/Maverick.png",
-      "Description": "Test"
-    }, {
-      "Company": "Symantec",
-      "Role": "Software Quality Assurance Intern",
-      "Site": "https://www.symantec.com/",
-      "Icon": "images/Company_Icons/Symantec.png",
-      "Description": "Test"
-    }, {
-      "Company": "Marnanteli's Pizza",
-      "Role": "Manager",
-      "Site": "http://www.marnantelispizza.com/",
-      "Icon": "images/Company_Icons/Marnanteli's.png",
-      "Description": "Test"
-    }, {
-      "Company": "Merrill Corporation",
-      "Role": "Fulfillment Associate",
-      "Site": "https://www.merrillcorp.com/en/",
-      "Icon": "images/Company_Icons/Merrill.png",
-      "Description": "Test"
-    }]
-  }]);
+  $scope.jobs = [{
+    "Role": "Technology Development Program Senior Associate",
+    "Company": "Optum",
+    "Site": "https://www.optum.com/",
+    "Description": "Test",
+    "Icon": "images/Company_Icons/Optum.png"
+  }, {
+    "Company": "Optum",
+    "Role": "Technology Development Program Intern",
+    "Site": "https://www.optum.com/",
+    "Icon": "images/Company_Icons/Optum.png",
+    "Description": "Test"
+  }, {
+    "Company": "Maverick Software Consulting",
+    "Role": "Software Engineering Intern",
+    "Site": "http://www.mavericksoftware.com/",
+    "Icon": "images/Company_Icons/Maverick.png",
+    "Description": "The most important job I had during college. I started working for Maverick as a Student Software Engineer from the spring semester of my sophomore year to the penultimate week of my senior year. Maverick contracts with<a href=\"https://www.veritas.com/\" target=\"_blank\">Veritas Technologies</a> (formerly Symantec) to give college students the opportunity to gain crucial real-world experience by working as SQA developers.<br> I wrote countless Perl scripts to automate the test scenarios for <a href=\"https://www.veritas.com/product/backup-and-recovery/netbackup-8.html?inid=us_veritas_home_products_netbackup-8\" target=\"_blank\">NetBackup</a>, the world's leading backup and recovery solution for enterprise data centers and hybrid clouds.<br> When I wasn't coding for Maverick, I was out promoting future \"Mavs\" to take a chance and apply. I still advocate for Maverick whenever I can, like when I return to St. Cloud State for CSCI Club, or when I bump into a TDP summer intern at Optum who's looking for advice before they return to school."
+  }, {
+    "Company": "Symantec",
+    "Role": "Software Quality Assurance Intern",
+    "Site": "https://www.symantec.com/",
+    "Icon": "images/Company_Icons/Symantec.png",
+    "Description": "Test"
+  }, {
+    "Company": "Marnanteli's Pizza",
+    "Role": "Manager",
+    "Site": "http://www.marnantelispizza.com/",
+    "Icon": "images/Company_Icons/Marnanteli's.png",
+    "Description": "Test"
+  }, {
+    "Company": "Merrill Corporation",
+    "Role": "Fulfillment Associate",
+    "Site": "https://www.merrillcorp.com/en/",
+    "Icon": "images/Company_Icons/Merrill.png",
+    "Description": "Test"
+  }]
+}]);
