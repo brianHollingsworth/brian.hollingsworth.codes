@@ -5,6 +5,10 @@ function dailyColorPalette(dayOfTheWeek) {
          $('.background-material-profile').css('background', '#33658A');
          $('.background-material-experience').css('background', '#86BBD8');
          $('.background-material-skillset').css('background', '#2F4858');
+         $('.background-material-skillset h2').css({"color":"#F6AE2D"});
+         $('.background-material-skillset p').css({"color":"#F6AE2D"});
+         $('.background-material-skillset a').css({"color":"#F6AE2D"});
+         $('div.skill').css({"background-color":"rgba(255, 255, 255, 0.50)"});
          $('.background-material-about').css('background', '#F6AE2D');
          $('.background-material-contact').css('background', '#F26419');
          break;
@@ -57,6 +61,7 @@ function dailyColorPalette(dayOfTheWeek) {
          $('.background-material-profile').css('background', '#05668D');
          $('.background-material-experience').css('background', '#028090');
          $('.background-material-skillset').css('background', '#00A896');
+         $('div.skill').css({"background-color":"rgba(255, 255, 255, 0.50)"});
          $('.background-material-about').css('background', '#02C39A');
          $('.background-material-about h2').css({"color":"#F0F3BD"});
          $('.background-material-about p').css({"color":"#F0F3BD"});
