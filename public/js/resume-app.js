@@ -121,37 +121,37 @@ app.controller('jobController', ['$scope', '$http', function ($scope, $http) {
     "Role": "Technology Development Program Senior Associate",
     "Company": "Optum",
     "Site": "https://www.optum.com/",
-    "Description": "Test",
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. A arcu cursus vitae congue mauris rhoncus aenean. Sed ullamcorper morbi tincidunt ornare massa eget egestas. Dui sapien eget mi proin sed. Dui vivamus arcu felis bibendum ut tristique et. In ornare quam viverra orci sagittis eu volutpat. Integer feugiat scelerisque varius morbi enim nunc faucibus. Facilisi etiam dignissim diam quis enim. Nulla aliquet porttitor lacus luctus accumsan tortor. Scelerisque varius morbi enim nunc faucibus a pellentesque sit amet. Ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae. Pulvinar elementum integer enim neque volutpat ac. Sed risus pretium quam vulputate. Non diam phasellus vestibulum lorem sed risus. Tempor commodo ullamcorper a lacus. Sed cras ornare arcu dui vivamus arcu felis bibendum. Laoreet non curabitur gravida arcu ac. Dolor magna eget est lorem ipsum dolor sit. Diam maecenas ultricies mi eget.",
     "Icon": "images/Company_Icons/Optum.png"
   }, {
     "Company": "Optum",
     "Role": "Technology Development Program Intern",
     "Site": "https://www.optum.com/",
     "Icon": "images/Company_Icons/Optum.png",
-    "Description": "Test"
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. A arcu cursus vitae congue mauris rhoncus aenean. Sed ullamcorper morbi tincidunt ornare massa eget egestas. Dui sapien eget mi proin sed. Dui vivamus arcu felis bibendum ut tristique et. In ornare quam viverra orci sagittis eu volutpat. Integer feugiat scelerisque varius morbi enim nunc faucibus. Facilisi etiam dignissim diam quis enim. Nulla aliquet porttitor lacus luctus accumsan tortor. Scelerisque varius morbi enim nunc faucibus a pellentesque sit amet. Ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae. Pulvinar elementum integer enim neque volutpat ac. Sed risus pretium quam vulputate. Non diam phasellus vestibulum lorem sed risus. Tempor commodo ullamcorper a lacus. Sed cras ornare arcu dui vivamus arcu felis bibendum. Laoreet non curabitur gravida arcu ac. Dolor magna eget est lorem ipsum dolor sit. Diam maecenas ultricies mi eget."
   }, {
     "Company": "Maverick Software Consulting",
     "Role": "Software Engineering Intern",
     "Site": "http://www.mavericksoftware.com/",
     "Icon": "images/Company_Icons/Maverick.png",
-    "Description": "The most important job I had during college. I started working for Maverick as a Student Software Engineer from the spring semester of my sophomore year to the penultimate week of my senior year. Maverick contracts with<a href=\"https://www.veritas.com/\" target=\"_blank\">Veritas Technologies</a> (formerly Symantec) to give college students the opportunity to gain crucial real-world experience by working as SQA developers.<br> I wrote countless Perl scripts to automate the test scenarios for <a href=\"https://www.veritas.com/product/backup-and-recovery/netbackup-8.html?inid=us_veritas_home_products_netbackup-8\" target=\"_blank\">NetBackup</a>, the world's leading backup and recovery solution for enterprise data centers and hybrid clouds.<br> When I wasn't coding for Maverick, I was out promoting future \"Mavs\" to take a chance and apply. I still advocate for Maverick whenever I can, like when I return to St. Cloud State for CSCI Club, or when I bump into a TDP summer intern at Optum who's looking for advice before they return to school."
+    "Description": "The most important job I had during college. I started working for Maverick as a Student Software Engineer from the spring semester of my sophomore year to the penultimate week of my senior year. Maverick contracts with <a href=\"https://www.veritas.com/\" target=\"_blank\">Veritas Technologies</a> (formerly Symantec) to give college students the opportunity to gain crucial real-world experience by working as SQA developers.<br> I wrote countless Perl scripts to automate the test scenarios for <a href=\"https://www.veritas.com/product/backup-and-recovery/netbackup-8.html?inid=us_veritas_home_products_netbackup-8\" target=\"_blank\">NetBackup</a>, the world's leading backup and recovery solution for enterprise data centers and hybrid clouds.<br> When I wasn't coding for Maverick, I was out promoting future \"Mavs\" to take a chance and apply. I still advocate for Maverick whenever I can, like when I return to St. Cloud State for CSCI Club, or when I bump into a TDP summer intern at Optum who's looking for advice before they return to school."
   }, {
     "Company": "Symantec",
     "Role": "Software Quality Assurance Intern",
     "Site": "https://www.symantec.com/",
     "Icon": "images/Company_Icons/Symantec.png",
-    "Description": "Test"
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. A arcu cursus vitae congue mauris rhoncus aenean. Sed ullamcorper morbi tincidunt ornare massa eget egestas. Dui sapien eget mi proin sed. Dui vivamus arcu felis bibendum ut tristique et. In ornare quam viverra orci sagittis eu volutpat. Integer feugiat scelerisque varius morbi enim nunc faucibus. Facilisi etiam dignissim diam quis enim. Nulla aliquet porttitor lacus luctus accumsan tortor. Scelerisque varius morbi enim nunc faucibus a pellentesque sit amet. Ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae. Pulvinar elementum integer enim neque volutpat ac. Sed risus pretium quam vulputate. Non diam phasellus vestibulum lorem sed risus. Tempor commodo ullamcorper a lacus. Sed cras ornare arcu dui vivamus arcu felis bibendum. Laoreet non curabitur gravida arcu ac. Dolor magna eget est lorem ipsum dolor sit. Diam maecenas ultricies mi eget."
   }, {
     "Company": "Marnanteli's Pizza",
     "Role": "Manager",
     "Site": "http://www.marnantelispizza.com/",
     "Icon": "images/Company_Icons/Marnanteli's.png",
-    "Description": "Test"
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. A arcu cursus vitae congue mauris rhoncus aenean. Sed ullamcorper morbi tincidunt ornare massa eget egestas. Dui sapien eget mi proin sed. Dui vivamus arcu felis bibendum ut tristique et. In ornare quam viverra orci sagittis eu volutpat. Integer feugiat scelerisque varius morbi enim nunc faucibus. Facilisi etiam dignissim diam quis enim. Nulla aliquet porttitor lacus luctus accumsan tortor. Scelerisque varius morbi enim nunc faucibus a pellentesque sit amet. Ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae. Pulvinar elementum integer enim neque volutpat ac. Sed risus pretium quam vulputate. Non diam phasellus vestibulum lorem sed risus. Tempor commodo ullamcorper a lacus. Sed cras ornare arcu dui vivamus arcu felis bibendum. Laoreet non curabitur gravida arcu ac. Dolor magna eget est lorem ipsum dolor sit. Diam maecenas ultricies mi eget."
   }, {
     "Company": "Merrill Corporation",
     "Role": "Fulfillment Associate",
     "Site": "https://www.merrillcorp.com/en/",
     "Icon": "images/Company_Icons/Merrill.png",
-    "Description": "Test"
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. A arcu cursus vitae congue mauris rhoncus aenean. Sed ullamcorper morbi tincidunt ornare massa eget egestas. Dui sapien eget mi proin sed. Dui vivamus arcu felis bibendum ut tristique et. In ornare quam viverra orci sagittis eu volutpat. Integer feugiat scelerisque varius morbi enim nunc faucibus. Facilisi etiam dignissim diam quis enim. Nulla aliquet porttitor lacus luctus accumsan tortor. Scelerisque varius morbi enim nunc faucibus a pellentesque sit amet. Ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae. Pulvinar elementum integer enim neque volutpat ac. Sed risus pretium quam vulputate. Non diam phasellus vestibulum lorem sed risus. Tempor commodo ullamcorper a lacus. Sed cras ornare arcu dui vivamus arcu felis bibendum. Laoreet non curabitur gravida arcu ac. Dolor magna eget est lorem ipsum dolor sit. Diam maecenas ultricies mi eget."
   }]
 }]);
