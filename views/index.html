@@ -154,7 +154,7 @@
   <div class="text-center background-material-experience">
     <div id="professional-experience" class="container">
       <div class="experience-text">
-        <h2>Developer Experience.</h2>
+        <h2>Work Experience.</h2>
         <p style="font-size:16px">
           I started coding as a teenager, but I officially began trading lines
           of code for fiscal returns on March 3rd, 2014, when I was lucky
@@ -174,13 +174,14 @@
                 <ul ng-repeat="job in jobs" style="list-style-type: none;padding-left:0;">
                   <li>
                     <div class="job" style="margin:0 auto 0 auto;">
-                      <span>
-                        <div class="job-square">
+                        <div class="job-square" style="float:left">
                           <a href="{{job.Site}}" target="_blank"><img class="job-icon" src={{job.Icon}}></a>
                         </div>
-                        <span>
+                        <div style="float:left;padding-left:15px">
                           <h5 style="font-weight:600;">{{job.Role}}</h5>
                           <h5 style="font-weight:600;">{{job.Company}}</h5>
+                        </div>
+                        <span>
                           <p class="job-description" ng-bind-html="job.Description | trustAsHTML"></p>
                         </span>
                       </span>
