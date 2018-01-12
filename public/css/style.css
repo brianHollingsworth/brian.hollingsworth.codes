@@ -349,8 +349,6 @@ img.job-icon {
 }
 
 .job-square {
-  display: inline-block;
-  margin-right: 0.5em;
   height: 5em;
   width: 5em;
 }
