@@ -520,6 +520,11 @@ img.job-icon {
     border-top: 1px solid black;
     margin-top: -45px;
   }
+
+  #jobController {
+    padding: 0px 85px;
+  }
+
   #skillController {
     padding: 0px 85px;
   }
@@ -543,6 +548,9 @@ img.job-icon {
     display: block;
     border-top: 1px solid black;
     margin-top: -35px;
+  }
+  #jobController {
+    padding: 0px 85px;
   }
   #skillController {
     padding: 0px 75px;
