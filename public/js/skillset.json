@@ -37,9 +37,9 @@
       "Proficiency": 3,
       "Icon": "images/Language_Icons/Python.png"
     }, {
-      "Name": "jQuery",
-      "Proficiency": 3,
-      "Icon": "images/Language_Icons/jQuery.png"
+      "Name": "Swift",
+      "Proficiency": 2,
+      "Icon": "images/Language_Icons/Swift.png"
     }],
 
     "tools": [{
