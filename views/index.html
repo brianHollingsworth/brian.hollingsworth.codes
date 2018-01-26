@@ -119,90 +119,87 @@
       </li>
     </ul>
   </div>
-
-  <!-- <div id="container">
-    <div class="text-center background-material-profile">
-      <a href="#profile">
-        <i class="fa fa-user-circle" aria-hidden="true"></i>
-        Profile
-      </a>
-    </div>
-    <div class="text-center background-material-experience">Professional Experience</div>
-    <div class="text-center background-material-skillset">Skillset</div>
-    <div class="text-center background-material-about">About brian.hollingsworth.codes</div>
-  </div> -->
-
+  <!-- <div id="sticky-profile">
+    <a href="#profile">
+      <i class="fa fa-user-circle" aria-hidden="true"></i>
+    </a>Profile</div> -->
   <div class="text-center background-material-profile">
     <div id="profile" class="container">
       <img id="profile-pic" class="profile-pic">
       <div class="profile-text">
         <h2>Profile.</h2>
         <p style="font-size:16px">
-          If it wasn't apparent by the URL or the Bootstrap jumbotron,
-          I'm Brian Hollingsworth. This site is a little side project of mine to
-          add some interactive flare to my resume.<br>
-          I decided to make this site for a number of reasons, but it mostly
-          boiled down to this: I got bored of LinkedIn. I knew nothing
-          would make me more homogeneous than flaunting my profile on the same 
-          platform as every other developer out there. Thus, out of that 
-          irritancy, brian.hollingsworth.codes was born!
+          If it wasn't apparent by the URL or the Bootstrap jumbotron, I'm Brian Hollingsworth. This site is a little side project
+          of mine to add some interactive flare to my resume.
+          <br> I decided to make this site for a number of reasons, but it mostly boiled down to this: I got bored of LinkedIn.
+          I knew nothing would make me more homogeneous than flaunting my profile on the same platform as every other developer
+          out there. Thus, out of that irritancy, brian.hollingsworth.codes was born!
         </p>
       </div>
     </div>
   </div>
 
+  <!-- <div id="sticky-experience">
+    <a href="#professional-experience">
+      <i class="fa fa-briefcase" aria-hidden="true"></i>
+    </a>Work Experience.</div> -->
   <div class="text-center background-material-experience">
     <div id="professional-experience" class="container">
       <div class="experience-text">
         <h2>Work Experience.</h2>
         <p style="font-size:16px">
-          I started coding as a teenager, but I officially began trading lines
-          of code for fiscal returns on March 3rd, 2014, when I was lucky
-          enough to have the most coveted job by Computer Science students at
-          St. Cloud State: Maverick Software Consulting.<br>
-          While the first four jobs I've listed below exhibit all of my
-          professional experience as a developer, I could not allow myself to
-          leave Marnanteli's Pizza and Merrill off this list; they each played
-          a huge role in helping me pay for 100% of my college tuition & fees 
-          out-of-pocket!
+          I started coding as a teenager, but I officially began trading lines of code for fiscal returns on March 3rd, 2014, when
+          I was lucky enough to have the most coveted job by Computer Science students at St. Cloud State: Maverick Software
+          Consulting.
+          <br> While the first four jobs I've listed below exhibit all of my professional experience as a developer, I could
+          not allow myself to leave Marnanteli's Pizza and Merrill off this list; they each played a huge role in helping
+          me pay for 100% of my college tuition & fees out-of-pocket!
         </p>
       </div>
       <div style="float: none; display: block; margin: 0 auto;">
         <div id="jobController" ng-controller="jobController">
-            <div class="row">
-              <div class="col-lg-6 col-lg-offset-3">
-                <ul ng-repeat="job in jobs" style="list-style-type: none;padding-left:0;">
-                  <li>
-                    <div class="job">
-                        <div class="job-square" style="float:left">
-                          <a href="{{job.Site}}" target="_blank"><img class="job-icon" src={{job.Icon}}></a>
-                        </div>
-                        <div style="float:left;padding-left:15px">
-                          <h5 style="font-weight:600;">{{job.Role}}</h5>
-                          <h5 style="font-weight:600;">{{job.Company}}</h5>
-                        </div>
-                        <span>
-                          <p class="job-description" ng-bind-html="job.Description | trustAsHTML"></p>
-                        </span>
-                      </span>
+          <div class="row">
+            <div class="col-lg-6 col-lg-offset-3">
+              <ul ng-repeat="job in jobs" style="list-style-type: none;padding-left:0;">
+                <li>
+                  <div class="job">
+                    <div class="job-square" style="float:left">
+                      <a href="{{job.Site}}" target="_blank">
+                        <img class="job-icon" src={{job.Icon}}>
+                      </a>
                     </div>
-                  </li>
-                </ul>
-              </div>
+                    <div style="float:left;padding-left:15px">
+                      <h5 style="font-weight:600;margin-bottom:3px;">{{job.Role}}</h5>
+                      <h5 style="font-weight:600;margin-bottom:2px;margin-top:4px;">{{job.Company}}</h5>
+                      <h5 style="font-weight:100;margin-bottom:2px;margin-top:4px;">{{job.Tenure}}</h5>
+                    </div>
+                    <span>
+                      <p class="job-description" ng-bind-html="job.Description | trustAsHTML"></p>
+                    </span>
+                    </span>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
+        </div>
       </div>
     </div>
   </div>
 
+  <!-- <div id="sticky-skillset">
+    <a href="#skillset">
+      <i class="fa fa-code" aria-hidden="true"></i>
+    </a>Skillset Experience.</div> -->
   <div class="text-center background-material-skillset">
     <div id="skillset" class="container">
       <div class="skillset-text">
         <h2>Skillset.</h2>
         <p style="font-size:16px">
-          Loosely following the <a href="http://www.bumc.bu.edu/facdev-medicine/files/2012/03/Dreyfus-skill-level.pdf" target="_blank"><i>Dreyfus model of skill acquisition</i></a>,
-          I've laid out what I believe to be my top skills into three categories: 
-          languages, tools, and operating systems.
+          Loosely following the
+          <a href="http://www.bumc.bu.edu/facdev-medicine/files/2012/03/Dreyfus-skill-level.pdf" target="_blank">
+            <i>Dreyfus model of skill acquisition</i>
+          </a>, I've laid out what I believe to be my top skills into three categories: languages, tools, and operating systems.
         </p>
       </div>
       <div id="skillController" ng-controller="skillController">
@@ -259,10 +256,8 @@
       </div>
     </div>
   </div>
-
   <div class="text-center background-material-about">
     <section id="about" class='container'>
-
       <h2>About brian.hollingsworth.codes</h2>
 
       <div class="row" style="padding-top: 2em">
@@ -292,17 +287,18 @@
 
       <div style="max-width:800px;margin:auto;overflow:auto;">
         <p style="font-size:16px;padding-top: 2em">
-          Initially, this MEAN stack application was built on top of Red Hat's 
-          OpenShift container platform. However, after the first couple months, 
-          the cluster on which my app resided became unreliable and would 
-          regularly experience extended outages. I spent a few weeks testing out
-          the big name cloud platforms but ended up moving my app over to
-          DigitalOcean, and it's been smooth sailing ever since!
+          Initially, this MEAN stack application was built on top of Red Hat's OpenShift container platform. However, after the first
+          couple months, the cluster on which my app resided became unreliable and would regularly experience extended outages.
+          I spent a few weeks testing out the big name cloud platforms but ended up moving my app over to DigitalOcean, and
+          it's been smooth sailing ever since!
           <br> All of my code is open source, so feel free to look under the hood of my "resume" and fork it if you want!
           <br> By the way, brian.hollingsworth.codes utilizes MongoDB to track the number of views it receives.
           <br>
           <% if (pageCountMessage) { %>
-            You are view #<span class="code" id="count-value"><%=pageCountMessage%></span>!
+            You are view #
+            <span class="code" id="count-value">
+              <%=pageCountMessage%>
+            </span>!
         </p>
         <% } else { %>
           <span class="code" id="count-value">No database configured.</span>
@@ -417,14 +413,65 @@
     }
   });
 
-  // A function to remove gradient from job descriptions when you reach the bottom.
-  jQuery(function($) {
-    $('.job-description').on('scroll', function() {
-        if($(this).scrollTop() + $(this).innerHeight() >= $(this)[0].scrollHeight) {
-            // alert('end reached');
-        }
-    })
-});
+  // $(function fixedUntilPoint() {
+
+  //   var sticky = $('#sticky-profile');
+  //   var sticky2 = $('#sticky-experience');
+  //   var sticky3 = $('#sticky-skillset');
+  //   var offsetContainer = sticky.offset().top;
+  //   var offsetContainer2 = sticky2.offset().top;
+  //   var offsetContainer3 = sticky3.offset().top;
+
+  //   function adjustDivPosition() {
+  //     var offsetFloat = $(document).scrollTop() + $(window).height() - sticky.outerHeight();
+  //     var offsetFloat2 = $(document).scrollTop() + $(window).height() - sticky2.outerHeight();
+  //     var offsetFloat3 = $(document).scrollTop() + $(window).height() - sticky3.outerHeight();
+  //     if (offsetContainer <= offsetFloat - 100) {
+  //       sticky.css({
+  //         bottom: 'auto',
+  //         position: 'absolute',
+  //         top: offsetContainer
+  //       });
+  //     } else {
+  //       sticky.css({
+  //         bottom: 100,
+  //         position: 'fixed',
+  //         top: 'auto'
+  //       });
+  //     }
+
+  //     if (offsetContainer2 <= offsetFloat2 + 5) {
+  //       sticky2.css({
+  //         bottom: 'auto',
+  //         position: 'absolute',
+  //         top: offsetContainer2 - 50
+  //       });
+  //     } else {
+  //       sticky2.css({
+  //         bottom: 50,
+  //         position: 'fixed',
+  //         top: 'auto'
+  //       });
+  //     }
+
+  //     if (offsetContainer3 <= offsetFloat3) {
+  //       sticky3.css({
+  //         bottom: 'auto',
+  //         position: 'absolute',
+  //         top: offsetContainer3
+  //       });
+  //     } else {
+  //       sticky3.css({
+  //         bottom: 0,
+  //         position: 'fixed',
+  //         top: 'auto'
+  //       });
+  //     }
+  //   }
+
+  //   $(window).on('scroll resize', adjustDivPosition)
+  //   adjustDivPosition();
+  // });
 
 </script>
 
