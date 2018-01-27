@@ -169,11 +169,11 @@
                       </a>
                     </div>
                     <div style="float:left;padding-left:15px">
-                      <h5 style="font-weight:600;margin-bottom:3px;">{{job.Role}}</h5>
-                      <h5 style="font-weight:600;margin-bottom:2px;margin-top:4px;">{{job.Company}}</h5>
-                      <h5 style="font-weight:100;margin-bottom:2px;margin-top:4px;">{{job.Tenure}}</h5>
+                      <h5 id="job-role" style="font-weight:600;margin-bottom:3px;">{{job.Role}}</h5>
+                      <h5 id="job-company" style="font-weight:600;margin-bottom:2px;margin-top:4px;">{{job.Company}}</h5>
+                      <h5 id="job-tenure" style="font-weight:100;margin-bottom:2px;margin-top:4px;">{{job.Tenure}}</h5>
                     </div>
-                    <span>
+                    <span style="margin-top:0.5em">
                       <p class="job-description" ng-bind-html="job.Description | trustAsHTML"></p>
                     </span>
                     </span>
@@ -295,10 +295,7 @@
           <br> By the way, brian.hollingsworth.codes utilizes MongoDB to track the number of views it receives.
           <br>
           <% if (pageCountMessage) { %>
-            You are view #
-            <span class="code" id="count-value">
-              <%=pageCountMessage%>
-            </span>!
+            You are view #<span class="code" id="count-value"><%=pageCountMessage%></span>!
         </p>
         <% } else { %>
           <span class="code" id="count-value">No database configured.</span>
