@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
   <meta name="author" content="Brian J. Hollingsworth">
-  <meta name="description" content="I'm Brian Hollingsworth, a .NET applications developer by trade and a freelance by nature.">
+  <meta name="description" content="I'm Brian Hollingsworth, an Applications Developer II by trade and a freelance by nature. Also, a debt-free college student!">
 
   <link rel="apple-touch-icon" sizes="57x57" href="images/Icons/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="images/Icons/apple-icon-60x60.png">
@@ -81,7 +81,8 @@
         </div>
         <!-- /.navbar-collapse -->
       </div>
-      <!-- /.container -->
+    </nav>
+    <!-- /.container -->
   </div>
 
   <div id="top" class="jumbotron">
@@ -119,41 +120,34 @@
       </li>
     </ul>
   </div>
-  <!-- <div id="sticky-profile">
-    <a href="#profile">
-      <i class="fa fa-user-circle" aria-hidden="true"></i>
-    </a>Profile</div> -->
+
   <div class="text-center background-material-profile">
-    <div id="profile" class="container">
+    <section id="profile" class="container">
       <img id="profile-pic" class="profile-pic">
       <div class="profile-text">
         <h2>Profile.</h2>
         <p style="font-size:16px">
           If it wasn't apparent by the URL or the Bootstrap jumbotron, I'm Brian Hollingsworth. This site is a little side project
-          of mine to add some interactive flare to my resume.
+          of mine to add some interactive flair to my resume.
           <br> I decided to make this site for a number of reasons, but it mostly boiled down to this: I got bored of LinkedIn.
           I knew nothing would make me more homogeneous than flaunting my profile on the same platform as every other developer
           out there. Thus, out of that irritancy, brian.hollingsworth.codes was born!
         </p>
       </div>
-    </div>
+    </section>
   </div>
 
-  <!-- <div id="sticky-experience">
-    <a href="#professional-experience">
-      <i class="fa fa-briefcase" aria-hidden="true"></i>
-    </a>Work Experience.</div> -->
   <div class="text-center background-material-experience">
-    <div id="professional-experience" class="container">
+    <section id="professional-experience" class="container">
       <div class="experience-text">
         <h2>Work Experience.</h2>
         <p style="font-size:16px">
           I started coding as a teenager, but I officially began trading lines of code for fiscal returns on March 3rd, 2014, when
-          I was lucky enough to have the most coveted job by Computer Science students at St. Cloud State: Maverick Software
-          Consulting.
-          <br> While the first four jobs I've listed below exhibit all of my professional experience as a developer, I could
-          not allow myself to leave Marnanteli's Pizza and Merrill off this list; they each played a huge role in helping
-          me pay for 100% of my college tuition & fees out-of-pocket!
+          I became one of the few lucky students to have the most coveted job by Computer Science majors at St. Cloud State,
+          Maverick Software Consulting.
+          <br> While the first five jobs I've listed below exhibit all of my professional experience as a developer, I could
+          not allow myself to omit Marnanteli's Pizza and Merrill from this list, because they each played a huge role in
+          helping me pay for 100% of my college tuition & fees out-of-pocket!
         </p>
       </div>
       <div style="float: none; display: block; margin: 0 auto;">
@@ -176,7 +170,6 @@
                     <span style="margin-top:0.5em">
                       <p class="job-description" ng-bind-html="job.Description | trustAsHTML"></p>
                     </span>
-                    </span>
                   </div>
                 </li>
               </ul>
@@ -184,15 +177,11 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
   </div>
 
-  <!-- <div id="sticky-skillset">
-    <a href="#skillset">
-      <i class="fa fa-code" aria-hidden="true"></i>
-    </a>Skillset Experience.</div> -->
-  <div class="text-center background-material-skillset">
-    <div id="skillset" class="container">
+  <div id="skillset-div" class="text-center background-material-skillset">
+    <section id="skillset" class="container">
       <div class="skillset-text">
         <h2>Skillset.</h2>
         <p style="font-size:16px">
@@ -254,7 +243,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
   </div>
   <div class="text-center background-material-about">
     <section id="about" class='container'>
@@ -409,66 +398,6 @@
       $("#profile-pic").attr("src", "images/Profile.png");
     }
   });
-
-  // $(function fixedUntilPoint() {
-
-  //   var sticky = $('#sticky-profile');
-  //   var sticky2 = $('#sticky-experience');
-  //   var sticky3 = $('#sticky-skillset');
-  //   var offsetContainer = sticky.offset().top;
-  //   var offsetContainer2 = sticky2.offset().top;
-  //   var offsetContainer3 = sticky3.offset().top;
-
-  //   function adjustDivPosition() {
-  //     var offsetFloat = $(document).scrollTop() + $(window).height() - sticky.outerHeight();
-  //     var offsetFloat2 = $(document).scrollTop() + $(window).height() - sticky2.outerHeight();
-  //     var offsetFloat3 = $(document).scrollTop() + $(window).height() - sticky3.outerHeight();
-  //     if (offsetContainer <= offsetFloat - 100) {
-  //       sticky.css({
-  //         bottom: 'auto',
-  //         position: 'absolute',
-  //         top: offsetContainer
-  //       });
-  //     } else {
-  //       sticky.css({
-  //         bottom: 100,
-  //         position: 'fixed',
-  //         top: 'auto'
-  //       });
-  //     }
-
-  //     if (offsetContainer2 <= offsetFloat2 + 5) {
-  //       sticky2.css({
-  //         bottom: 'auto',
-  //         position: 'absolute',
-  //         top: offsetContainer2 - 50
-  //       });
-  //     } else {
-  //       sticky2.css({
-  //         bottom: 50,
-  //         position: 'fixed',
-  //         top: 'auto'
-  //       });
-  //     }
-
-  //     if (offsetContainer3 <= offsetFloat3) {
-  //       sticky3.css({
-  //         bottom: 'auto',
-  //         position: 'absolute',
-  //         top: offsetContainer3
-  //       });
-  //     } else {
-  //       sticky3.css({
-  //         bottom: 0,
-  //         position: 'fixed',
-  //         top: 'auto'
-  //       });
-  //     }
-  //   }
-
-  //   $(window).on('scroll resize', adjustDivPosition)
-  //   adjustDivPosition();
-  // });
 
 </script>
 
