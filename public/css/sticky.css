@@ -1,0 +1,23 @@
+.sticky-div {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 15px;
+  padding-left: 0px;
+  text-align: center;
+}
+
+#sticky-profile {
+  background: #EF861B;
+}
+
+#sticky-experience {
+  background: #FFF;
+}
+
+#sticky-skillset {
+  background: #F00;
+}
+
+#sticky-about {
+  background: #0F0;
+}

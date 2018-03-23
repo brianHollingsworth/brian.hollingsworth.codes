@@ -171,6 +171,7 @@ hr {
 }
 
 .profile-text {
+  padding: 1em;
   max-width: 550px;
   margin: auto;
   overflow: auto;
@@ -178,12 +179,14 @@ hr {
 }
 
 .experience-text {
+  padding: 1em;
   max-width: 550px;
   margin: auto;
   overflow: auto;
 }
 
 .skillset-text {
+  padding: 1em;
   max-width: 550px;
   margin: auto;
   overflow: auto;
@@ -270,33 +273,6 @@ div.mean-flex-box div img {
   width: 100%;
   max-width: 246px;
   height: auto;
-}
-
-#sticky-profile {
-  box-sizing: border-box;
-  background: #EF861B;
-  width: 100%;
-  padding: 15px;
-  padding-left: 0px;
-  text-align: center;
-}
-
-#sticky-experience {
-  box-sizing: border-box;
-  background: #FFF;
-  width: 100%;
-  padding: 15px;
-  padding-left: 0px;
-  text-align: center;
-}
-
-#sticky-skillset {
-  box-sizing: border-box;
-  background: #F00;
-  width: 100%;
-  padding: 15px;
-  padding-left: 0px;
-  text-align: center;
 }
 
 #professional-experience .experience {
@@ -616,6 +592,7 @@ img.job-icon {
     display: inline;
   }
   .profile-pic {
+    padding-top: 2.5em;
     padding-left: 1em;
     height: 250px;
   }
@@ -642,6 +619,10 @@ img.job-icon {
   }
   #profile {
     display: block;
+  }
+
+  .profile-pic {
+    padding-top: 0em;
   }
 
   .job-square {
