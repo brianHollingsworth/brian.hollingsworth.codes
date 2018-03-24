@@ -744,6 +744,7 @@ figure.effect:hover p {
 }
 
 #signature-container {
+  z-index: 0;
   position: relative;
   top: 50%;
   transform: translateY(-50%);
