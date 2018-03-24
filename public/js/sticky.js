@@ -19,19 +19,21 @@ $(function fixedUntilPoint() {
     var bottomOfProfileDiv = $(profileDiv).position().top + $(profileDiv).outerHeight(true);
     var bottomOfExperienceDiv = $(experienceDiv).position().top + $(experienceDiv).outerHeight(true);
     var bottomOfSkillsetDiv = $(skillsetDiv).position().top + $(skillsetDiv).outerHeight(true);
+    var bottomOfStickyProfile = $(stickyProfile).position().top + $(stickyProfile).outerHeight(true);
+    var bottomOfProfileAnchor = $(profileAnchor).position().top + $(profileAnchor).outerHeight(true);
     var profileOffsetFloat = $(document).scrollTop() + $(window).height() - stickyProfile.outerHeight();
     var experienceOffsetFloat = $(document).scrollTop() + $(window).height() - stickyExperience.outerHeight();
     var skillsetOffsetFloat = $(document).scrollTop() + $(window).height() - stickySkillset.outerHeight();
     var aboutOffsetFloat = $(document).scrollTop() + $(window).height() - stickyAbout.outerHeight();
 
-    if (bottomOfTopDiv <= profileOffsetFloat - 150) {
+    if (bottomOfProfileAnchor <= profileOffsetFloat - 150) {
       stickyProfile.css({
         bottom: 'auto',
         position: 'absolute',
         top: profileAnchor
       });
     } else {
-      //console.log(bottomOfTopDiv + " " + (profileOffsetFloat - 150));
+      // console.log(bottomOfTopDiv + " " + (profileOffsetFloat - 150) + " " + bottomOfProfileAnchor + " " + bottomOfStickyProfile);
       stickyProfile.css({
         bottom: 150,
         position: 'fixed',
