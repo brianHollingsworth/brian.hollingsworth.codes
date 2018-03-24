@@ -451,12 +451,12 @@ img.job-icon {
 
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: portrait) {
   /* Display mobile-navbar on high-res mobile devices like my iPhone 7 Plus. */
-  #sidebar {
+  /* #sidebar {
     display: none;
   }
   #mobile-navbar {
     display: inline-block;
-  }
+  } */
 }
 
 @media only screen and (orientation: portrait) and (max-width: 767px) {
