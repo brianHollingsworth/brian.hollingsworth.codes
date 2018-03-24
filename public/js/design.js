@@ -1,11 +1,19 @@
   // Whenever the page is reloaded, animate the signature.
   $(document).ready(function () {
 
-    if (window.innerWidth <= 767) {
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
       $("#mobile-navbar").css("display", "block");
-      $("#profile-pic").attr("src", "images/Profile-Mobile.png");
+      $("#mobile-navbar").show();
     } else {
       $("#mobile-navbar").css("display", "none");
+      $("#mobile-navbar").hide();
+    }
+
+    if (window.innerWidth <= 767) {
+      // $("#mobile-navbar").css("display", "block");
+      $("#profile-pic").attr("src", "images/Profile-Mobile.png");
+    } else {
+      // $("#mobile-navbar").css("display", "none");
       $("#profile-pic").attr("src", "images/Profile.png");
     }
 
@@ -45,15 +53,24 @@
   // Whenever my resume is viewed on a mobile device, I only want the fixed
   // navigation bar to be displayed.
   $(window).resize(function () {
-    if (window.innerWidth <= 767) {
+
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
       $("#mobile-navbar").css("display", "block");
       $("#mobile-navbar").show();
-      $("#sidebar").hide();
-      $("#profile-pic").attr("src", "images/Profile-Mobile.png");
     } else {
-      $("#sidebar").show();
       $("#mobile-navbar").css("display", "none");
       $("#mobile-navbar").hide();
+    }
+
+    if (window.innerWidth <= 767) {
+      // $("#mobile-navbar").css("display", "block");
+      // $("#mobile-navbar").show();
+      // $("#sidebar").hide();
+      $("#profile-pic").attr("src", "images/Profile-Mobile.png");
+    } else {
+      // $("#sidebar").show();
+      // $("#mobile-navbar").css("display", "none");
+      // $("#mobile-navbar").hide();
       $("#profile-pic").attr("src", "images/Profile.png");
     }
   });
