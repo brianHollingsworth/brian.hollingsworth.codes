@@ -50,13 +50,15 @@ $(function fixedUntilPoint() {
       });
     } else {
       if (bottomOfTopDiv <= profileOffsetFloat - 150) {
+        stickyProfile.removeClass("sticky-top-shadow");
         stickyProfile.css({
           bottom: 'auto',
           position: 'absolute',
           top: profileAnchor
         });
       } else {
-        //console.log(bottomOfTopDiv + " " + (profileOffsetFloat - 150));
+        console.log(bottomOfTopDiv + " " + (profileOffsetFloat - 150));
+        stickyProfile.addClass("sticky-top-shadow");
         stickyProfile.css({
           bottom: 150,
           position: 'fixed',
@@ -65,6 +67,7 @@ $(function fixedUntilPoint() {
       }
 
       if (bottomOfProfileDiv <= experienceOffsetFloat - 100) {
+        stickyExperience.removeClass("sticky-top-shadow");
         stickyExperience.css({
           bottom: 'auto',
           position: 'absolute',
@@ -72,6 +75,7 @@ $(function fixedUntilPoint() {
         });
       } else {
         // console.log(bottomOfProfileDiv + " " + (experienceOffsetFloat - 50));
+        stickyExperience.addClass("sticky-top-shadow");
         stickyExperience.css({
           bottom: 100,
           position: 'fixed',
@@ -80,6 +84,7 @@ $(function fixedUntilPoint() {
       }
 
       if (bottomOfExperienceDiv <= skillsetOffsetFloat - 50) {
+        stickySkillset.removeClass("sticky-top-shadow");
         stickySkillset.css({
           bottom: 'auto',
           position: 'absolute',
@@ -87,6 +92,7 @@ $(function fixedUntilPoint() {
         });
       } else {
         // console.log(bottomOfExperienceDiv + " " + skillsetOffsetFloat);
+        stickySkillset.addClass("sticky-top-shadow");
         stickySkillset.css({
           bottom: 50,
           position: 'fixed',
@@ -95,6 +101,7 @@ $(function fixedUntilPoint() {
       }
 
       if (bottomOfSkillsetDiv <= aboutOffsetFloat) {
+        stickyAbout.removeClass("sticky-top-shadow");
         stickyAbout.css({
           bottom: 'auto',
           position: 'absolute',
@@ -102,6 +109,7 @@ $(function fixedUntilPoint() {
         });
       } else {
         //console.log(bottomOfSkillsetDiv + " " + aboutOffsetFloat);
+        stickyAbout.addClass("sticky-top-shadow");
         stickyAbout.css({
           bottom: 0,
           position: 'fixed',
