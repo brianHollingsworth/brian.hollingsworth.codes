@@ -2,7 +2,6 @@ var express = require('express');
 // var morgan = require('morgan');
 var favicons = require('connect-favicons');
 var path = require('path');
-const getIP = require('external-ip')();
 
 var app = express();
 
@@ -71,13 +70,6 @@ var initDb = function (callback) {
 };
 
 app.get('/', function (req, res) {
-  getIP((err, ip) => {
-    if (err) {
-      // every service in the list has failed
-      throw err;
-    }
-    console.log("*** " + Math.floor(Date.now() / 1000) + ": " + ip);
-  });
 
   // try to initialize the db on every request if it's not already
   // initialized.
