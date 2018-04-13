@@ -2,11 +2,12 @@ var express = require('express');
 // var morgan = require('morgan');
 var favicons = require('connect-favicons');
 var path = require('path');
+const getIP = require('external-ip')();
 
 var app = express();
 
-  app.use(favicons(__dirname + '/public/images/Icons'));
-  app.use(express.static(path.join(__dirname, '/public')));
+app.use(favicons(__dirname + '/public/images/Icons'));
+app.use(express.static(path.join(__dirname, '/public')));
 //app.use(favicon(path.join(__dirname, 'public', 'images', 'Icons', 'favicon.ico')));
 //app.use(favicons(__dirname + 'public/images/Icons'));
 //app.use(favicon(__dirname + '/public/images/Icons/favicon.ico'));
@@ -70,12 +71,14 @@ var initDb = function (callback) {
 };
 
 app.get('/', function (req, res) {
+  getIP((err, ip) => {
+    if (err) {
+      // every service in the list has failed
+      throw err;
+    }
+    console.log("*** " + Math.floor(Date.now() / 1000) + ": " + ip);
+  });
 
-  var remoteAddress = (req.headers['x-forwarded-for'] ||
-     req.connection.remoteAddress ||
-     req.socket.remoteAddress ||
-     req.connection.socket.remoteAddress).split(",")[0];
-  console.log("*** " + Math.floor(Date.now()/1000) + ": " + req.ip + " " + remoteAddress);
   // try to initialize the db on every request if it's not already
   // initialized.
   if (!db) {
