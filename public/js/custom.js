@@ -3,17 +3,55 @@ function dailyColorPalette(dayOfTheWeek) {
       case 0:
          // Sunday Funday
          $('.background-material-profile').css('background', '#33658A');
+         $('.background-material-profile p').css('color', '#F6AE2D');
          $('#sticky-profile').css('background', '#33658A');
+         $('#sticky-profile').css('color', '#F6AE2D');
+         $('#sticky-profile a i').css('color', '#F6AE2D');
+
          $('.background-material-experience').css('background', '#86BBD8');
+         $('.background-material-experience p').css('color', '#33658A');
          $('#sticky-experience').css('background', '#86BBD8');
+         $('#sticky-experience').css('color', '#33658A');
+         $('#sticky-experience a i').css('color', '#33658A');
+
          $('.background-material-skillset').css('background', '#2F4858');
+         $('.background-material-skillset p').css('color', '#86BBD8');
+         $('.background-material-skillset a').css('color', '#86BBD8');
          $('#sticky-skillset').css('background', '#2F4858');
+         $('#sticky-skillset').css('color', '#86BBD8');
+         $('#sticky-skillset a i').css('color', '#86BBD8');
+
          $('.background-material-about').css('background', '#F6AE2D');
          $('#sticky-about').css('background', '#F6AE2D');
+         $('#sticky-about a i').css('color', '#2F4858');
+         $('#sticky-about').css({"color":"#2F4858"});
          $('.background-material-contact').css('background', '#F26419');
-         $('.background-material-skillset h2').css({"color":"#F6AE2D"});
-         $('.background-material-skillset p').css({"color":"#F6AE2D"});
-         $('.background-material-skillset a').css({"color":"#F6AE2D"});
+
+            // // Sunday Funday
+            // $('.background-material-profile').css('background', '#33658A');
+            // $('.background-material-profile p').css('color', '#86BBD8');
+            // $('#sticky-profile').css('background', '#33658A');
+            // $('#sticky-profile').css('color', '#86BBD8');
+            // $('#sticky-profile a i').css('color', '#86BBD8');
+
+            // $('.background-material-experience').css('background', '#86BBD8');
+            // $('#sticky-experience').css('background', '#86BBD8');
+            // $('#sticky-experience').css('color', '#2F4858');
+            // $('#sticky-experience a i').css('color', '#2F4858');
+
+            // $('.background-material-skillset').css('background', '#2F4858');
+            // $('.background-material-skillset p').css('color', '#F6AE2D');
+            // $('.background-material-skillset a').css('color', '#F6AE2D');
+            // $('#sticky-skillset').css('background', '#2F4858');
+            // $('#sticky-skillset').css('color', '#F6AE2D');
+            // $('#sticky-skillset a i').css('color', '#F6AE2D');
+
+            // $('.background-material-about').css('background', '#F6AE2D');
+            // $('#sticky-about').css('background', '#F6AE2D');
+            // $('#sticky-about a i').css('color', '#33658A');
+            // $('#sticky-about').css({"color":"#33658A"});
+            // $('.background-material-contact').css('background', '#F26419');
+
          break;
       case 1:
          // The Monday Blues
@@ -89,6 +127,8 @@ function dailyColorPalette(dayOfTheWeek) {
          $('#sticky-skillset').css('background', '#00A896');
          $('.background-material-about').css('background', '#02C39A');
          $('#sticky-about').css('background', '#02C39A');
+         $('.sticky-div').css({"color":"ivory"});
+         $('.sticky-div a i').css({"color":"ivory"});
          $('.background-material-about h2').css({"color":"#F0F3BD"});
          $('.background-material-about p').css({"color":"#F0F3BD"});
          $('.background-material-contact').css('background', '#F0F3BD');
