@@ -1,5 +1,5 @@
 var express = require('express');
-var morgan = require('morgan');
+// var morgan = require('morgan');
 var favicons = require('connect-favicons');
 var path = require('path');
 
@@ -18,7 +18,7 @@ app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css'));
 Object.assign = require('object-assign')
 
 app.engine('html', require('ejs').renderFile);
-app.use(morgan('combined'))
+// app.use(morgan('combined'))
 
 var port = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080,
   ip = process.env.IP || process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0',
@@ -70,6 +70,12 @@ var initDb = function (callback) {
 };
 
 app.get('/', function (req, res) {
+
+  var remoteAddress = (req.headers['x-forwarded-for'] ||
+     req.connection.remoteAddress ||
+     req.socket.remoteAddress ||
+     req.connection.socket.remoteAddress).split(",")[0];
+  console.log("*** " + Math.floor(Date.now()/1000) + ": " + req.ip + " " + remoteAddress);
   // try to initialize the db on every request if it's not already
   // initialized.
   if (!db) {
