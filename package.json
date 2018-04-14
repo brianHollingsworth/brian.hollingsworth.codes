@@ -1,35 +1,39 @@
 {
-  "name": "brian",
-  "version": "0.0.1",
+  "name": "brian.hollingsworth.codes",
+  "version": "1.2.3",
   "description": "A robust resume to show off what I can do.",
   "main": "server.js",
+  "directories": {
+    "test": "tests"
+  },
   "dependencies": {
+    "bootstrap": "^3.3.7",
     "chai": "^3.5.0",
     "chai-http": "^2.0.1",
+    "connect-favicons": "^0.1.5",
     "ejs": "^2.4.1",
     "express": "^4.13.4",
+    "jquery": "^3.2.1",
     "mocha": "^2.4.5",
     "mongodb": "^2.1.16",
     "morgan": "^1.7.0",
     "object-assign": "4.1.0",
-    "external-ip": "2.0.3"
+    "path": "^0.12.7",
+    "serve-favicon": "^2.4.4"
   },
-  "engine": {
-    "node": "*",
-    "npm": "*"
-  },
+  "devDependencies": {},
   "scripts": {
-    "start": "node server.js",
-    "test": "IP=0.0.0.0 PORT=3030 mocha --timeout 5000 tests/*_test.js"
+    "test": "mocha",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/brianHollingsworth/brian.hollingsworth.codes.git"
+    "url": "git+https://github.com/brianHollingsworth/brian.hollingsworth.codes.git"
   },
-  "author": "Steve Speicher <sspeiche@gmail.com>",
-  "license": "CC-BY-1.0",
+  "author": "Brian J. Hollingsworth",
+  "license": "ISC",
   "bugs": {
-    "url": "http://github.com/openshift/nodejs-ex/issues"
+    "url": "https://github.com/brianHollingsworth/brian.hollingsworth.codes/issues"
   },
-  "homepage": "http://github.com/openshift/nodejs-ex"
+  "homepage": "https://github.com/brianHollingsworth/brian.hollingsworth.codes#readme"
 }
