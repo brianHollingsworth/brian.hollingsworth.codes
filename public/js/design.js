@@ -27,7 +27,7 @@
 
     var date = new Date();
     var dayOfTheWeek = date.getDay();
-    dailyColorPalette(dayOfTheWeek);
+    dailyColorPalette(2);
 
     $('a[href^="#"]').on('click', function (e) {
       e.preventDefault();
