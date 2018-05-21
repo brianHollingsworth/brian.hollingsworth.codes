@@ -1,6 +1,10 @@
 {
   "skillset": {
     "languages": [{
+      "Name": "C#",
+      "Proficiency": 4,
+      "Icon": "images/Language_Icons/CSharp.png"
+    }, {
       "Name": "C++",
       "Proficiency": 4,
       "Icon": "images/Language_Icons/C++.png"
@@ -8,10 +12,6 @@
       "Name": "Java",
       "Proficiency": 4,
       "Icon": "images/Language_Icons/Java.png"
-    }, {
-      "Name": "C#",
-      "Proficiency": 4,
-      "Icon": "images/Language_Icons/CSharp.png"
     }, {
       "Name": "Perl",
       "Proficiency": 4,
@@ -85,13 +85,13 @@
       "Proficiency": 5,
       "Icon": "images/Environment_Icons/Windows_7.png"
     }, {
-      "Name": "Windows Server 2012",
-      "Proficiency": 4,
-      "Icon": "images/Environment_Icons/Windows_Server_2012.png"
-    }, {
       "Name": "Red Hat",
       "Proficiency": 4,
       "Icon": "images/Environment_Icons/Red_Hat.png"
+    }, {
+      "Name": "Windows Server 2012",
+      "Proficiency": 3,
+      "Icon": "images/Environment_Icons/Windows_Server_2012.png"
     }, {
       "Name": "SUSE Linux",
       "Proficiency": 2,
