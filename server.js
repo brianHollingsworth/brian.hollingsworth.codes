@@ -70,7 +70,7 @@ var initDb = function (callback) {
 };
 
 app.get('/', function (req, res) {
-  console.log("- " + Math.floor(Date.now() / 1000));
+  //console.log("- " + Math.floor(Date.now() / 1000));
 
   // try to initialize the db on every request if it's not already
   // initialized.
