@@ -168,6 +168,8 @@ hr {
   height: 500px;
   margin-right: 1em;
   right: 0px;
+  -webkit-filter: drop-shadow(4px 4px 4px #424242 );
+  filter: drop-shadow(4px 4px 4px #424242);
 }
 
 .profile-text {
