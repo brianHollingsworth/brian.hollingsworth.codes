@@ -1,11 +1,25 @@
 {
   "jobs": [{
+    "Role": "Associate Software Engineer",
+    "Company": "Optum",
+    "Site": "https://www.optum.com/",
+    "Description": "Just had a recent role change, so here's some filler text in the meantime: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vestibulum sapien lorem. Integer ac libero vel lorem accumsan finibus in vitae sem. Sed tempor dui vel nibh luctus, quis pharetra lectus ultricies. Aliquam non odio in sapien pellentesque gravida in lobortis est. Vestibulum nisl diam, convallis sed vulputate quis, cursus quis ex. Curabitur vitae est tincidunt metus tincidunt volutpat. Suspendisse potenti. Sed at pulvinar urna, at lacinia velit. Integer tempus posuere quam in bibendum. Proin posuere felis id blandit semper. Donec tristique tempor neque, sit amet hendrerit tortor gravida nec. Morbi tristique, nulla porta sodales dictum, est tortor lacinia sem, quis dictum massa metus sit amet justo.",
+    "Icon": "images/Company_Icons/Optum.png",
+    "Tenure": "August 2018 - Present"
+  }, {
+    "Role": "Software Engineering Intern",
+    "Company": "Maverick Software Consulting",
+    "Site": "http://www.mavericksoftware.com/",
+    "Icon": "images/Company_Icons/Maverick.png",
+    "Description": "The most important job I had during college. I started working for Maverick as a Student Software Engineer from the spring semester of my sophomore year to the penultimate week of my senior year. Maverick contracts with <a href=\"https://www.veritas.com/\" target=\"_blank\">Veritas Technologies</a> (formerly Symantec) to give college students the opportunity to gain crucial real-world experience by working as SQA developers.<br> I wrote countless Perl scripts to automate test scenarios for <a href=\"https://www.veritas.com/product/backup-and-recovery/netbackup-8.html?inid=us_veritas_home_products_netbackup-8\" target=\"_blank\">NetBackup</a>, the world's leading backup and recovery solution for enterprise data centers and hybrid clouds.<br> When I wasn't coding for Maverick, I was out promoting future \"Mavs\" to take a chance and apply. I still advocate for Maverick whenever I can, like when I return to St. Cloud State for CSCI Club, or when I bump into a TDP summer intern at Optum who's looking for advice before they return to school.",
+    "Tenure": "March 2014 – April 2016"
+  }, {
     "Role": "Applications Developer II",
     "Company": "Optum",
     "Site": "https://www.optum.com/",
     "Description": "<u>CorpCard/U.S. Bank:</u> Developed an Optum-certified REST API to enhance the user experience for site admins. Certain employees at UnitedHealth Group require company travel and/or purchasing cards, and the old process for obtaining a card was as follows: internally apply for a card; wait for the request to be approved by a manager; wait for site admins to email the request to our bank affilate; and then wait for our bank affiliate to process the request and send a card in the mail. Notice a trend? There was A LOT of waiting involved. Today, my API directly connects with our bank affiliate's processing service. This allows UHG's corporate card admins to send as many card requests as they like with a single click.</br></br><u>GDPR:</u> After the General Data Protection Regulation (GDPR) was adopted, UnitedHealth Group put together measures for ensuring personal data of its EU employees is kept for only as long as it is being processed for technical and organizational purposes; after which, that data is deemed \"in scope\" for purging. My GDPR program parses identifying information (ID, name, email, etc.) from the \"in scope\" data, queries for records of that information against all of UHG's platforms, and deletes all instances of those records. The true beauty of my program comes from its modularity; I designed it to dynamically change as UHG's presence in Europe expands. Now that I have completed its development, the behavior of my application changes as the EU data protection regime changes.",
     "Icon": "images/Company_Icons/Optum.png",
-    "Tenure": "January 2018 - Present"
+    "Tenure": "January 2018 - August 2018"
   }, {
     "Role": "Software Quality Assurance Intern",
     "Company": "Symantec",
@@ -41,12 +55,5 @@
     "Icon": "images/Company_Icons/Merrill.png",
     "Description": "Even though delivering pizzas for minimum wage and tips was decent money for an 18-year-old, I knew I needed a second source of income to pay for college on my own. This was a 'flex' position that allowed me to work every day that I didn't work at Marnanteli's; so, in a span of less than six months, I went from not having a job to working two jobs, seven days per week.<br>I processed, troubleshot, and completed sales orders (navigating on Windows 7 and Windows XP environments). Prior to production, I quality checked sample prints of files to ensure pristine print quality for client orders. I also prepared, ran, and maintained high-volume digital printers (Océ VarioPrint 6250 and Xerox DocuColor 8000/8080).",
     "Tenure": "July 2012 – February 2014"
-  }, {
-    "Role": "Software Engineering Intern",
-    "Company": "Maverick Software Consulting",
-    "Site": "http://www.mavericksoftware.com/",
-    "Icon": "images/Company_Icons/Maverick.png",
-    "Description": "The most important job I had during college. I started working for Maverick as a Student Software Engineer from the spring semester of my sophomore year to the penultimate week of my senior year. Maverick contracts with <a href=\"https://www.veritas.com/\" target=\"_blank\">Veritas Technologies</a> (formerly Symantec) to give college students the opportunity to gain crucial real-world experience by working as SQA developers.<br> I wrote countless Perl scripts to automate test scenarios for <a href=\"https://www.veritas.com/product/backup-and-recovery/netbackup-8.html?inid=us_veritas_home_products_netbackup-8\" target=\"_blank\">NetBackup</a>, the world's leading backup and recovery solution for enterprise data centers and hybrid clouds.<br> When I wasn't coding for Maverick, I was out promoting future \"Mavs\" to take a chance and apply. I still advocate for Maverick whenever I can, like when I return to St. Cloud State for CSCI Club, or when I bump into a TDP summer intern at Optum who's looking for advice before they return to school.",
-    "Tenure": "March 2014 – April 2016"
   }]
 }
