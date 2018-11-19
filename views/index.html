@@ -41,7 +41,7 @@
   <link rel="stylesheet" href="css/sticky.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
-  <script type="text/javascript" src="js/custom.js"></script>
+  <script type="text/javascript" src="/public/js/custom.js"></script>
   <script src="/js/jquery.min.js"></script>
   <script src="/js/bootstrap.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
@@ -50,15 +50,18 @@
 
 <body data-spy="scroll" data-target="#sidebar">
   <div id="mobile-navbar">
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" role="navigation">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-          <button id="navbar-button" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <!-- <button id="navbar-button" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar top-bar"></span>
             <span class="icon-bar middle-bar"></span>
             <span class="icon-bar bottom-bar"></span>
+          </button> -->
+          <button id="navbar-button" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
           </button>
           <a class="navbar-left" href="#">
             <img id="brand-img" src="images/Signature_White.png">
@@ -89,12 +92,10 @@
 
   <div id="top" class="jumbotron">
     <div id="signature-container" class="container">
-      <div class="row text-center">
+      <!-- <div class="row text-center"> -->
         <img id="signature-animated" src="images/Signature_Animated.gif" class="signature">
-        <div class="animated fadeInUp">
-          <h1 class="hr">Brian J. Hollingsworth</h1>
-        </div>
-      </div>
+       <!-- </div> -->
+        <!-- <h1 class="hr">Brian J. Hollingsworth</h1> -->
     </div>
   </div>
 
@@ -102,7 +103,7 @@
     <div id="profile-anchor"></div>
   </div>
 
-  <div class="text-center background-material-profile">
+   <div class="text-center background-material-profile">
     <div id="sticky-profile" class="sticky-div">
       <a href="#profile">
         <i class="fa fa-user-circle fa-lg" aria-hidden="true"></i>
@@ -308,8 +309,8 @@
           <%} %>
       </div>
 
-      <div class="row" style="padding-top: 2em">
-        <a href="https://github.com/brianHollingsworth/brian.hollingsworth.codes" target="_blank" class="btn btn-primary btn-md">View Source Code on GitHub</a>
+      <div class="row" style="padding-top: 1em">
+        <a id="github-repo-button" href="https://github.com/brianHollingsworth/brian.hollingsworth.codes" target="_blank" class="btn btn-primary btn-md">View Source Code on GitHub</a>
       </div>
     </section>
   </div>

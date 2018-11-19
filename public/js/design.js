@@ -10,10 +10,11 @@
     }
 
     if (window.innerWidth <= 767) {
-      // $("#mobile-navbar").css("display", "block");
+
+      $("#mobile-navbar").css("display", "block");
       $("#profile-pic").attr("src", "images/Profile-Mobile.png");
     } else {
-      // $("#mobile-navbar").css("display", "none");
+      $("#mobile-navbar").css("display", "none");
       $("#profile-pic").attr("src", "images/Profile.png");
     }
 
@@ -63,14 +64,14 @@
     }
 
     if (window.innerWidth <= 767) {
-      // $("#mobile-navbar").css("display", "block");
-      // $("#mobile-navbar").show();
+      $("#mobile-navbar").css("display", "block");
+      $("#mobile-navbar").show();
       // $("#sidebar").hide();
       $("#profile-pic").attr("src", "images/Profile-Mobile.png");
     } else {
       // $("#sidebar").show();
-      // $("#mobile-navbar").css("display", "none");
-      // $("#mobile-navbar").hide();
+      $("#mobile-navbar").css("display", "none");
+      $("#mobile-navbar").hide();
       $("#profile-pic").attr("src", "images/Profile.png");
     }
   });
