@@ -159,6 +159,10 @@ hr {
   text-align: center;
 }
 
+#top {
+  margin: 0;
+}
+
 #sticky-profile {
   background: #EF861B;
   color: #424242;
