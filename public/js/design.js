@@ -18,17 +18,17 @@
       $("#profile-pic").attr("src", "images/Profile.png");
     }
 
-    $('#sidebar').affix({
-      offset: {
-        top: $('.navbar-default').height()
-      }
-    });
+    // $('#sidebar').affix({
+    //   offset: {
+    //     top: $('.navbar-default').height()
+    //   }
+    // });
 
     document.getElementById('signature-animated').src = 'images/Signature_Animated.gif';
 
-    var date = new Date();
-    var dayOfTheWeek = date.getDay();
-    dailyColorPalette(2);
+    // var date = new Date();
+    // var dayOfTheWeek = date.getDay();
+    // dailyColorPalette(2);
 
     $('a[href^="#"]').on('click', function (e) {
       e.preventDefault();
