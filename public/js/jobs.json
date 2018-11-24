@@ -1,18 +1,18 @@
 {
   "jobs": [{
-    "Role": "Associate Software Engineer",
+    "Role": "Software Engineer",
     "Company": "Optum",
     "Site": "https://www.optum.com/",
     "Description": "Just had a recent role change, so here's some filler text in the meantime: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vestibulum sapien lorem. Integer ac libero vel lorem accumsan finibus in vitae sem. Sed tempor dui vel nibh luctus, quis pharetra lectus ultricies. Aliquam non odio in sapien pellentesque gravida in lobortis est. Vestibulum nisl diam, convallis sed vulputate quis, cursus quis ex. Curabitur vitae est tincidunt metus tincidunt volutpat. Suspendisse potenti. Sed at pulvinar urna, at lacinia velit. Integer tempus posuere quam in bibendum. Proin posuere felis id blandit semper. Donec tristique tempor neque, sit amet hendrerit tortor gravida nec. Morbi tristique, nulla porta sodales dictum, est tortor lacinia sem, quis dictum massa metus sit amet justo.",
     "Icon": "images/Company_Icons/Optum.png",
-    "Tenure": "August 2018 - Present"
+    "Tenure": "November 2018 - Present"
   }, {
-    "Role": "Software Engineering Intern",
-    "Company": "Maverick Software Consulting",
-    "Site": "http://www.mavericksoftware.com/",
-    "Icon": "images/Company_Icons/Maverick.png",
-    "Description": "The most important job I had during college. I started working for Maverick as a Student Software Engineer from the spring semester of my sophomore year to the penultimate week of my senior year. Maverick contracts with <a href=\"https://www.veritas.com/\" target=\"_blank\">Veritas Technologies</a> (formerly Symantec) to give college students the opportunity to gain crucial real-world experience by working as SQA developers.<br> I wrote countless Perl scripts to automate test scenarios for <a href=\"https://www.veritas.com/product/backup-and-recovery/netbackup-8.html?inid=us_veritas_home_products_netbackup-8\" target=\"_blank\">NetBackup</a>, the world's leading backup and recovery solution for enterprise data centers and hybrid clouds.<br> When I wasn't coding for Maverick, I was out promoting future \"Mavs\" to take a chance and apply. I still advocate for Maverick whenever I can, like when I return to St. Cloud State for CSCI Club, or when I bump into a TDP summer intern at Optum who's looking for advice before they return to school.",
-    "Tenure": "March 2014 – April 2016"
+    "Role": "Associate Software Engineer",
+    "Company": "Optum",
+    "Site": "https://www.optum.com/",
+    "Description": "This is actually the same role as Applications Developer II; UnitedHealth Group made a change to just about everyone's job title, based on job code and functional competency.</br></br><u>Fortify Scans:</u> As of 2018, UnitedHealth Group does not allow new code to be deployed into production if a <a href=\"https://software.microfocus.com/en-us/products/static-code-analysis-sast/overview\" target=\"_blank\">Fortify Static Code Analyzer</a> scan detects vulnerabilities of 'high' or 'critical' severity. All sprint-related work came to a halt, and I spent my days remediating said vulnerabilities in my team's suite of .NET applications.",
+    "Icon": "images/Company_Icons/Optum.png",
+    "Tenure": "August 2018 - October 2018"
   }, {
     "Role": "Applications Developer II",
     "Company": "Optum",
@@ -21,13 +21,6 @@
     "Icon": "images/Company_Icons/Optum.png",
     "Tenure": "January 2018 - August 2018"
   }, {
-    "Role": "Software Quality Assurance Intern",
-    "Company": "Symantec",
-    "Site": "https://www.symantec.com/",
-    "Icon": "images/Company_Icons/Symantec.png",
-    "Description": "I came into my internship with Symantec already having over a full year of experience with the company from my work as a consultant at Maverick. I continued my work with automating test scripts in an Agile environment to which I had been accustomed. My biggest challenge was writing automated scripts and Perl subroutines for Symantec's NetBackup CLI commands to test their functionality with NetBackup's GA front-end web interface, Self Service (formerly Biomni Front Office).",
-    "Tenure": "May 2015 – August 2015"
-  }, {
     "Role": "Tech Dev Program Senior Associate",
     "Company": "Optum",
     "Site": "https://www.optum.com/",
@@ -35,19 +28,33 @@
     "Icon": "images/Company_Icons/Optum.png",
     "Tenure": "November 2016 - January 2018"
   }, {
-    "Role": "Manager",
-    "Company": "Marnanteli's Pizza",
-    "Site": "http://www.marnantelispizza.com/",
-    "Icon": "images/Company_Icons/Marnanteli's.png",
-    "Description": "Marnanteli's will always be one of my favorite jobs. I began working at the best pizza place in Sartell during my senior year of high school. Starting out at \"the bottom of the totem pole\", I spent the first couple months of my pizza career honing my craft for making the perfect pizza. When I wasn't making works of art in the kitchen, I was cruising around town, delivering lunch and dinner to the wonderful individuals & families of Sartell, Sauk Rapids, Rice, and St. Cloud.<br>I moved up to a manager role about a year after my start date, which meant I needed to be officially recognized as a \"person in charge\" by Minnesota Department of Health Food Code. That title put extra responsibility on my shoulders for ensuring safe food handling practices amongst my staff members.",
-    "Tenure": "January 2012 – February 2016"
-  }, {
     "Role": "Tech Dev Program Intern",
     "Company": "Optum",
     "Site": "https://www.optum.com/",
     "Icon": "images/Company_Icons/Optum.png",
     "Description": "My first go-round with Optum's fantastic Technology Development Program (TDP). TDP interns are introduced to Optum and UnitedHealth Group by working closely with technology professionals, mentors, and leaders over a 12-week period. I spent the summer of 2016 working as a Java Applications Developer on an internal database application that focused on UnitedHealthcare member activity collection (MAC). To put it in a nutshell, UHC insures <i>a lot</i> of companies, ranging from small family shops with single-digit employees to enterprises with hundreds of thousands of employees. The majority of insurance plans involve providing members with monetary compensations when said members complete health-related tasks, like getting a physical. If a member believes his or her compensation is too small, for example, he or she can file a claim to have the compensation corrected. Those claims get sent to data analysts who sift through millions of entries; that's where MAC comes in. Without revealing too much, MAC finds and returns all CLOB claim entries based on the parameters provided by an XML template file. MAC then inserts entries for those members who need recompensation, which provides a clear picture of how many insured members need to be justly repaid.",
     "Tenure": "June 2016 - August 2016"
+  }, {
+    "Role": "Software Engineering Intern",
+    "Company": "Maverick Software Consulting",
+    "Site": "http://www.mavericksoftware.com/",
+    "Icon": "images/Company_Icons/Maverick.png",
+    "Description": "The most important job I had during college. I started working for Maverick as a Student Software Engineer from the spring semester of my sophomore year to the penultimate week of my senior year. Maverick contracts with <a href=\"https://www.veritas.com/\" target=\"_blank\">Veritas Technologies</a> (formerly Symantec) to give college students the opportunity to gain crucial real-world experience by working as SQA developers.<br> I wrote countless Perl scripts to automate test scenarios for <a href=\"https://www.veritas.com/product/backup-and-recovery/netbackup-8.html?inid=us_veritas_home_products_netbackup-8\" target=\"_blank\">NetBackup</a>, the world's leading backup and recovery solution for enterprise data centers and hybrid clouds.<br> When I wasn't coding for Maverick, I was out promoting future \"Mavs\" to take a chance and apply. I still advocate for Maverick whenever I can, like when I return to St. Cloud State for CSCI Club, or when I bump into a TDP summer intern at Optum who's looking for advice before they return to school.",
+    "Tenure": "March 2014 – April 2016"
+  }, {
+    "Role": "Software Quality Assurance Intern",
+    "Company": "Symantec",
+    "Site": "https://www.symantec.com/",
+    "Icon": "images/Company_Icons/Symantec.png",
+    "Description": "I came into my internship with Symantec already having over a full year of experience with the company from my work as a consultant at Maverick. I continued my work with automating test scripts in an Agile environment to which I had been accustomed. My biggest challenge was writing automated scripts and Perl subroutines for Symantec's NetBackup CLI commands to test their functionality with NetBackup's GA front-end web interface, Self Service (formerly Biomni Front Office).",
+    "Tenure": "May 2015 – August 2015"
+  }, {
+    "Role": "Manager",
+    "Company": "Marnanteli's Pizza",
+    "Site": "http://www.marnantelispizza.com/",
+    "Icon": "images/Company_Icons/Marnanteli's.png",
+    "Description": "Marnanteli's will always be one of my favorite jobs. I began working at the best pizza place in Sartell during my senior year of high school. Starting out at \"the bottom of the totem pole\", I spent the first couple months of my pizza career honing my craft for making the perfect pizza. When I wasn't making works of art in the kitchen, I was cruising around town, delivering lunch and dinner to the wonderful individuals & families of Sartell, Sauk Rapids, Rice, and St. Cloud.<br>I moved up to a manager role about a year after my start date, which meant I needed to be officially recognized as a \"person in charge\" by Minnesota Department of Health Food Code. That title put extra responsibility on my shoulders for ensuring safe food handling practices amongst my staff members.",
+    "Tenure": "January 2012 – February 2016"
   }, {
     "Role": "Fulfillment Associate",
     "Company": "Merrill Corporation",
