@@ -610,7 +610,7 @@ img.job-icon {
     margin-top: -2.813rem;
   }
 
-  #jobController {
+  .jobController {
     padding: 0rem 5.313rem;
   }
 
@@ -639,7 +639,7 @@ img.job-icon {
     margin-top: -35px;
   }
 
-  #jobController {
+  .jobController {
     padding: 0rem 5.313rem;
   }
   #skillController {

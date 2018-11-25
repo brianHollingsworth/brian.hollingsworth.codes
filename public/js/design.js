@@ -9,6 +9,14 @@
       $("#mobile-navbar").hide();
     }
 
+    if (window.innerWidth < 1200) {
+      $("#jobsDesktop").css("display", "none");
+      $("#jobsMobile").css("display", "block");
+    } else {
+      $("#jobsDesktop").css("display", "block");
+      $("#jobsMobile").css("display", "none");
+    }
+    
     if (window.innerWidth <= 767) {
 
       $("#mobile-navbar").css("display", "block");
@@ -61,6 +69,14 @@
     } else {
       $("#mobile-navbar").css("display", "none");
       $("#mobile-navbar").hide();
+    }
+
+    if (window.innerWidth < 1200) {
+      $("#jobsDesktop").css("display", "none");
+      $("#jobsMobile").css("display", "block");
+    } else {
+      $("#jobsDesktop").css("display", "block");
+      $("#jobsMobile").css("display", "none");
     }
 
     if (window.innerWidth <= 767) {

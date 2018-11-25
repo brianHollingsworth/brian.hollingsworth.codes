@@ -134,61 +134,88 @@
           I started coding as a teenager, but I officially began trading lines of code for fiscal returns on March 3rd, 2014, when
           I became one of the few lucky students to have the most coveted job by Computer Science majors at St. Cloud State,
           Maverick Software Consulting.
-          <br> While the first six jobs I've listed below exhibit all of my professional experience as a developer, I could
+          <br> While the first seven jobs I've listed below exhibit all of my professional experience as a developer, I could
           not allow myself to omit Marnanteli's Pizza and Merrill from this list, because they each played a huge role in
           helping me pay for 100% of my college tuition & fees out-of-pocket!
         </p>
       </div>
-      <div style="float: none; display: block; margin: 0 auto;">
-        <div id="jobController" ng-controller="jobController">
-          <div class="row" ng-repeat="job in jobs" ng-switch on="$index % 2">
-            <div class="col-sm-6" ng-switch-when="0">
-              <ul style="list-style-type: none;padding-left:0;">
-                  <li>
-                    <div class="job">
-                      <div class="job-square" style="float:left">
-                        <a href="{{jobs[$index].Site}}" target="_blank">
-                          <img class="job-icon" src={{jobs[$index].Icon}}>
-                        </a>
-                      </div>
-                      <div style="float:left;padding-left:15px">
-                        <h5 id="job-role" style="font-weight:600;margin-bottom:3px;">{{jobs[$index].Role}}</h5>
-                        <h5 id="job-company" style="font-weight:600;margin-bottom:2px;margin-top:4px;">{{jobs[$index].Company}}</h5>
-                        <h5 id="job-tenure" style="font-weight:100;margin-bottom:2px;margin-top:4px;">{{jobs[$index].Tenure}}</h5>
-                      </div>
-                      <span style="margin-top:0.5em">
-                        <p class="job-description" ng-bind-html="jobs[$index].Description | trustAsHTML"></p>
-                      </span>
-                    </div>
-                  </li>
-                </ul>
-            </div>
-            <div class="col-sm-6" ng-switch-when="0">
-              <span ng-show="jobs[$index+1]">
+      <div id="jobsDesktop" style="float: none; display: block; margin: 0 auto;">
+          <div id="jobController" ng-controller="jobController">
+            <div class="row" ng-repeat="job in jobs" ng-switch on="$index % 2">
+              <div class="col-sm-6" ng-switch-when="0">
                 <ul style="list-style-type: none;padding-left:0;">
                     <li>
                       <div class="job">
                         <div class="job-square" style="float:left">
-                          <a href="{{jobs[$index+1].Site}}" target="_blank">
-                            <img class="job-icon" src={{jobs[$index+1].Icon}}>
+                          <a href="{{jobs[$index].Site}}" target="_blank">
+                            <img class="job-icon" src={{jobs[$index].Icon}}>
                           </a>
                         </div>
                         <div style="float:left;padding-left:15px">
-                          <h5 id="job-role" style="font-weight:600;margin-bottom:3px;">{{jobs[$index+1].Role}}</h5>
-                          <h5 id="job-company" style="font-weight:600;margin-bottom:2px;margin-top:4px;">{{jobs[$index+1].Company}}</h5>
-                          <h5 id="job-tenure" style="font-weight:100;margin-bottom:2px;margin-top:4px;">{{jobs[$index+1].Tenure}}</h5>
+                          <h5 id="job-role" style="font-weight:600;margin-bottom:3px;">{{jobs[$index].Role}}</h5>
+                          <h5 id="job-company" style="font-weight:600;margin-bottom:2px;margin-top:4px;">{{jobs[$index].Company}}</h5>
+                          <h5 id="job-tenure" style="font-weight:100;margin-bottom:2px;margin-top:4px;">{{jobs[$index].Tenure}}</h5>
                         </div>
                         <span style="margin-top:0.5em">
-                          <p class="job-description" ng-bind-html="jobs[$index+1].Description | trustAsHTML"></p>
+                          <p class="job-description" ng-bind-html="jobs[$index].Description | trustAsHTML"></p>
                         </span>
                       </div>
                     </li>
                   </ul>
-              </span>
+              </div>
+              <div class="col-sm-6" ng-switch-when="0">
+                <span ng-show="jobs[$index+1]">
+                  <ul style="list-style-type: none;padding-left:0;">
+                      <li>
+                        <div class="job">
+                          <div class="job-square" style="float:left">
+                            <a href="{{jobs[$index+1].Site}}" target="_blank">
+                              <img class="job-icon" src={{jobs[$index+1].Icon}}>
+                            </a>
+                          </div>
+                          <div style="float:left;padding-left:15px">
+                            <h5 id="job-role" style="font-weight:600;margin-bottom:3px;">{{jobs[$index+1].Role}}</h5>
+                            <h5 id="job-company" style="font-weight:600;margin-bottom:2px;margin-top:4px;">{{jobs[$index+1].Company}}</h5>
+                            <h5 id="job-tenure" style="font-weight:100;margin-bottom:2px;margin-top:4px;">{{jobs[$index+1].Tenure}}</h5>
+                          </div>
+                          <span style="margin-top:0.5em">
+                            <p class="job-description" ng-bind-html="jobs[$index+1].Description | trustAsHTML"></p>
+                          </span>
+                        </div>
+                      </li>
+                    </ul>
+                </span>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div id="jobsMobile" style="float: none; display: block; margin: 0 auto;">
+        <div id="jobControllerMobile" ng-controller="jobController">
+            <div class="row" ng-repeat="job in jobs">
+              <div class="col-sm-12">
+                <ul style="list-style-type: none;padding-left:0;">
+                    <li>
+                      <div class="job">
+                        <div class="job-square" style="float:left">
+                          <a href="{{jobs[$index].Site}}" target="_blank">
+                            <img class="job-icon" src={{jobs[$index].Icon}}>
+                          </a>
+                        </div>
+                        <div style="float:left;padding-left:15px">
+                          <h5 id="job-role" style="font-weight:600;margin-bottom:3px;">{{jobs[$index].Role}}</h5>
+                          <h5 id="job-company" style="font-weight:600;margin-bottom:2px;margin-top:4px;">{{jobs[$index].Company}}</h5>
+                          <h5 id="job-tenure" style="font-weight:100;margin-bottom:2px;margin-top:4px;">{{jobs[$index].Tenure}}</h5>
+                        </div>
+                        <span style="margin-top:0.5em">
+                          <p class="job-description" ng-bind-html="jobs[$index].Description | trustAsHTML"></p>
+                        </span>
+                      </div>
+                    </li>
+                  </ul>
+              </div>
             </div>
           </div>
         </div>
-      </div>
     </section>
   </div>
   <div id="skillset-div" class="text-center background-material-skillset">
