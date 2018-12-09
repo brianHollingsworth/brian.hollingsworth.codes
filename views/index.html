@@ -50,7 +50,7 @@
 
 <body data-spy="scroll" data-target="#sidebar">
   <div id="mobile-navbar">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" role="navigation">
+    <nav class="navbar navbar-expand-lg navbar-dark" role="navigation">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -60,7 +60,7 @@
             <span class="icon-bar middle-bar"></span>
             <span class="icon-bar bottom-bar"></span>
           </button> -->
-          <button id="navbar-button" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
+          <button id="navbar-button" class="navbar-toggler pull-right" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <a class="navbar-left" href="#">
@@ -92,10 +92,10 @@
 
   <div id="top" class="jumbotron">
     <div id="signature-container" class="container">
-      <!-- <div class="row text-center"> -->
-        <img id="signature-animated" src="images/Signature_Animated.gif" class="signature">
-       <!-- </div> -->
-        <!-- <h1 class="hr">Brian J. Hollingsworth</h1> -->
+      <figure class="signature-block">
+        <img id="signature-animated" src="images/Signature_Animated.gif" class="signature-block-img">
+        <figcaption class="signature-block-caption">Brian J. Hollingsworth</span>
+      </figure>
     </div>
   </div>
 
@@ -152,9 +152,9 @@
                           </a>
                         </div>
                         <div style="float:left;padding-left:15px">
-                          <h5 id="job-role" style="font-weight:600;margin-bottom:3px;">{{jobs[$index].Role}}</h5>
-                          <h5 id="job-company" style="font-weight:600;margin-bottom:2px;margin-top:4px;">{{jobs[$index].Company}}</h5>
-                          <h5 id="job-tenure" style="font-weight:100;margin-bottom:2px;margin-top:4px;">{{jobs[$index].Tenure}}</h5>
+                          <h5 id="job-role" style="font-weight:600;margin-bottom:3px;font-size:1.1rem;">{{jobs[$index].Role}}</h5>
+                          <h5 id="job-company" style="font-weight:600;margin-bottom:2px;margin-top:4px;font-size:1.1rem;">{{jobs[$index].Company}}</h5>
+                          <h5 id="job-tenure" style="font-weight:100;margin-bottom:2px;margin-top:4px;font-size:1.1rem;">{{jobs[$index].Tenure}}</h5>
                         </div>
                         <span style="margin-top:0.5em">
                           <p class="job-description" ng-bind-html="jobs[$index].Description | trustAsHTML"></p>
@@ -174,9 +174,9 @@
                             </a>
                           </div>
                           <div style="float:left;padding-left:15px">
-                            <h5 id="job-role" style="font-weight:600;margin-bottom:3px;">{{jobs[$index+1].Role}}</h5>
-                            <h5 id="job-company" style="font-weight:600;margin-bottom:2px;margin-top:4px;">{{jobs[$index+1].Company}}</h5>
-                            <h5 id="job-tenure" style="font-weight:100;margin-bottom:2px;margin-top:4px;">{{jobs[$index+1].Tenure}}</h5>
+                            <h5 id="job-role" style="font-weight:600;margin-bottom:3px;font-size:1.1rem;">{{jobs[$index+1].Role}}</h5>
+                            <h5 id="job-company" style="font-weight:600;margin-bottom:2px;margin-top:4px;font-size:1.1rem;">{{jobs[$index+1].Company}}</h5>
+                            <h5 id="job-tenure" style="font-weight:100;margin-bottom:2px;margin-top:4px;font-size:1.1rem;">{{jobs[$index+1].Tenure}}</h5>
                           </div>
                           <span style="margin-top:0.5em">
                             <p class="job-description" ng-bind-html="jobs[$index+1].Description | trustAsHTML"></p>

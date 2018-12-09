@@ -159,6 +159,24 @@ hr {
   text-align: center;
 }
 
+figure.signature-block {
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+  width: 60%;
+}
+
+.signature-block-img {
+  width: 42%;
+}
+
+.signature-block-caption {
+  border-top: 1px solid black;
+  margin-top: -3.5rem;
+  font-size: 4.2rem;
+  display: block;
+}
+
 #top {
   margin: 0;
 }
@@ -487,10 +505,12 @@ img.job-icon {
   }
   .navbar .nav>li {
     height: 3.75rem;
+    display: inline-block;
+    text-align: center;
   }
   .navbar .nav>li a {
     height: 3.75rem;
-    text-align: center;
+    display: inline-block;
     padding-top: 1.25rem;
     font-weight: 600;
     color: #FFFFFF;
@@ -545,11 +565,6 @@ img.job-icon {
     -webkit-background-size: auto 150%;
     background-attachment: scroll;
   }
-  .signature {
-    width: 23%;
-    margin: 0 auto;
-    display: block;
-  }
   .jumbotron .container h1 {
     font-size: 2.75rem;
   }
@@ -563,12 +578,6 @@ img.job-icon {
   .jumbotron .lead {
     display: none;
   }
-  .signature {
-    width: 23%;
-    margin: auto;
-    display: block;
-  }
-
   .jumbotron .container h1 {
     font-size: 2rem;
   }
@@ -576,7 +585,6 @@ img.job-icon {
 
 
 /* Large desktops and laptops */
-
 @media (min-width: 75rem) {
   .hr:before {
     align-self: auto;
@@ -585,6 +593,7 @@ img.job-icon {
     border-top: 0.0625rem solid black;
     margin-top: -3.125rem;
   }
+
   #skillController {
     padding: 0rem 4.688rem;
   }
@@ -600,7 +609,7 @@ img.job-icon {
 
 
 /* Landscape tablets and medium desktops */
-
+/* Brian's notes: 992 <= width (px) < 1200 */
 @media (min-width: 62rem) and (max-width: 74.94rem) {
   .hr:before {
     align-self: auto;
@@ -608,6 +617,11 @@ img.job-icon {
     display: block;
     border-top: 0.0625rem solid black;
     margin-top: -2.813rem;
+  }
+
+  .signature-block-caption {
+    font-size: 3.45rem;
+    margin-top: -3rem;
   }
 
   .jobController {
@@ -629,14 +643,19 @@ img.job-icon {
 
 
 /* Portrait tablets and small desktops */
-
-@media (min-width: 48rem) and (max-width: 61.94rem) {
+/* Brian's notes: 768 <= width (px) < 992 */
+@media (min-width: 48rem) and (max-width: 61.99rem) {
   .hr:before {
     align-self: auto;
     content: '';
     display: block;
     border-top: 0.0625rem solid black;
     margin-top: -35px;
+  }
+
+  .signature-block-caption {
+    font-size: 2.6rem;
+    margin-top: -2rem;
   }
 
   .jobController {
@@ -666,8 +685,8 @@ img.job-icon {
 
 
 /* Landscape phones and portrait tablets */
-
-@media (max-width: 47.94rem) {
+/* Brian's notes: 481 <= width (px) < 768 */
+@media (max-width: 47.99rem) {
   .hr:before {
     align-self: auto;
     content: '';
@@ -677,6 +696,11 @@ img.job-icon {
   }
   .jumbotron .container h1 {
     font-size: 2.5rem;
+  }
+
+  .signature-block-caption {
+    font-size: 1.6rem;
+    margin-top: -1.5rem;
   }
 
   #profile {
@@ -699,7 +723,7 @@ img.job-icon {
 
 
 /* Portrait phones and smaller */
-
+/* Brian's notes: width (px) < 481 */
 @media (max-width: 30rem) {
   .hr:before {
     align-self: auto;
@@ -707,6 +731,11 @@ img.job-icon {
     display: block;
     border-top: 1px solid black;
     margin-top: -0.9375rem;
+  }
+
+  .signature-block-caption {
+    font-size: 1.4rem;
+    margin-top: -1rem;
   }
 
   .jumbotron .container h1 {
@@ -725,7 +754,7 @@ img.job-icon {
     width: 4em;
   }
   #job-role, #job-company, #job-tenure {
-    font-size: 9pt;
+    font-size: 1.1rem;
   }
   div.social-link a i {
     font-size: 3em;
@@ -734,6 +763,13 @@ img.job-icon {
   }
   #snapcode {
     width: 50vw;
+  }
+}
+
+@media (max-width: 28rem) {
+  .signature-block-caption {
+    font-size: 1.05rem;
+    margin-top: -1rem;
   }
 }
 
@@ -834,7 +870,6 @@ figure.effect:hover p {
 .signature {
   width: 23%;
   margin: auto;
-  padding-bottom: -5rem;
   display: block;
 }
 
@@ -896,8 +931,13 @@ figure.effect:hover p {
   display: none;
 }
 
+.navbar-header {
+  width: 100%;
+}
+
 #navbar-button {
   border-color: #000;
+  margin-left: 5px;
 }
 
 #bs-example-navbar-collapse-1 {
@@ -914,7 +954,6 @@ figure.effect:hover p {
 
 #brand-img {
   position: relative;
-  padding-top: 0.3125rem;
   padding-left: 0.3125rem;
   max-height: 3em;
   min-height: 3em;
