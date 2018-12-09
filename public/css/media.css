@@ -1,0 +1,415 @@
+@media (max-width: 75rem) {
+  .profile-pic {
+    padding-left: 6.25rem;
+  }
+
+  .jumbotron .container h1 {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 47.94rem) {
+  .jumbotron:before {
+    bottom: 6.25rem;
+    left: 1.25rem;
+    right: 1.25rem;
+    top: 1.25rem;
+  }
+
+  .jumbotron .container {
+    top: 20%;
+    padding-top: 0rem;
+  }
+
+  .jumbotron .container h1 {
+    font-size: 3rem;
+  }
+
+  .jumbotron .scroll-down {
+    width: 100%;
+    right: 0rem;
+  }
+
+  .navbar {
+    left: 0rem;
+    width: 100%;
+  }
+
+  .navbar .nav>li {
+    height: 3.75rem;
+    display: inline-block;
+    text-align: center;
+  }
+
+  .navbar .nav>li a {
+    height: 3.75rem;
+    display: inline-block;
+    padding-top: 1.25rem;
+    font-weight: 600;
+    color: #FFFFFF;
+  }
+
+  .fixed .navbar {
+    top: 0rem;
+  }
+
+  .container {
+    padding: 3.75rem 1.25rem;
+    min-width: 17.5rem;
+  }
+
+  #sidebar {
+    display: none;
+  }
+
+  #mobile-navbar {
+    display: inline-block;
+  }
+
+  #profile .row * {
+    text-align: center;
+  }
+
+  #professional-experience .experience .experience-details>span {
+    display: block;
+    margin-bottom: 0.375rem;
+  }
+
+  #professional-experience .experience .experience-details .seperator {
+    display: none;
+  }
+
+  #contact {
+    padding-bottom: 3.75rem;
+  }
+
+  #contact a .icon {
+    float: left;
+    margin-right: 0.625rem;
+  }
+}
+
+@media only screen and (min-device-width: 25.88rem) and (max-device-width: 46rem) and (orientation: portrait) {
+
+  /* Display mobile-navbar on high-res mobile devices like my iPhone 7 Plus. */
+  /* #sidebar {
+    display: none;
+  }
+  #mobile-navbar {
+    display: inline-block;
+  } */
+  .jumbotron .container h1 {
+    font-size: 1.75rem;
+  }
+}
+
+@media only screen and (orientation: portrait) and (max-width: 47.94rem) {
+  .jumbotron {
+    -webkit-background-size: auto 150%;
+    background-attachment: scroll;
+  }
+
+  .jumbotron .container h1 {
+    font-size: 2.75rem;
+  }
+}
+
+@media only screen and (orientation: landscape) and (max-width: 47.94rem) {
+  .jumbotron {
+    -webkit-background-size: 150% auto;
+    background-attachment: scroll;
+  }
+
+  .jumbotron .lead {
+    display: none;
+  }
+
+  .jumbotron .container h1 {
+    font-size: 2rem;
+  }
+}
+
+
+/* Large desktops and laptops */
+@media (min-width: 75rem) {
+  .hr:before {
+    align-self: auto;
+    content: '';
+    display: block;
+    border-top: 0.0625rem solid black;
+    margin-top: -3.125rem;
+  }
+
+  figure.signature-block {
+    margin-top: -11rem;
+  }
+
+  #skillController {
+    padding: 0rem 4.688rem;
+  }
+
+  div.social-link a i {
+    font-size: 5em;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+  }
+
+  #snapcode {
+    width: 30vw;
+  }
+}
+
+
+/* Landscape tablets and medium desktops */
+/* Brian's notes: 992 <= width (px) < 1200 */
+@media (min-width: 62rem) and (max-width: 74.94rem) {
+  .hr:before {
+    align-self: auto;
+    content: '';
+    display: block;
+    border-top: 0.0625rem solid black;
+    margin-top: -2.813rem;
+  }
+
+  figure.signature-block {
+    margin-top: -11rem;
+  }
+
+  .signature-block-caption {
+    font-size: 3.45rem;
+    margin-top: -3rem;
+  }
+
+  .jobController {
+    padding: 0rem 5.313rem;
+  }
+
+  #skillController {
+    padding: 0rem 5.313rem;
+  }
+
+  div.social-link a i {
+    font-size: 5em;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+  }
+
+  #snapcode {
+    width: 30vw;
+  }
+}
+
+
+/* Portrait tablets and small desktops */
+/* Brian's notes: 768 <= width (px) < 992 */
+@media (min-width: 48rem) and (max-width: 61.99rem) {
+  .hr:before {
+    align-self: auto;
+    content: '';
+    display: block;
+    border-top: 0.0625rem solid black;
+    margin-top: -35px;
+  }
+
+  figure.signature-block {
+    margin-top: -14rem;
+  }
+
+  .signature-block-caption {
+    font-size: 2.6rem;
+    margin-top: -2rem;
+  }
+
+  .jobController {
+    padding: 0rem 5.313rem;
+  }
+
+  #skillController {
+    padding: 0rem 4.688rem;
+  }
+
+  div.col-sm-4 {
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+  }
+
+  .square {
+    margin-right: 0.25em;
+  }
+
+  div.social-link a i {
+    font-size: 4em;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+  }
+
+  #snapcode {
+    width: 40vw;
+  }
+}
+
+
+/* Landscape phones and portrait tablets */
+/* Brian's notes: 481 <= width (px) < 768 */
+@media (max-width: 47.99rem) {
+  .hr:before {
+    align-self: auto;
+    content: '';
+    display: block;
+    border-top: 0.0625rem solid black;
+    margin-top: -1.563rem;
+  }
+
+  .jumbotron .container h1 {
+    font-size: 2.5rem;
+  }
+
+  figure.signature-block {
+    margin-top: -11rem;
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 75%;
+  }
+
+  .signature-block-img {
+    width: 50%;
+  }
+
+  .signature-block-caption {
+    font-size: 2rem;
+    margin-top: -1.5rem;
+  }
+
+  #profile {
+    display: inline;
+  }
+
+  .profile-pic {
+    padding-top: 2.5em;
+    padding-left: 1em;
+    height: 250px;
+  }
+
+  div.skill {
+    padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+    margin: 1.25rem auto 1.25rem auto;
+    text-align: justify;
+    border: 2px;
+    background-color: rgba(255, 255, 255, 0.45);
+    background-position: 0.5rem 0.6875rem;
+    border-radius: 0.5rem;
+  }
+
+  div.skill span {
+    display: inline-block;
+    padding-bottom: 0.125rem;
+    font-size: 0.85rem;
+    line-height: 1.3em;
+    color: #5C5C5C;
+  }
+
+  i.fa.fa-star {
+    font-size: 0.95em;
+  }
+
+  div.social-link a i {
+    font-size: 3em;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+  }
+
+  #snapcode {
+    width: 30vw;
+  }
+}
+
+
+/* Portrait phones and smaller */
+/* Brian's notes: width (px) < 481 */
+@media (max-width: 30rem) {
+  .hr:before {
+    align-self: auto;
+    content: '';
+    display: block;
+    border-top: 1px solid black;
+    margin-top: -0.9375rem;
+  }
+
+  figure.signature-block {
+    margin-top: -11rem;
+  }
+
+  .signature-block-caption {
+    font-size: 1.4rem;
+    margin-top: -1rem;
+  }
+
+  .jumbotron .container h1 {
+    font-size: 1.5rem;
+  }
+
+  #profile {
+    display: block;
+  }
+
+  .profile-pic {
+    padding-top: 0em;
+  }
+
+  .job-square {
+    height: 4em;
+    width: 4em;
+  }
+
+  #job-role,
+  #job-company,
+  #job-tenure {
+    font-size: 1rem;
+  }
+
+  figure.signature-block {
+    width: 75%;
+  }
+
+  .signature-block-caption {
+    font-size: 1.6rem;
+    margin-top: -1rem;
+  }
+
+  div.social-link a i {
+    font-size: 3em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+  }
+
+  #snapcode {
+    width: 50vw;
+  }
+}
+
+@media (max-width: 28rem) {
+
+  figure.signature-block {
+    width: 75%;
+  }
+
+  .signature-block-caption {
+    font-size: 1.6rem;
+    margin-top: -1rem;
+  }
+}
+
+@keyframes wiggle {
+  0% {
+    padding-top: 20px;
+  }
+
+  50% {
+    padding-top: 28px;
+  }
+
+  100% {
+    padding-top: 20px;
+  }
+}
