@@ -1,6 +1,10 @@
 {
   "skillset": {
     "languages": [{
+      "Name": "Java",
+      "Proficiency": 4,
+      "Icon": "images/Language_Icons/Java.png"
+    }, {
       "Name": "C#",
       "Proficiency": 4,
       "Icon": "images/Language_Icons/CSharp.png"
@@ -8,10 +12,6 @@
       "Name": "C++",
       "Proficiency": 4,
       "Icon": "images/Language_Icons/C++.png"
-    }, {
-      "Name": "Java",
-      "Proficiency": 4,
-      "Icon": "images/Language_Icons/Java.png"
     }, {
       "Name": "HTML",
       "Proficiency": 4,
