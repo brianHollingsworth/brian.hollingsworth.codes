@@ -41,7 +41,7 @@
   <link rel="stylesheet" href="css/sticky.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
-  <script type="text/javascript" src="js/custom.js"></script>
+  <script type="text/javascript" src="/public/js/custom.js"></script>
   <script src="/js/jquery.min.js"></script>
   <script src="/js/bootstrap.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
@@ -50,15 +50,18 @@
 
 <body data-spy="scroll" data-target="#sidebar">
   <div id="mobile-navbar">
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-expand-lg navbar-dark" role="navigation">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-          <button id="navbar-button" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <!-- <button id="navbar-button" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar top-bar"></span>
             <span class="icon-bar middle-bar"></span>
             <span class="icon-bar bottom-bar"></span>
+          </button> -->
+          <button id="navbar-button" class="navbar-toggler pull-right" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
           </button>
           <a class="navbar-left" href="#">
             <img id="brand-img" src="images/Signature_White.png">
@@ -89,12 +92,10 @@
 
   <div id="top" class="jumbotron">
     <div id="signature-container" class="container">
-      <div class="row text-center">
-        <img id="signature-animated" src="images/Signature_Animated.gif" class="signature">
-        <div class="animated fadeInUp">
-          <h1 class="hr">Brian J. Hollingsworth</h1>
-        </div>
-      </div>
+      <figure class="signature-block">
+        <img id="signature-animated" src="images/Signature_Animated.gif" class="signature-block-img">
+        <figcaption class="signature-block-caption">Brian J. Hollingsworth</span>
+      </figure>
     </div>
   </div>
 
@@ -102,7 +103,7 @@
     <div id="profile-anchor"></div>
   </div>
 
-  <div class="text-center background-material-profile">
+   <div class="text-center background-material-profile">
     <div id="sticky-profile" class="sticky-div">
       <a href="#profile">
         <i class="fa fa-user-circle fa-lg" aria-hidden="true"></i>
@@ -133,61 +134,88 @@
           I started coding as a teenager, but I officially began trading lines of code for fiscal returns on March 3rd, 2014, when
           I became one of the few lucky students to have the most coveted job by Computer Science majors at St. Cloud State,
           Maverick Software Consulting.
-          <br> While the first six jobs I've listed below exhibit all of my professional experience as a developer, I could
+          <br> While the first seven jobs I've listed below exhibit all of my professional experience as a developer, I could
           not allow myself to omit Marnanteli's Pizza and Merrill from this list, because they each played a huge role in
           helping me pay for 100% of my college tuition & fees out-of-pocket!
         </p>
       </div>
-      <div style="float: none; display: block; margin: 0 auto;">
-        <div id="jobController" ng-controller="jobController">
-          <div ng-repeat="job in jobs" ng-if="$even">
-            <div class="col-lg-6">
-              <ul style="list-style-type: none;padding-left:0;">
-                <li>
-                  <div class="job">
-                    <div class="job-square" style="float:left">
-                      <a href="{{jobs[$index].Site}}" target="_blank">
-                        <img class="job-icon" src={{jobs[$index].Icon}}>
-                      </a>
-                    </div>
-                    <div style="float:left;padding-left:15px">
-                      <h5 id="job-role" style="font-weight:600;margin-bottom:3px;">{{jobs[$index].Role}}</h5>
-                      <h5 id="job-company" style="font-weight:600;margin-bottom:2px;margin-top:4px;">{{jobs[$index].Company}}</h5>
-                      <h5 id="job-tenure" style="font-weight:100;margin-bottom:2px;margin-top:4px;">{{jobs[$index].Tenure}}</h5>
-                    </div>
-                    <span style="margin-top:0.5em">
-                      <p class="job-description" ng-bind-html="jobs[$index].Description | trustAsHTML"></p>
-                    </span>
-                  </div>
-                </li>
-              </ul>
+      <div id="jobsDesktop" style="float: none; display: block; margin: 0 auto;">
+          <div id="jobController" ng-controller="jobController">
+            <div class="row" ng-repeat="job in jobs" ng-switch on="$index % 2">
+              <div class="col-sm-6" ng-switch-when="0">
+                <ul style="list-style-type: none;padding-left:0;">
+                    <li>
+                      <div class="job">
+                        <div class="job-square" style="float:left">
+                          <a href="{{jobs[$index].Site}}" target="_blank">
+                            <img class="job-icon" src={{jobs[$index].Icon}}>
+                          </a>
+                        </div>
+                        <div style="float:left;padding-left:15px">
+                          <h5 id="job-role" style="font-weight:600;margin-bottom:3px;font-size:1.1rem;">{{jobs[$index].Role}}</h5>
+                          <h5 id="job-company" style="font-weight:600;margin-bottom:2px;margin-top:4px;font-size:1.1rem;">{{jobs[$index].Company}}</h5>
+                          <h5 id="job-tenure" style="font-weight:100;margin-bottom:2px;margin-top:4px;font-size:1.1rem;">{{jobs[$index].Tenure}}</h5>
+                        </div>
+                        <span style="margin-top:0.5em">
+                          <p class="job-description" ng-bind-html="jobs[$index].Description | trustAsHTML"></p>
+                        </span>
+                      </div>
+                    </li>
+                  </ul>
+              </div>
+              <div class="col-sm-6" ng-switch-when="0">
+                <span ng-show="jobs[$index+1]">
+                  <ul style="list-style-type: none;padding-left:0;">
+                      <li>
+                        <div class="job">
+                          <div class="job-square" style="float:left">
+                            <a href="{{jobs[$index+1].Site}}" target="_blank">
+                              <img class="job-icon" src={{jobs[$index+1].Icon}}>
+                            </a>
+                          </div>
+                          <div style="float:left;padding-left:15px">
+                            <h5 id="job-role" style="font-weight:600;margin-bottom:3px;font-size:1.1rem;">{{jobs[$index+1].Role}}</h5>
+                            <h5 id="job-company" style="font-weight:600;margin-bottom:2px;margin-top:4px;font-size:1.1rem;">{{jobs[$index+1].Company}}</h5>
+                            <h5 id="job-tenure" style="font-weight:100;margin-bottom:2px;margin-top:4px;font-size:1.1rem;">{{jobs[$index+1].Tenure}}</h5>
+                          </div>
+                          <span style="margin-top:0.5em">
+                            <p class="job-description" ng-bind-html="jobs[$index+1].Description | trustAsHTML"></p>
+                          </span>
+                        </div>
+                      </li>
+                    </ul>
+                </span>
+              </div>
             </div>
           </div>
-          <div ng-repeat="job in jobs" ng-if="$odd">
-            <div class="col-lg-6">
-              <ul style="list-style-type: none;padding-left:0;">
-                <li>
-                  <div class="job">
-                    <div class="job-square" style="float:left">
-                      <a href="{{jobs[$index].Site}}" target="_blank">
-                        <img class="job-icon" src={{jobs[$index].Icon}}>
-                      </a>
-                    </div>
-                    <div style="float:left;padding-left:15px">
-                      <h5 id="job-role" style="font-weight:600;margin-bottom:3px;">{{jobs[$index].Role}}</h5>
-                      <h5 id="job-company" style="font-weight:600;margin-bottom:2px;margin-top:4px;">{{jobs[$index].Company}}</h5>
-                      <h5 id="job-tenure" style="font-weight:100;margin-bottom:2px;margin-top:4px;">{{jobs[$index].Tenure}}</h5>
-                    </div>
-                    <span style="margin-top:0.5em">
-                      <p class="job-description" ng-bind-html="jobs[$index].Description | trustAsHTML"></p>
-                    </span>
-                  </div>
-                </li>
-              </ul>
+      </div>
+      <div id="jobsMobile" style="float: none; display: block; margin: 0 auto;">
+        <div id="jobControllerMobile" ng-controller="jobController">
+            <div class="row" ng-repeat="job in jobs">
+              <div class="col-sm-12">
+                <ul style="list-style-type: none;padding-left:0;">
+                    <li>
+                      <div class="job">
+                        <div class="job-square" style="float:left">
+                          <a href="{{jobs[$index].Site}}" target="_blank">
+                            <img class="job-icon" src={{jobs[$index].Icon}}>
+                          </a>
+                        </div>
+                        <div style="float:left;padding-left:15px">
+                          <h5 id="job-role" style="font-weight:600;margin-bottom:3px;">{{jobs[$index].Role}}</h5>
+                          <h5 id="job-company" style="font-weight:600;margin-bottom:2px;margin-top:4px;">{{jobs[$index].Company}}</h5>
+                          <h5 id="job-tenure" style="font-weight:100;margin-bottom:2px;margin-top:4px;">{{jobs[$index].Tenure}}</h5>
+                        </div>
+                        <span style="margin-top:0.5em">
+                          <p class="job-description" ng-bind-html="jobs[$index].Description | trustAsHTML"></p>
+                        </span>
+                      </div>
+                    </li>
+                  </ul>
+              </div>
             </div>
           </div>
         </div>
-      </div>
     </section>
   </div>
   <div id="skillset-div" class="text-center background-material-skillset">
@@ -308,8 +336,8 @@
           <%} %>
       </div>
 
-      <div class="row" style="padding-top: 2em">
-        <a href="https://github.com/brianHollingsworth/brian.hollingsworth.codes" target="_blank" class="btn btn-primary btn-md">View Source Code on GitHub</a>
+      <div class="row" style="padding-top: 1em">
+        <a id="github-repo-button" href="https://github.com/brianHollingsworth/brian.hollingsworth.codes" target="_blank" class="btn btn-primary btn-md">View Source Code on GitHub</a>
       </div>
     </section>
   </div>

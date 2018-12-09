@@ -7,7 +7,7 @@ body {
 
 body {
   background: #F3EFE0;
-  font-size: 15px;
+  font-size: 1rem;
   line-height: 1.64;
 }
 
@@ -26,13 +26,13 @@ h6,
 strong,
 b {
   font-family: 'Roboto', sans-serif !important;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 h1,
 h4 {
   font-weight: 700;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 }
 
 h2,
@@ -42,24 +42,25 @@ h3 {
 }
 
 h2 {
-  font-size: 54px;
+  font-size: 3.375rem;
   text-align: center;
 }
 
 h3 {
-  font-size: 28px;
+  font-size: 1.75rem;
 }
 
-.hr {
+/* .hr {
+  margin-bottom: 3rem;
   display: inline-block;
-}
+} */
 
 .hr:before {
   align-self: auto;
   content: '';
   display: block;
   border-top: 1px solid black;
-  margin-top: -75px;
+  margin-top: -4.688rem;
 }
 
 p.lead {
@@ -78,12 +79,12 @@ p.lead a:hover {
 
 ul.no-bullets {
   list-style-type: none;
-  margin: 0px;
-  padding: 0px;
+  margin: 0rem;
+  padding: 0rem;
 }
 
 hr {
-  margin: 40px 0px;
+  margin: 2.5rem 0rem;
   border-color: #727878;
   opacity: 0.2;
   filter: alpha(opacity=20);
@@ -102,24 +103,24 @@ hr {
 .icon {
   display: inline-block;
   background: url(images/sm_icon_sprite.png) no-repeat;
-  height: 32px;
-  width: 32px;
+  height: 2rem;
+  width: 2rem;
 }
 
 .icon.icon-twitter {
-  background-position: 0px 0px;
+  background-position: 0rem 0rem;
 }
 
 .icon.icon-linkedin {
-  background-position: 0px -32px;
+  background-position: 0rem -2rem;
 }
 
 .icon.icon-skype {
-  background-position: 0px -64px;
+  background-position: 0rem -4rem;
 }
 
 .icon.icon-email {
-  background-position: 0px -96px;
+  background-position: 0rem -6rem;
 }
 
 .jumbotron {
@@ -135,17 +136,17 @@ hr {
   background-size: cover;
   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/background.jpg', sizingMethod='scale')";
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/background.jpg', sizingMethod='scale');
-  margin-bottom: 0px;
-  padding: 0px;
+  margin-bottom: 0rem;
+  padding: 0rem;
 }
 
 .jumbotron .overlay {
   background-color: #FFFFFF;
   position: absolute;
-  top: 0px;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
+  top: 0rem;
+  bottom: 0rem;
+  left: 0rem;
+  right: 0rem;
   opacity: 0.75;
   filter: alpha(opacity=75);
   z-index: 2;
@@ -158,40 +159,141 @@ hr {
   text-align: center;
 }
 
+figure.signature-block {
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+  width: 60%;
+}
+
+.signature-block-img {
+  width: 42%;
+}
+
+.signature-block-caption {
+  border-top: 1px solid black;
+  margin-top: -3.5rem;
+  font-size: 4.2rem;
+  display: block;
+}
+
+#top {
+  margin: 0;
+}
+
+#sticky-profile {
+  background: #EF861B;
+  color: #424242;
+}
+
+#sticky-profile a i {
+  color: #424242;
+}
+
 #profile {
   display: flex;
-  padding-bottom: 0px;
+  padding-bottom: 0rem;
+}
+
+.background-material-profile {
+  background: #EF861B;
 }
 
 .profile-pic {
-  padding-left: 100px;
-  height: 500px;
+  padding-left: 6.25rem;
+  height: 34.38rem;
   margin-right: 1em;
-  right: 0px;
-  -webkit-filter: drop-shadow(4px 4px 4px #424242 );
-  filter: drop-shadow(4px 4px 4px #424242);
+  right: 0rem;
+  -webkit-filter: drop-shadow(0.25rem 0.25rem 0.25rem #424242 );
+  filter: drop-shadow(0.25rem 0.25rem 0.25rem #424242);
 }
 
 .profile-text {
   padding: 1em;
-  max-width: 550px;
+  max-width: 34.38rem;
   margin: auto;
   overflow: auto;
   flex-grow: 1;
 }
 
+#profile-div p {
+  color: #424242;
+}
+
+#sticky-experience {
+  background: #F6BD16;
+  color: #424242;
+}
+
+#sticky-experience a i {
+  color: #424242;
+}
+
+.background-material-experience {
+  background: #F6BD16;
+  color: #424242;
+}
+
 .experience-text {
   padding: 1em;
-  max-width: 550px;
+  max-width: 34.38rem;
   margin: auto;
   overflow: auto;
 }
 
+#sticky-skillset {
+  background: #F9D61A;
+  color: #424242;
+}
+
+#sticky-skillset a i {
+  color: #424242;
+}
+
+.background-material-skillset {
+  background: #F9D61A;
+  color: #424242;
+}
+
+.background-material-skillset a, .background-material-skillset p {
+  color: #424242;
+}
+
 .skillset-text {
   padding: 1em;
-  max-width: 550px;
+  max-width: 34.38rem;
   margin: auto;
   overflow: auto;
+}
+
+#sticky-about {
+  background: #9C9C9C;
+  color: #424242;
+}
+
+#sticky-about a i {
+  color: #424242;
+}
+
+.background-material-about {
+  background: #9C9C9C;
+}
+
+.background-material-about p {
+  color: #424242;
+}
+
+#github-repo-button {
+  background-color: #337AB7;
+  margin: 0 auto;
+}
+
+.background-material-contact {
+  background: #BCBCBC;
+}
+
+.fa-github, .fa-linkedin, .fa-twitter, .fa-instagram, .fa-snapchat-ghost {
+  color: #337AB7;
 }
 
 .jumbotron .container>* {
@@ -200,22 +302,23 @@ hr {
 }
 
 .jumbotron .container h1 {
-  padding-bottom: 20px;
-  border-bottom: 1px solid #FFFFFF;
+  font-size: 4rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 0.0625rem solid #FFFFFF;
   border-bottom-color: rgba(255, 255, 255, 0.35);
   display: inline-block;
 }
 
 .jumbotron .container .lead {
-  font-size: 28px;
+  font-size: 1.75rem;
 }
 
 .jumbotron .scroll-down {
-  height: 80px;
-  width: 110px;
+  height: 5rem;
+  width: 6.875rem;
   display: block;
   position: absolute;
-  bottom: 0px;
+  bottom: 0rem;
   right: 5%;
   background-color: #222222;
   text-align: center;
@@ -224,9 +327,9 @@ hr {
 
 .jumbotron .scroll-down .glyphicon {
   color: #FFFFFF;
-  font-size: 30px;
-  padding-right: 2px;
-  padding-top: 20px;
+  font-size: 1.875rem;
+  padding-right: 0.125rem;
+  padding-top: 1.25rem;
   animation-name: wiggle;
   animation-duration: 1.2s;
   animation-timing-function: linear;
@@ -235,32 +338,16 @@ hr {
 }
 
 .jumbotron .scroll-down:hover .glyphicon {
-  padding-top: 25px;
+  padding-top: 1.563rem;
 }
 
 .background-white {
   background: #FFFFFF;
 }
 
-.background-material-profile {
-  background: #C0DFD9;
-}
-
-.background-material-experience {
-  background: #E9ECE5;
-}
-
-.background-material-skillset {
-  background: #B3C2BF;
-}
-
-.background-material-about {
-  background: #3B3A36;
-}
-
 .container {
-  max-width: 1280px;
-  padding: 40px 180px;
+  max-width: 80rem;
+  padding: 2.5rem 11.25rem;
 }
 
 div.mean-flex-box div img {
@@ -268,28 +355,28 @@ div.mean-flex-box div img {
 }
 
 #profile .row>div {
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 #profile .row>div img {
   width: 100%;
-  max-width: 246px;
+  max-width: 15.38rem;
   height: auto;
 }
 
 #professional-experience .experience {
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 #professional-experience .experience p>strong {
   display: block;
-  padding-top: 8px;
-  margin-bottom: 10px;
+  padding-top: 0.5rem;
+  margin-bottom: 0.625rem;
 }
 
 #professional-experience .experience .experience-details {
   display: block;
-  margin-top: 6px;
+  margin-top: 0.375rem;
 }
 
 #professional-experience .experience .experience-details * {
@@ -301,19 +388,19 @@ div.mean-flex-box div img {
 }
 
 div.skill {
-  padding: 8px 12px 8px 12px;
-  margin: 20px auto 20px auto;
+  padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+  margin: 1.25rem auto 1.25rem auto;
   text-align: justify;
   border: 2px;
   background-color: rgba(255, 255, 255, 0.45);
-  background-position: 8px 11px;
-  border-radius: 8px;
+  background-position: 0.5rem 0.6875rem;
+  border-radius: 0.5rem;
 }
 
 div.skill span {
   display: inline-block;
-  padding-bottom: 2px;
-  font-size: 15px;
+  padding-bottom: 0.125rem;
+  font-size: 0.9375rem;
   line-height: 1.3em;
   color: #5C5C5C;
 }
@@ -331,19 +418,19 @@ img.skill-icon {
 }
 
 div.job {
-  padding: 8px 12px 8px 12px;
-  margin: 20px auto 20px auto;
+  padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+  margin: 1.25rem auto 1.25rem auto;
   text-align: justify;
-  border: 2px;
+  border: 0.125rem;
   background-color: rgba(255, 255, 255, 0.35);
-  background-position: 8px 11px;
-  border-radius: 8px;
+  background-position: 0.5rem 0.6875rem;
+  border-radius: 0.5rem;
 }
 
 div.job span {
   display: inline-block;
-  padding-bottom: 2px;
-  font-size: 15px;
+  padding-bottom: 0.125rem;
+  font-size: 0.9375rem;
   line-height: 1.3em;
   color: #5C5C5C;
 }
@@ -359,7 +446,7 @@ img.job-icon {
 }
 
 .job-description {
-  height: 120px;
+  height: 7.5rem;
   width: 100%;
   overflow-y: auto;
   /*
@@ -380,51 +467,60 @@ img.job-icon {
   */
   /* background: linear-gradient(white 30%, hsla(0, 0%, 100%, 0)), linear-gradient(hsla(0, 0%, 100%, 0) 10px, white 70%) bottom, radial-gradient(at top, rgba(0, 0, 0, 0.2), transparent 70%), radial-gradient(at bottom, rgba(0, 0, 0, 0.2), transparent 70%) bottom;  */
   background-repeat: no-repeat;
-  background-size: 100% 20px, 100% 20px, 100% 10px, 100% 10px;
+  background-size: 100% 1.25rem, 100% 1.25rem, 100% 0.625rem, 100% 0.625rem;
   background-attachment: local, local, scroll, scroll;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 75rem) {
   .profile-pic {
-    padding-left: 100px;
+    padding-left: 6.25rem;
+  }
+
+  .jumbotron .container h1 {
+    font-size: 3.5rem;
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 47.94rem) {
   .jumbotron:before {
-    bottom: 100px;
-    left: 20px;
-    right: 20px;
-    top: 20px;
+    bottom: 6.25rem;
+    left: 1.25rem;
+    right: 1.25rem;
+    top: 1.25rem;
   }
   .jumbotron .container {
     top: 20%;
-    padding-top: 0px;
+    padding-top: 0rem;
+  }
+  .jumbotron .container h1 {
+    font-size: 3rem;
   }
   .jumbotron .scroll-down {
     width: 100%;
-    right: 0px;
+    right: 0rem;
   }
   .navbar {
-    left: 0px;
+    left: 0rem;
     width: 100%;
   }
   .navbar .nav>li {
-    height: 60px;
+    height: 3.75rem;
+    display: inline-block;
+    text-align: center;
   }
   .navbar .nav>li a {
-    height: 60px;
-    text-align: center;
-    padding-top: 20px;
+    height: 3.75rem;
+    display: inline-block;
+    padding-top: 1.25rem;
     font-weight: 600;
     color: #FFFFFF;
   }
   .fixed .navbar {
-    top: 0px;
+    top: 0rem;
   }
   .container {
-    padding: 60px 20px;
-    min-width: 280px;
+    padding: 3.75rem 1.25rem;
+    min-width: 17.5rem;
   }
   #sidebar {
     display: none;
@@ -437,21 +533,21 @@ img.job-icon {
   }
   #professional-experience .experience .experience-details>span {
     display: block;
-    margin-bottom: 6px;
+    margin-bottom: 0.375rem;
   }
   #professional-experience .experience .experience-details .seperator {
     display: none;
   }
   #contact {
-    padding-bottom: 60px;
+    padding-bottom: 3.75rem;
   }
   #contact a .icon {
     float: left;
-    margin-right: 10px;
+    margin-right: 0.625rem;
   }
 }
 
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: portrait) {
+@media only screen and (min-device-width: 25.88rem) and (max-device-width: 46rem) and (orientation: portrait) {
   /* Display mobile-navbar on high-res mobile devices like my iPhone 7 Plus. */
   /* #sidebar {
     display: none;
@@ -459,22 +555,22 @@ img.job-icon {
   #mobile-navbar {
     display: inline-block;
   } */
+  .jumbotron .container h1 {
+    font-size: 1.75rem;
+  }
 }
 
-@media only screen and (orientation: portrait) and (max-width: 767px) {
+@media only screen and (orientation: portrait) and (max-width: 47.94rem) {
   .jumbotron {
     -webkit-background-size: auto 150%;
     background-attachment: scroll;
   }
-  .signature {
-    width: 23%;
-    margin: auto;
-    display: block;
-    margin-bottom: -0.75em;
+  .jumbotron .container h1 {
+    font-size: 2.75rem;
   }
 }
 
-@media only screen and (orientation: landscape) and (max-width: 767px) {
+@media only screen and (orientation: landscape) and (max-width: 47.94rem) {
   .jumbotron {
     -webkit-background-size: 150% auto;
     background-attachment: scroll;
@@ -482,27 +578,24 @@ img.job-icon {
   .jumbotron .lead {
     display: none;
   }
-  .signature {
-    width: 23%;
-    margin: auto;
-    display: block;
-    margin-bottom: 1.0em;
+  .jumbotron .container h1 {
+    font-size: 2rem;
   }
 }
 
 
 /* Large desktops and laptops */
-
-@media (min-width: 1200px) {
+@media (min-width: 75rem) {
   .hr:before {
     align-self: auto;
     content: '';
     display: block;
-    border-top: 1px solid black;
-    margin-top: -50px;
+    border-top: 0.0625rem solid black;
+    margin-top: -3.125rem;
   }
+
   #skillController {
-    padding: 0px 75px;
+    padding: 0rem 4.688rem;
   }
   div.social-link a i {
     font-size: 5em;
@@ -516,22 +609,27 @@ img.job-icon {
 
 
 /* Landscape tablets and medium desktops */
-
-@media (min-width: 992px) and (max-width: 1199px) {
+/* Brian's notes: 992 <= width (px) < 1200 */
+@media (min-width: 62rem) and (max-width: 74.94rem) {
   .hr:before {
     align-self: auto;
     content: '';
     display: block;
-    border-top: 1px solid black;
-    margin-top: -45px;
+    border-top: 0.0625rem solid black;
+    margin-top: -2.813rem;
   }
 
-  #jobController {
-    padding: 0px 85px;
+  .signature-block-caption {
+    font-size: 3.45rem;
+    margin-top: -3rem;
+  }
+
+  .jobController {
+    padding: 0rem 5.313rem;
   }
 
   #skillController {
-    padding: 0px 85px;
+    padding: 0rem 5.313rem;
   }
   div.social-link a i {
     font-size: 5em;
@@ -545,25 +643,31 @@ img.job-icon {
 
 
 /* Portrait tablets and small desktops */
-
-@media (min-width: 768px) and (max-width: 991px) {
+/* Brian's notes: 768 <= width (px) < 992 */
+@media (min-width: 48rem) and (max-width: 61.99rem) {
   .hr:before {
     align-self: auto;
     content: '';
     display: block;
-    border-top: 1px solid black;
+    border-top: 0.0625rem solid black;
     margin-top: -35px;
   }
-  #jobController {
-    padding: 0px 85px;
+
+  .signature-block-caption {
+    font-size: 2.6rem;
+    margin-top: -2rem;
+  }
+
+  .jobController {
+    padding: 0rem 5.313rem;
   }
   #skillController {
-    padding: 0px 75px;
+    padding: 0rem 4.688rem;
   }
 
   div.col-sm-4 {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
   }
 
   .square {
@@ -581,15 +685,24 @@ img.job-icon {
 
 
 /* Landscape phones and portrait tablets */
-
-@media (max-width: 767px) {
+/* Brian's notes: 481 <= width (px) < 768 */
+@media (max-width: 47.99rem) {
   .hr:before {
     align-self: auto;
     content: '';
     display: block;
-    border-top: 1px solid black;
-    margin-top: -25px;
+    border-top: 0.0625rem solid black;
+    margin-top: -1.563rem;
   }
+  .jumbotron .container h1 {
+    font-size: 2.5rem;
+  }
+
+  .signature-block-caption {
+    font-size: 1.6rem;
+    margin-top: -1.5rem;
+  }
+
   #profile {
     display: inline;
   }
@@ -610,14 +723,23 @@ img.job-icon {
 
 
 /* Portrait phones and smaller */
-
-@media (max-width: 480px) {
+/* Brian's notes: width (px) < 481 */
+@media (max-width: 30rem) {
   .hr:before {
     align-self: auto;
     content: '';
     display: block;
     border-top: 1px solid black;
-    margin-top: -15px;
+    margin-top: -0.9375rem;
+  }
+
+  .signature-block-caption {
+    font-size: 1.4rem;
+    margin-top: -1rem;
+  }
+
+  .jumbotron .container h1 {
+    font-size: 1.5rem;
   }
   #profile {
     display: block;
@@ -632,7 +754,7 @@ img.job-icon {
     width: 4em;
   }
   #job-role, #job-company, #job-tenure {
-    font-size: 9pt;
+    font-size: 1.1rem;
   }
   div.social-link a i {
     font-size: 3em;
@@ -641,6 +763,13 @@ img.job-icon {
   }
   #snapcode {
     width: 50vw;
+  }
+}
+
+@media (max-width: 28rem) {
+  .signature-block-caption {
+    font-size: 1.05rem;
+    margin-top: -1rem;
   }
 }
 
@@ -742,10 +871,11 @@ figure.effect:hover p {
   width: 23%;
   margin: auto;
   display: block;
-  margin-bottom: -1.25em;
 }
 
 #signature-container {
+  display: flex;
+  justify-content: center;
   z-index: 0;
   position: relative;
   top: 50%;
@@ -801,8 +931,13 @@ figure.effect:hover p {
   display: none;
 }
 
+.navbar-header {
+  width: 100%;
+}
+
 #navbar-button {
   border-color: #000;
+  margin-left: 5px;
 }
 
 #bs-example-navbar-collapse-1 {
@@ -819,8 +954,7 @@ figure.effect:hover p {
 
 #brand-img {
   position: relative;
-  padding-top: 5px;
-  padding-left: 5px;
+  padding-left: 0.3125rem;
   max-height: 3em;
   min-height: 3em;
 }

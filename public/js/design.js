@@ -9,25 +9,34 @@
       $("#mobile-navbar").hide();
     }
 
+    if (window.innerWidth < 1200) {
+      $("#jobsDesktop").css("display", "none");
+      $("#jobsMobile").css("display", "block");
+    } else {
+      $("#jobsDesktop").css("display", "block");
+      $("#jobsMobile").css("display", "none");
+    }
+    
     if (window.innerWidth <= 767) {
-      // $("#mobile-navbar").css("display", "block");
+
+      $("#mobile-navbar").css("display", "block");
       $("#profile-pic").attr("src", "images/Profile-Mobile.png");
     } else {
-      // $("#mobile-navbar").css("display", "none");
+      $("#mobile-navbar").css("display", "none");
       $("#profile-pic").attr("src", "images/Profile.png");
     }
 
-    $('#sidebar').affix({
-      offset: {
-        top: $('.navbar-default').height()
-      }
-    });
+    // $('#sidebar').affix({
+    //   offset: {
+    //     top: $('.navbar-default').height()
+    //   }
+    // });
 
     document.getElementById('signature-animated').src = 'images/Signature_Animated.gif';
 
-    var date = new Date();
-    var dayOfTheWeek = date.getDay();
-    dailyColorPalette(2);
+    // var date = new Date();
+    // var dayOfTheWeek = date.getDay();
+    // dailyColorPalette(2);
 
     $('a[href^="#"]').on('click', function (e) {
       e.preventDefault();
@@ -62,15 +71,23 @@
       $("#mobile-navbar").hide();
     }
 
+    if (window.innerWidth < 1200) {
+      $("#jobsDesktop").css("display", "none");
+      $("#jobsMobile").css("display", "block");
+    } else {
+      $("#jobsDesktop").css("display", "block");
+      $("#jobsMobile").css("display", "none");
+    }
+
     if (window.innerWidth <= 767) {
-      // $("#mobile-navbar").css("display", "block");
-      // $("#mobile-navbar").show();
+      $("#mobile-navbar").css("display", "block");
+      $("#mobile-navbar").show();
       // $("#sidebar").hide();
       $("#profile-pic").attr("src", "images/Profile-Mobile.png");
     } else {
       // $("#sidebar").show();
-      // $("#mobile-navbar").css("display", "none");
-      // $("#mobile-navbar").hide();
+      $("#mobile-navbar").css("display", "none");
+      $("#mobile-navbar").hide();
       $("#profile-pic").attr("src", "images/Profile.png");
     }
   });
