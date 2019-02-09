@@ -30,19 +30,19 @@
       "Icon": "images/Language_Icons/Nodejs.png"
     }, {
       "Name": "Perl",
-      "Proficiency": 4,
+      "Proficiency": 3,
       "Icon": "images/Language_Icons/Perl.png"
     }, {
       "Name": "Python",
       "Proficiency": 3,
       "Icon": "images/Language_Icons/Python.png"
-    }, {
-      "Name": "Swift",
-      "Proficiency": 2,
-      "Icon": "images/Language_Icons/Swift.png"
     }],
 
     "tools": [{
+      "Name": "IntelliJ IDEA",
+      "Proficiency": 4,
+      "Icon": "images/Tool_Icons/IntelliJ_IDEA.png"
+    }, {
       "Name": "Visual Studio",
       "Proficiency": 4,
       "Icon": "images/Tool_Icons/Visual_Studio.png"
@@ -54,10 +54,6 @@
       "Name": "Git",
       "Proficiency": 4,
       "Icon": "images/Tool_Icons/Git.png"
-    }, {
-      "Name": "IntelliJ IDEA",
-      "Proficiency": 3,
-      "Icon": "images/Tool_Icons/IntelliJ_IDEA.png"
     }, {
       "Name": "SQL Server",
       "Proficiency": 3,
