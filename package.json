@@ -1,6 +1,6 @@
 {
   "name": "brian.hollingsworth.codes",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "A robust resume to show off what I can do.",
   "main": "server.js",
   "directories": {
