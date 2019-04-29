@@ -2,7 +2,7 @@
   "skillset": {
     "languages": [{
       "Name": "Java",
-      "Proficiency": 4,
+      "Proficiency": 5,
       "Icon": "images/Language_Icons/Java.png"
     }, {
       "Name": "C#",
@@ -29,18 +29,18 @@
       "Proficiency": 4,
       "Icon": "images/Language_Icons/Nodejs.png"
     }, {
-      "Name": "Perl",
-      "Proficiency": 3,
-      "Icon": "images/Language_Icons/Perl.png"
-    }, {
       "Name": "Python",
       "Proficiency": 3,
       "Icon": "images/Language_Icons/Python.png"
+    }, {
+      "Name": "Perl",
+      "Proficiency": 2,
+      "Icon": "images/Language_Icons/Perl.png"
     }],
 
     "tools": [{
       "Name": "IntelliJ IDEA",
-      "Proficiency": 4,
+      "Proficiency": 5,
       "Icon": "images/Tool_Icons/IntelliJ_IDEA.png"
     }, {
       "Name": "Visual Studio",
@@ -55,6 +55,10 @@
       "Proficiency": 4,
       "Icon": "images/Tool_Icons/Git.png"
     }, {
+      "Name": "MySQL",
+      "Proficiency": 4,
+      "Icon": "images/Tool_Icons/MySQL.png"
+    }, {
       "Name": "SQL Server",
       "Proficiency": 3,
       "Icon": "images/Tool_Icons/SQL_Server.png"
@@ -64,7 +68,7 @@
       "Icon": "images/Tool_Icons/OpenShift.png"
     }, {
       "Name": "Xcode",
-      "Proficiency": 3,
+      "Proficiency": 2,
       "Icon": "images/Tool_Icons/Xcode.png"
     }],
 
